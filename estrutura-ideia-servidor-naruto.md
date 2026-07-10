@@ -1,0 +1,625 @@
+# Estrutura da Ideia — Servidor Naruto no TFS 1.4.2 + OTCv8
+
+## Visão do Projeto
+
+A proposta do servidor é se diferenciar dos servidores tradicionais de Naruto, nos quais o jogador escolhe ou controla diretamente personagens famosos do anime, como Naruto, Sasuke, Kakashi ou Itachi.
+
+Neste projeto, o jogador cria a própria identidade dentro do universo ninja. Em vez de “ser” um personagem da obra, ele será um ninja original, com evolução própria, escolhas de estilo de combate, progressão de rank, especialização elemental e construção individual de poder.
+
+O foco do jogo é oferecer uma experiência de progressão mais autoral, com sensação de carreira ninja, aprendizado técnico, crescimento gradual e liberdade para montar builds diferentes. O universo do anime serve como base temática, visual e narrativa, mas a jornada do jogador é própria.
+
+## Pilar Central da Proposta
+
+O conceito principal do servidor é:
+
+- O jogador não joga como um personagem do anime.
+- O jogador cria sua própria identidade ninja.
+- A progressão acontece como em uma carreira dentro do mundo shinobi.
+- Técnicas icônicas do anime existem no jogo, mas são aprendidas como jutsus e não recebidas por “ser” determinado personagem.
+
+Isso muda completamente a fantasia principal do jogo:
+
+- Em servidores comuns: “eu sou o Naruto”.
+- Neste servidor: “eu sou um ninja do meu clã, com meus elementos, meu treinamento e minhas técnicas”.
+
+Esse diferencial dá mais longevidade ao servidor, mais variedade de builds e mais espaço para sistemas de progressão, economia e conteúdo de médio e longo prazo.
+
+## Fantasia do Jogador
+
+A fantasia principal do jogador deve ser a de viver a trajetória de um ninja dentro do mundo de Naruto.
+
+Ele começa como alguém comum dentro da aldeia, com pouco poder, poucos recursos e poucas técnicas. Aos poucos, evolui por esforço, treinamento, missões, estudo de jutsus, combate contra ameaças maiores e conquista de reconhecimento. O jogador deve sentir que construiu sua força e não apenas herdou um personagem pronto.
+
+### Sensações que o servidor deve entregar
+
+- Evolução real de iniciante para elite ninja.
+- Liberdade para escolher o estilo de combate.
+- Descoberta gradual de técnicas mais avançadas.
+- Valor no treinamento, e não só no level.
+- Recompensa por dedicação, especialização e planejamento.
+- Imersão em uma vila ninja viva, com missões, economia e ameaças globais.
+
+## Estrutura de Progressão
+
+### 1. Identidade Própria do Jogador
+
+Ao entrar no jogo, o personagem não é um herói conhecido do anime. Ele é um ninja original. Isso permite criar:
+
+- Nome próprio.
+- Aparência própria.
+- Caminho de evolução próprio.
+- Escolhas de build próprias.
+- Especializações próprias.
+
+Esse sistema pode abrir espaço futuramente para:
+
+- Clãs jogáveis.
+- Traços iniciais.
+- Afinidades naturais.
+- Talentos passivos.
+- Especializações avançadas.
+
+### 2. Progressão por Rank Ninja
+
+A progressão social e funcional do personagem pode seguir a hierarquia ninja clássica. Exemplo:
+
+- Estudante da Academia.
+- Genin.
+- Chunin.
+- Jonin.
+- ANBU (ou especialização avançada).
+- Kage ou equivalente endgame narrativo.
+
+Cada rank pode desbloquear:
+
+- Novas áreas.
+- Novos NPCs.
+- Novas missões.
+- Novos exames.
+- Acesso a técnicas mais complexas.
+- Equipamentos melhores.
+- Responsabilidades e conteúdos mais perigosos.
+
+A promoção de rank não deve depender só de level. O ideal é exigir combinação de fatores:
+
+- Level mínimo.
+- Missões concluídas.
+- Prova prática.
+- Prova teórica ou escolha de respostas.
+- Bosses específicos derrotados.
+- Reputação com a aldeia.
+
+Isso faz a progressão parecer mais narrativa e menos automática.
+
+### 3. Level como Base de Poder
+
+O level representa a evolução geral do ninja e deve ser um dos pilares centrais do crescimento.
+
+O level pode definir principalmente:
+
+- Vida máxima.
+- Chakra máximo.
+- Dano base geral.
+- Resistência geral.
+- Requisitos para aprender técnicas.
+- Acesso a conteúdos mais perigosos.
+
+### Ideia de função do level dentro do servidor
+
+- Level = maturidade geral do personagem.
+- Não deve decidir tudo sozinho.
+- Deve se combinar com treino, mentalidade, elemento e jutsus aprendidos.
+
+Assim, dois jogadores do mesmo nível ainda podem ser diferentes entre si.
+
+## Atributos Principais
+
+A base do servidor pode girar em torno de três eixos de evolução: nível, treino e mentalidade.
+
+### 1. Nível
+
+Responsável por:
+
+- Vida.
+- Chakra.
+- Força geral.
+- Sobrevivência.
+- Requisitos de progressão.
+
+### 2. Treino
+
+Treino representa o desenvolvimento físico e corporal do ninja.
+
+Impacta principalmente:
+
+- Taijutsu.
+- Dano físico básico.
+- Ataques corpo a corpo.
+- Eficiência com armas ninja físicas.
+- Resistência corporal.
+
+Esse atributo reforça a ideia de que o jogador pode construir um ninja mais físico, agressivo e de combate direto.
+
+### 3. Mentalidade
+
+Mentalidade representa o domínio interno de chakra, disciplina, foco e capacidade técnica.
+
+Impacta principalmente:
+
+- Poder de ninjutsu.
+- Quantidade adicional de chakra.
+- Eficiência no uso de jutsus.
+- Escalonamento de dano elemental.
+- Controle de técnicas avançadas.
+
+Esse atributo favorece jogadores que querem investir em técnicas, combos, utilidade e poder de chakra.
+
+### 4. Resultado Prático da Combinação
+
+A combinação desses três eixos gera estilos diferentes de personagem:
+
+- Level alto + treino alto = ninja resistente com bom combate físico.
+- Level alto + mentalidade alta = ninja forte em jutsus e chakra.
+- Treino alto + mentalidade média = híbrido funcional.
+- Mentalidade muito alta + elementos raros = foco em ninjutsu avançado.
+
+Isso é importante porque cria diversidade de builds sem depender apenas de vocações fixas.
+
+## Sistema de Elementos
+
+Um dos pilares mais fortes do servidor deve ser a afinidade elemental.
+
+### Conceito Base
+
+O jogador escolhe um elemento principal no início da jornada ou em um momento inicial controlado do progresso. Esse elemento representa sua afinidade base e define o primeiro conjunto de técnicas que ele poderá estudar.
+
+### Elementos iniciais sugeridos
+
+- Katon (fogo).
+- Suiton (água).
+- Raiton (raio).
+- Doton (terra).
+- Fuuton (vento).
+
+### Função do Elemento Base
+
+O elemento base define:
+
+- Primeira árvore de jutsus liberada.
+- Estilo visual inicial do jogador.
+- Primeiros combates especializados.
+- Rotas de build no early e mid game.
+
+### Aprendizado de Novos Elementos
+
+Um diferencial importante é que o jogador pode aprender outros elementos no futuro, mas isso deve exigir esforço e progressão real.
+
+Sugestões de regra:
+
+- Primeiro elemento é mais fácil de desenvolver.
+- Segundo elemento exige rank mínimo, missão e treinamento especial.
+- Terceiro elemento deve ser conteúdo avançado e raro.
+- Combinações especiais podem ficar para endgame.
+
+Isso cria senso de conquista e evita que todos tenham tudo muito cedo.
+
+### Possibilidades Futuras
+
+Com evolução do projeto, isso pode se expandir para:
+
+- Kekkei Genkai por combinação de elementos.
+- Jutsus únicos de linhagem.
+- Especializações secretas.
+- Mestres elementais por vila.
+- Pergaminhos raros para técnicas especiais.
+
+## Sistema de Jutsus
+
+### Filosofia do Sistema
+
+Os jutsus não devem ser entregues automaticamente apenas porque o jogador subiu de nível. O ideal é que o jogador precise aprender, desbloquear, treinar e dominar técnicas.
+
+Isso aproxima o servidor da fantasia de estudo e evolução ninja.
+
+### Estrutura de Aprendizado
+
+Cada jutsu pode depender de requisitos como:
+
+- Nível mínimo.
+- Rank ninja mínimo.
+- Elemento necessário.
+- Mentalidade mínima.
+- Missão específica.
+- Mestre NPC.
+- Item de aprendizado, como pergaminho.
+- Custo em dinheiro ou recursos.
+
+### Tipos de Jutsu
+
+Os jutsus podem ser organizados em categorias:
+
+- Ninjutsu ofensivo.
+- Ninjutsu defensivo.
+- Jutsus de mobilidade.
+- Jutsus utilitários.
+- Genjutsu.
+- Taijutsu especial.
+- Técnicas supremas / ultimates.
+- Invocações no futuro.
+
+### Relação com Personagens do Anime
+
+Em vez de o jogador “ser o Sasuke” para usar uma técnica famosa, ele aprende técnicas inspiradas ou diretamente baseadas no repertório de personagens do anime.
+
+Exemplo conceitual:
+
+- Um usuário de katon avançado pode aprender técnicas icônicas de fogo.
+- Um usuário de raiton pode acessar técnicas relâmpago inspiradas em personagens famosos.
+- Um jogador com progressão especial pode aprender técnicas lendárias, desde que cumpra os requisitos.
+
+Dessa forma, o anime vira fonte de técnicas, não de classes prontas.
+
+### Progressão de Domínio
+
+Além de aprender o jutsu, pode existir domínio da técnica:
+
+- Aprendido.
+- Treinado.
+- Aperfeiçoado.
+- Mestre.
+
+O domínio pode melhorar:
+
+- Dano.
+- Custo de chakra.
+- Tempo de recarga.
+- Alcance.
+- Efeitos secundários.
+
+Isso aumenta o valor do uso contínuo da técnica.
+
+## Estilos de Combate
+
+O servidor pode se apoiar em estilos de combate construídos organicamente a partir dos atributos e técnicas do jogador.
+
+### Arquétipos possíveis
+
+- Ninja físico: foco em treino, taijutsu, armas e pressão curta distância.
+- Ninja elemental: foco em mentalidade, chakra e combos de ninjutsu.
+- Ninja híbrido: equilíbrio entre dano físico e técnicas.
+- Ninja tático: foco em utilidade, controle, debuffs e movimentação.
+- Ninja especialista: foco em um elemento com alta eficiência.
+- Ninja versátil: múltiplos elementos com poder moderado.
+
+Essa estrutura permite liberdade sem precisar prender o jogo a vocações clássicas demais.
+
+## Mundo e Estrutura das Aldeias
+
+### Aldeia Inicial
+
+A aldeia principal inicial pode ser Konoha, funcionando como centro do early e mid game.
+
+Funções de Konoha no começo do projeto:
+
+- Spawn inicial.
+- Área de tutorial.
+- NPCs principais.
+- Academia ninja.
+- Primeiro hospital.
+- Loja básica.
+- Quadro de missões.
+- Mestres de treino.
+- Exames de progressão.
+- Primeiro núcleo econômico.
+
+### Expansão Futura
+
+Com o desenvolvimento, outras aldeias podem ser abertas como conteúdo adicional:
+
+- Sunagakure.
+- Kirigakure.
+- Kumogakure.
+- Iwagakure.
+- Vilas menores e territórios neutros.
+
+Cada aldeia futura pode ter:
+
+- Missões próprias.
+- Afinidades elementais favorecidas.
+- NPCs exclusivos.
+- Jutsus únicos.
+- Facções locais.
+- Economia regional.
+- Eventos e conflitos.
+
+### Estrutura do Mundo
+
+O mapa pode ser dividido por camadas de progressão:
+
+- Zona segura da aldeia.
+- Campos de treino.
+- Florestas e estradas.
+- Áreas de bandidos e ninjas renegados.
+- Ruínas e templos.
+- Campos de guerra.
+- Covis de chefes.
+- Regiões das bijuus.
+- Dimensões ou áreas especiais de ameaça Otsutsuki.
+
+## Sistema de Missões
+
+As missões devem ser uma das principais formas de dar direção ao jogador e alimentar a economia.
+
+### Funções das Missões
+
+- Gerar dinheiro.
+- Dar experiência.
+- Liberar progressão de rank.
+- Introduzir lore.
+- Ensinar sistemas.
+- Guiar o jogador pelo mapa.
+- Oferecer reputação com a aldeia.
+
+### Categorias de Missões
+
+- Missões da academia.
+- Missões de rank D, C, B, A e S.
+- Missões de caça.
+- Missões de coleta.
+- Missões de escolta.
+- Missões de patrulha.
+- Missões de investigação.
+- Missões de história principal.
+- Missões de progressão elemental.
+- Missões para aprender jutsus.
+- Missões diárias e semanais.
+
+### Progressão de Recompensas
+
+As missões podem recompensar com:
+
+- Dinheiro.
+- Experiência.
+- Itens.
+- Pergaminhos.
+- Reputação.
+- Materiais de crafting.
+- Títulos.
+- Liberação de conteúdo.
+
+Isso ajuda a manter um loop saudável entre combate, exploração, economia e progressão.
+
+## Economia do Servidor
+
+A economia precisa ser funcional e útil desde o início, para que o dinheiro tenha valor real.
+
+### Fontes de Dinheiro
+
+- Missões.
+- Loot de monstros e chefes.
+- Venda de itens coletados.
+- Recompensas de eventos.
+- Contratos especiais.
+
+### Principais Gastos do Jogador
+
+- Aprendizado de jutsus.
+- Compra de armas ninja.
+- Compra de armaduras e roupas.
+- Consumíveis.
+- Pergaminhos.
+- Materiais especiais.
+- Taxas de progressão.
+- Viagens futuras entre aldeias.
+- Crafting e aprimoramento.
+
+### Objetivo Econômico
+
+A economia deve evitar dois extremos:
+
+- Dinheiro inútil demais.
+- Dinheiro escasso demais ao ponto de travar a diversão.
+
+O ideal é que o dinheiro seja sempre relevante para:
+
+- Melhorar build.
+- Se preparar para conteúdos fortes.
+- Desbloquear técnicas.
+- Comprar equipamentos de qualidade.
+- Participar de sistemas de crafting e progressão.
+
+### Possibilidades Futuras
+
+- Mercado entre jogadores.
+- Leilão.
+- Profissões secundárias.
+- Crafting de armas e pergaminhos.
+- Sistema de coleta de recursos.
+- Economia regional por aldeia.
+
+## Itens e Equipamentos
+
+A identidade dos itens deve seguir a fantasia ninja, sem depender de equipamentos genéricos de MMORPG.
+
+### Categorias de Itens
+
+- Kunais.
+- Shurikens.
+- Senbons.
+- Bombas de fumaça.
+- Talismãs.
+- Pergaminhos.
+- Roupas ninja.
+- Armaduras leves.
+- Coletes de rank.
+- Faixas e acessórios.
+- Itens de cura.
+- Itens de recuperação de chakra.
+
+### Papel dos Equipamentos
+
+Equipamentos podem oferecer:
+
+- Ataque físico.
+- Defesa.
+- Chakra extra.
+- Bônus de mentalidade.
+- Bônus de treino.
+- Resistência elemental.
+- Redução de custo de jutsu.
+- Velocidade ou mobilidade.
+
+### Qualidade dos Itens
+
+Estrutura sugerida:
+
+- Comum.
+- Aprimorado.
+- Raro.
+- Elite.
+- Lendário.
+
+### Filosofia de Itemização
+
+Os itens devem complementar a build do jogador e não substituir o valor da progressão pessoal. O poder principal vem do ninja, enquanto o equipamento melhora e especializa seu desempenho.
+
+## Bosses e Conteúdo de Alto Nível
+
+Os bosses devem ser baseados nas grandes ameaças do universo Naruto, funcionando como objetivos de progressão, desafio e recompensa.
+
+### Categorias de Bosses
+
+- Vilões clássicos do anime.
+- Membros de organizações criminosas.
+- Ninjas renegados lendários.
+- Bijuus.
+- Invasores Otsutsuki.
+- Bosses especiais como Momoshiki e outros inimigos de escala superior.
+
+### Função dos Bosses
+
+- Conteúdo de grupo.
+- Teste de build.
+- Fonte de loot raro.
+- Fonte de materiais especiais.
+- Requisito de progressão em missões.
+- Eventos globais do servidor.
+
+### Papel das Bijuus
+
+As bijuus podem ser conteúdo central de endgame ou mid/late game, com alto valor temático.
+
+Ideias de uso:
+
+- Bosses de mundo.
+- Eventos periódicos.
+- Cadeias de missões especiais.
+- Recompensas únicas.
+- Sistemas futuros ligados a selamento ou fragmentos de chakra.
+
+### Otsutsuki e Escala Final
+
+Inimigos como Momoshiki podem representar o topo do conteúdo, com foco em:
+
+- Mecânicas especiais.
+- Lutas em equipe.
+- Alta exigência de progressão.
+- Recompensas raras e prestígio.
+
+## Loop Principal do Jogador
+
+O loop principal do servidor pode ser estruturado assim:
+
+1. Receber missões na aldeia.
+2. Treinar atributos e evoluir level.
+3. Ganhar dinheiro e recursos.
+4. Aprender novos jutsus.
+5. Melhorar equipamentos.
+6. Avançar no rank ninja.
+7. Enfrentar áreas mais perigosas.
+8. Derrotar bosses e desbloquear conteúdo novo.
+9. Desenvolver novos elementos e especializações.
+10. Participar do conteúdo de alto nível.
+
+Esse loop ajuda a manter direção clara sem perder a liberdade de build.
+
+## Diferenciais do Servidor
+
+Pontos que tornam o projeto diferente de outros servidores de Naruto:
+
+- O jogador não controla personagens do anime.
+- O jogador cria sua própria identidade ninja.
+- O sistema é baseado em progressão de carreira shinobi.
+- Técnicas são aprendidas por requisitos e estudo.
+- Elementos têm papel central na build.
+- Treino e mentalidade criam diversidade real de evolução.
+- O anime fornece o universo e os jutsus, mas não prende o jogador a classes prontas.
+- A economia tem valor prático no progresso.
+- As aldeias e ranks estruturam a sensação de mundo vivo.
+
+## Estrutura Inicial Recomendável para Desenvolvimento
+
+Para organizar o projeto e evitar escopo excessivo no começo, uma boa versão inicial pode focar em:
+
+### MVP do Servidor
+
+- 1 aldeia principal: Konoha.
+- Progressão até Chunin ou Jonin inicial.
+- 3 a 5 elementos base.
+- Sistema de level, treino e mentalidade.
+- Conjunto inicial de jutsus por elemento.
+- Missões básicas por rank.
+- Economia funcional simples.
+- Itens ninja básicos.
+- Alguns bosses principais.
+- 1 ou 2 eventos marcantes.
+
+### O que deixar para fases posteriores
+
+- Outras aldeias.
+- Sistema de clãs profundo.
+- Kekkei Genkai.
+- Arena PvP estruturada.
+- Guerra entre vilas.
+- Crafting avançado.
+- Sistema de invocações.
+- Conteúdo Otsutsuki completo.
+- Endgame com bijuus mais complexo.
+
+Essa divisão ajuda a lançar uma base sólida antes de expandir o universo.
+
+## Direção de Design do Projeto
+
+A ideia do servidor deve seguir algumas diretrizes centrais:
+
+- Progressão antes de fanservice.
+- Identidade própria antes de personagem pronto.
+- Liberdade de build com limites saudáveis.
+- Conteúdo com sensação de carreira ninja.
+- Jutsus como conquista, não como presente automático.
+- Economia útil e integrada ao progresso.
+- Expansão gradual de mundo e sistemas.
+
+## Resumo Conceitual do Jogo
+
+Este servidor Naruto propõe uma experiência mais original e imersiva, na qual o jogador vive sua própria jornada shinobi dentro de um mundo inspirado no anime. Em vez de assumir personagens famosos, ele começa como um ninja comum, escolhe afinidades, treina corpo e mente, aprende técnicas, sobe de rank, participa da economia da aldeia e enfrenta as grandes ameaças do universo ninja.
+
+A grande força da ideia está em unir:
+
+- Progressão autoral.
+- Construção de build.
+- Universo temático forte.
+- Liberdade de evolução.
+- Conteúdo escalável para longo prazo.
+
+## Próximos Passos Sugeridos
+
+Depois desta estrutura conceitual, os próximos documentos ideais para o projeto seriam:
+
+- Documento de sistemas base, com fórmulas e atributos.
+- Documento de progressão de ranks e requisitos.
+- Documento de elementos e árvore de jutsus.
+- Documento de economia inicial.
+- Documento de mapa inicial e fluxo de missão.
+- Documento de MVP técnico para TFS 1.4.2 + OTCv8.
+- Documento de monetização saudável e retenção.
