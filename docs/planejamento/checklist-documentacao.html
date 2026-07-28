@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NarutoGame — Checklist de Documentação</title>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
+<style>
+:root,[data-theme="light"]{
+  --color-bg:#f7f6f2;--color-surface:#f9f8f5;--color-surface-2:#fbfbf9;
+  --color-surface-offset:#f0ede8;--color-border:rgba(40,37,29,0.12);
+  --color-text:#28251d;--color-text-muted:#7a7974;--color-text-faint:#bab9b4;
+  --color-primary:#c84b00;--color-primary-hover:#a33c00;
+  --color-secondary:#5a7c3a;--color-accent:#b8860b;
+  --color-done:#437a22;--color-pending:#964219;--color-locked:#7a7974;
+  --shadow-sm:0 1px 3px rgba(40,37,29,0.08);--shadow-md:0 4px 16px rgba(40,37,29,0.1);
+  --radius-md:0.5rem;--radius-lg:0.75rem;--radius-full:9999px;
+  --font-display:'Cabinet Grotesk','Georgia',serif;
+  --font-body:'Satoshi','Inter',sans-serif;
+  --space-2:0.5rem;--space-3:0.75rem;--space-4:1rem;--space-6:1.5rem;
+  --space-8:2rem;--space-10:2.5rem;--space-12:3rem;
+  --text-xs:clamp(0.75rem,0.7rem + 0.25vw,0.875rem);
+  --text-sm:clamp(0.875rem,0.8rem + 0.35vw,1rem);
+  --text-base:clamp(1rem,0.95rem + 0.25vw,1.125rem);
+  --text-lg:clamp(1.125rem,1rem + 0.75vw,1.5rem);
+  --text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);
+  --text-2xl:clamp(2rem,1.2rem + 2.5vw,3.5rem);
+}
+[data-theme="dark"]{
+  --color-bg:#0f0e0c;--color-surface:#161512;--color-surface-2:#1c1b18;
+  --color-surface-offset:#1f1e1b;--color-border:rgba(220,200,180,0.1);
+  --color-text:#ddd9d2;--color-text-muted:#857f76;--color-text-faint:#4a4843;
+  --color-primary:#e86a1a;--color-primary-hover:#ff8040;
+  --color-secondary:#8ab55a;--color-accent:#d4aa30;
+  --color-done:#6daa45;--color-pending:#bb653b;--color-locked:#5a5957;
+  --shadow-sm:0 1px 3px rgba(0,0,0,0.3);--shadow-md:0 4px 16px rgba(0,0,0,0.4);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;}
+body{font-family:var(--font-body);font-size:var(--text-base);color:var(--color-text);background:var(--color-bg);min-height:100dvh;line-height:1.6;}
+a,button,[role="button"]{transition:color 180ms ease,background 180ms ease,border-color 180ms ease,box-shadow 180ms ease;}
+button{cursor:pointer;background:none;border:none;font:inherit;color:inherit;}
+.site-header{position:sticky;top:0;z-index:100;background:color-mix(in oklch,var(--color-bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--color-border);padding:var(--space-3) var(--space-6);display:flex;align-items:center;justify-content:space-between;}
+.logo{display:flex;align-items:center;gap:var(--space-3);}
+.logo svg{width:36px;height:36px;flex-shrink:0;}
+.logo-text{font-family:var(--font-display);font-size:var(--text-lg);font-weight:800;letter-spacing:-0.02em;}
+.logo-sub{font-size:var(--text-xs);color:var(--color-text-muted);display:block;margin-top:-4px;}
+.theme-toggle{width:40px;height:40px;border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;color:var(--color-text-muted);border:1px solid var(--color-border);}
+.theme-toggle:hover{color:var(--color-text);background:var(--color-surface-offset);}
+.hero{padding:var(--space-10) var(--space-6) var(--space-8);max-width:860px;margin-inline:auto;text-align:center;}
+.hero-badge{display:inline-flex;align-items:center;gap:var(--space-2);background:color-mix(in oklch,var(--color-primary) 12%,var(--color-surface));color:var(--color-primary);border:1px solid color-mix(in oklch,var(--color-primary) 25%,transparent);padding:var(--space-2) var(--space-4);border-radius:var(--radius-full);font-size:var(--text-xs);font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:var(--space-6);}
+.hero h1{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:800;line-height:1.1;letter-spacing:-0.03em;margin-bottom:var(--space-4);}
+.hero h1 span{color:var(--color-primary);}
+.hero p{font-size:var(--text-base);color:var(--color-text-muted);max-width:60ch;margin-inline:auto;}
+.progress-container{max-width:860px;margin:0 auto var(--space-8);padding:0 var(--space-6);}
+.progress-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-2);}
+.progress-label{font-size:var(--text-sm);font-weight:600;}
+.progress-count{font-size:var(--text-sm);color:var(--color-text-muted);}
+.progress-bar{height:8px;border-radius:var(--radius-full);background:var(--color-surface-offset);overflow:hidden;}
+.progress-fill{height:100%;border-radius:var(--radius-full);background:linear-gradient(90deg,var(--color-primary),var(--color-accent));transition:width 0.6s ease;width:0%;}
+.main{max-width:860px;margin-inline:auto;padding:0 var(--space-6) var(--space-12);}
+.phase{margin-bottom:var(--space-8);}
+.phase-header{display:flex;align-items:center;gap:var(--space-3);margin-bottom:var(--space-4);padding-bottom:var(--space-3);border-bottom:1px solid var(--color-border);}
+.phase-num{width:32px;height:32px;border-radius:var(--radius-full);background:var(--color-primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:var(--text-xs);font-weight:700;flex-shrink:0;}
+.phase-title{font-family:var(--font-display);font-size:var(--text-lg);font-weight:800;}
+.phase-sub{font-size:var(--text-xs);color:var(--color-text-muted);margin-left:auto;}
+.checklist{display:flex;flex-direction:column;gap:var(--space-3);}
+.item{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-4);display:grid;grid-template-columns:auto 1fr auto;gap:var(--space-3);align-items:flex-start;cursor:pointer;box-shadow:var(--shadow-sm);transition:box-shadow 180ms ease,transform 180ms ease,background 180ms ease;}
+.item:hover{box-shadow:var(--shadow-md);background:var(--color-surface-2);}
+.item.done{opacity:0.6;}
+.item.locked{pointer-events:none;opacity:0.4;}
+.check-btn{width:22px;height:22px;border-radius:6px;flex-shrink:0;margin-top:2px;border:2px solid var(--color-border);background:transparent;display:flex;align-items:center;justify-content:center;transition:all 180ms ease;}
+.item.done .check-btn{background:var(--color-done);border-color:var(--color-done);}
+.item.done .check-btn::after{content:"✓";color:#fff;font-size:12px;font-weight:700;}
+.item-title{font-weight:600;font-size:var(--text-sm);margin-bottom:var(--space-2);}
+.item.done .item-title{text-decoration:line-through;color:var(--color-text-muted);}
+.item-desc{font-size:var(--text-xs);color:var(--color-text-muted);line-height:1.5;}
+.item-meta{display:flex;flex-wrap:wrap;gap:var(--space-2);margin-top:var(--space-2);}
+.tag{display:inline-block;padding:2px 10px;border-radius:var(--radius-full);font-size:0.7rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;}
+.tag-priority-high{background:color-mix(in oklch,var(--color-pending) 15%,var(--color-surface));color:var(--color-pending);}
+.tag-priority-med{background:color-mix(in oklch,var(--color-accent) 15%,var(--color-surface));color:var(--color-accent);}
+.tag-priority-low{background:color-mix(in oklch,var(--color-secondary) 15%,var(--color-surface));color:var(--color-secondary);}
+.tag-lock{background:var(--color-surface-offset);color:var(--color-text-faint);}
+.item-status{font-size:var(--text-xs);color:var(--color-text-faint);white-space:nowrap;margin-top:2px;}
+.tip-box{background:color-mix(in oklch,var(--color-primary) 8%,var(--color-surface));border:1px solid color-mix(in oklch,var(--color-primary) 20%,transparent);border-radius:var(--radius-lg);padding:var(--space-4) var(--space-6);margin-top:var(--space-8);font-size:var(--text-sm);color:var(--color-text-muted);}
+.tip-box strong{color:var(--color-primary);}
+@media(max-width:600px){.hero{padding:var(--space-8) var(--space-4) var(--space-6);}.main,.progress-container{padding-inline:var(--space-4);}.item{grid-template-columns:auto 1fr;}.item-status{display:none;}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="logo">
+    <svg viewBox="0 0 36 36" fill="none" aria-label="NarutoGame Logo">
+      <circle cx="18" cy="18" r="16" stroke="currentColor" stroke-width="1.5" opacity="0.2"/>
+      <circle cx="18" cy="18" r="10" fill="none" stroke="var(--color-primary)" stroke-width="2"/>
+      <circle cx="18" cy="18" r="4" fill="var(--color-primary)"/>
+      <path d="M18 8 L21 14 L18 12 L15 14 Z" fill="var(--color-primary)" opacity="0.7"/>
+      <path d="M28 18 L22 21 L24 18 L22 15 Z" fill="var(--color-primary)" opacity="0.7"/>
+      <path d="M18 28 L15 22 L18 24 L21 22 Z" fill="var(--color-primary)" opacity="0.7"/>
+      <path d="M8 18 L14 15 L12 18 L14 21 Z" fill="var(--color-primary)" opacity="0.7"/>
+    </svg>
+    <div>
+      <span class="logo-text">NarutoGame</span>
+      <span class="logo-sub">TFS 1.4.2 + OTCv8</span>
+    </div>
+  </div>
+  <button class="theme-toggle" data-theme-toggle aria-label="Alternar tema">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+</header>
+<section class="hero">
+  <div class="hero-badge">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M9 11l3 3L22 4"/></svg>
+    Planejamento de Documentação
+  </div>
+  <h1>Checklist do <span>Servidor Naruto</span></h1>
+  <p>Documentar antes de codar. Cada fase prepara a base para a próxima. Siga a ordem para construir um projeto sólido.</p>
+</section>
+<div class="progress-container">
+  <div class="progress-header">
+    <span class="progress-label">Progresso Geral</span>
+    <span class="progress-count" id="prog-count">0 / 20 concluídos</span>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="prog-fill"></div></div>
+</div>
+<main class="main">
+  <section class="phase">
+    <div class="phase-header">
+      <div class="phase-num">1</div>
+      <h2 class="phase-title">Visão e Conceito</h2>
+      <span class="phase-sub">Base de tudo</span>
+    </div>
+    <div class="checklist">
+      <div class="item" onclick="toggle(this)">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Documento de Visão Geral do Projeto</div>
+          <div class="item-desc">Resumo da proposta, diferencial, público-alvo e tom do jogo. O "por quê" do servidor existir. Partir do estrutura-ideia-servidor-naruto.md já existente.</div>
+          <div class="item-meta"><span class="tag tag-priority-high">Prioridade Alta</span></div>
+        </div>
+        <span class="item-status">📄 Doc</span>
+      </div>
+      <div class="item" onclick="toggle(this)">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Fantasia do Jogador e Loop Principal</div>
+          <div class="item-desc">Experiência emocional do jogador do início ao endgame. O loop: missão → treino → jutsu → rank → boss.</div>
+          <div class="item-meta"><span class="tag tag-priority-high">Prioridade Alta</span></div>
+        </div>
+        <span class="item-status">📄 Doc</span>
+      </div>
+      <div class="item" onclick="toggle(this)">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Escopo do MVP (Versão Inicial)</div>
+          <div class="item-desc">Definir exatamente o que entra no primeiro lançamento. 1 aldeia, até Jonin, 3-5 elementos, jutsus base. O que fica para fases futuras.</div>
+          <div class="item-meta"><span class="tag tag-priority-high">Prioridade Alta</span></div>
+        </div>
+        <span class="item-status">📄 Doc</span>
+      </div>
+    </div>
+  </section>
+  <section class="phase">
+    <div class="phase-header">
+      <div class="phase-num">2</div>
+      <h2 class="phase-title">Sistemas Base</h2>
+      <span class="phase-sub">Mecânicas centrais</span>
+    </div>
+    <div class="checklist">
+      <div class="item" onclick="toggle(this)">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Doc de Atributos e Fórmulas</div>
+          <div class="item-desc">Nível, Treino e Mentalidade com fórmulas exatas. Como cada atributo escala o dano, vida, chakra e resistência. Tabelas de valores por nível.</div>
+          <div class="item-meta"><span class="tag tag-priority-high">Prioridade Alta</span></div>
+        </div>
+        <span class="item-status">⚙️ Sistema</span>
+      </div>
+      <div class="item" onclick="toggle(this)">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Doc de Progressão de Rank Ninja</div>
+          <div class="item-desc">Requisitos exatos por rank: nível mínimo, missões, provas, bosses. O que cada rank desbloqueia: áreas, NPCs, técnicas, equipamentos.</div>
+          <div class="item-meta"><span class="tag tag-priority-high">Prioridade Alta</span></div>
+        </div>
+        <span class="item-status">⚙️ Sistema</span>
+      </div>
+      <div class="item" onclick="toggle(this)">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Doc de Elementos e Árvore de Jutsus</div>
+          <div class="item-desc">Os 5 elementos base com lista de jutsus por nível e requisito. Regras de aprendizado do 2º e 3º elemento. Mapa visual da árvore de evolução.</div>
+          <div class="item-meta"><span class="tag tag-priority-high">Prioridade Alta</span></div>
+        </div>
+        <span class="item-status">⚙️ Sistema</span>
+      </div>
+      <div class="item" onclick="toggle(this)">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Doc de Sistema de Jutsus (Detalhado)</div>
+          <div class="item-desc">Estrutura de aprendizado, tipos de jutsu, sistema de domínio (Aprendido → Mestre). Custo de chakra, cooldown, escalonamento com atributos.</div>
+          <div class="item-meta"><span class="tag tag-priority-med">Prioridade Média</span></div>
+        </div>
+        <span class="item-status">⚙️ Sistema</span>
+      </div>
+      <div class="item" onclick="toggle(this)">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Doc de Estilos de Combate e Builds</div>
+          <div class="item-desc">Arquétipos: físico, elemental, híbrido, tático, especialista, versátil. Exemplos de builds para cada estilo com atributos recomendados.</div>
+          <div class="item-meta"><span class="tag tag-priority-med">Prioridade Média</span></div>
+        </div>
+        <span class="item-status">⚙️ Sistema</span>
+      </div>
+    </div>
+  </section>
+  <section class="phase">
+    <div class="phase-header">
+      <div class="phase-num">3</div>
+      <h2 class="phase-title">Mundo e Conteúdo</h2>
+      <span class="phase-sub">Mapa, missões, bosses</span>
+    </div>
+    <div class="checklist">
+      <div class="item" onclick="toggle(this)">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Doc de Mapa Inicial e Zonas (Konoha MVP)</div>
+          <div class="item-desc">Esboço do mapa de Konoha e arredores. Zonas por nível de perigo. Fluxo de progressão geográfica do jogador.</div>
+          <div class="item-meta"><span class="tag tag-priority-high">Prioridade Alta</span></div>
+        </div>
+        <span class="item-status">🗺️ Mundo</span>
+      </div>
+      <div class="item" onclick="toggle(this)">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Doc de Sistema de Missões</div>
+          <div class="item-desc">Categorias, recompensas por rank (D a S), missões diárias/semanais. Fluxo para progressão de rank e aprendizado de jutsus.</div>
+          <div class="item-meta"><span class="tag tag-priority-high">Prioridade Alta</span></div>
+        </div>
+        <span class="item-status">🗺️ Mundo</span>
+      </div>
+      <div class="item" onclick="toggle(this)">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Doc de Bosses e Conteúdo de Alto Nível</div>
+          <div class="item-desc">Lista de bosses do MVP com mecânicas básicas, loot e requisitos. Papel das Bijuus no mid/endgame.</div>
+          <div class="item-meta"><span class="tag tag-priority-med">Prioridade Média</span></div>
+        </div>
+        <span class="item-status">🗺️ Mundo</span>
+      </div>
+    </div>
+  </section>
+  <section class="phase">
+    <div class="phase-header">
+      <div class="phase-num">4</div>
+      <h2 class="phase-title">Economia e Itens</h2>
+      <span class="phase-sub">Fluxo de recursos</span>
+    </div>
+    <div class="checklist">
+      <div class="item" onclick="toggle(this)">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Doc de Economia Inicial</div>
+          <div class="item-desc">Fontes de dinheiro, principais gastos e balanço de entrada/saída por fase do jogo. Tabela de preços de jutsus, itens e serviços.</div>
+          <div class="item-meta"><span class="tag tag-priority-high">Prioridade Alta</span></div>
+        </div>
+        <span class="item-status">💰 Economia</span>
+      </div>
+      <div class="item" onclick="toggle(this)">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Doc de Itens e Equipamentos</div>
+          <div class="item-desc">Categorias (kunai, pergaminhos, armaduras), raridades (Comum → Lendário), bônus de cada tipo. Filosofia: item complementa, não substitui o ninja.</div>
+          <div class="item-meta"><span class="tag tag-priority-med">Prioridade Média</span></div>
+        </div>
+        <span class="item-status">💰 Economia</span>
+      </div>
+    </div>
+  </section>
+  <section class="phase">
+    <div class="phase-header">
+      <div class="phase-num">5</div>
+      <h2 class="phase-title">Técnico e Implementação</h2>
+      <span class="phase-sub">TFS 1.4.2 + OTCv8</span>
+    </div>
+    <div class="checklist">
+      <div class="item" onclick="toggle(this)">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Doc de Arquitetura Técnica do MVP</div>
+          <div class="item-desc">Como implementar os sistemas no TFS 1.4.2. Estrutura de arquivos Lua, scripts de atributos, sistema de jutsus via spells, storage IDs para rank e progresso.</div>
+          <div class="item-meta"><span class="tag tag-priority-high">Prioridade Alta</span></div>
+        </div>
+        <span class="item-status">🛠️ Técnico</span>
+      </div>
+      <div class="item" onclick="toggle(this)">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Doc de Integração OTCv8 (Interface)</div>
+          <div class="item-desc">UI customizada: HUD de chakra/vida, menu de jutsus, janela de rank, painel de missões. Comunicação entre servidor e cliente.</div>
+          <div class="item-meta"><span class="tag tag-priority-med">Prioridade Média</span></div>
+        </div>
+        <span class="item-status">🛠️ Técnico</span>
+      </div>
+      <div class="item" onclick="toggle(this)">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Doc de Monetização Saudável e Retenção</div>
+          <div class="item-desc">O que pode ser pago sem prejudicar o jogo. Itens cosméticos vs. vantagens. Sistemas de retenção: daily login, progressão visível, eventos sazonais.</div>
+          <div class="item-meta"><span class="tag tag-priority-low">Prioridade Baixa</span></div>
+        </div>
+        <span class="item-status">🛠️ Técnico</span>
+      </div>
+    </div>
+  </section>
+  <section class="phase">
+    <div class="phase-header">
+      <div class="phase-num">6</div>
+      <h2 class="phase-title">Expansão Futura</h2>
+      <span class="phase-sub">Pós-MVP</span>
+    </div>
+    <div class="checklist">
+      <div class="item locked">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Doc de Sistema de Clãs e Kekkei Genkai</div>
+          <div class="item-desc">Clãs jogáveis com traços iniciais e técnicas únicas de linhagem. Kekkei Genkai por combinação de elementos.</div>
+          <div class="item-meta"><span class="tag tag-priority-low">Pós-MVP</span><span class="tag tag-lock">🔒 Bloqueado</span></div>
+        </div>
+        <span class="item-status">🌐 Expansão</span>
+      </div>
+      <div class="item locked">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Doc de Outras Aldeias (Suna, Kiri, Kumo, Iwa)</div>
+          <div class="item-desc">Missões próprias, afinidades elementais favorecidas, NPCs exclusivos, economia regional e facções por aldeia.</div>
+          <div class="item-meta"><span class="tag tag-priority-low">Pós-MVP</span><span class="tag tag-lock">🔒 Bloqueado</span></div>
+        </div>
+        <span class="item-status">🌐 Expansão</span>
+      </div>
+      <div class="item locked">
+        <button class="check-btn" aria-label="marcar"></button>
+        <div class="item-body">
+          <div class="item-title">Doc de PvP, Crafting Avançado e Invocações</div>
+          <div class="item-desc">Arena PvP estruturada, guerra entre vilas, crafting de armas e pergaminhos, sistema de invocações.</div>
+          <div class="item-meta"><span class="tag tag-priority-low">Pós-MVP</span><span class="tag tag-lock">🔒 Bloqueado</span></div>
+        </div>
+        <span class="item-status">🌐 Expansão</span>
+      </div>
+    </div>
+  </section>
+  <div class="tip-box">
+    <strong>💡 Dica de Ordem:</strong> Fases 1 → 2 → 3 → 4 → 5 são interdependentes. Não avance para a implementação técnica (Fase 5) antes de ter as Fases 1 e 2 completas. A Fase 6 só começa depois do MVP estar no ar.
+  </div>
+</main>
+<script>
+(function(){
+  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+  let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+  r.setAttribute('data-theme',d);
+  if(t)t.addEventListener('click',()=>{
+    d=d==='dark'?'light':'dark';
+    r.setAttribute('data-theme',d);
+    t.innerHTML=d==='dark'
+      ?'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
+      :'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+  });
+})();
+function toggle(el){
+  if(el.classList.contains('locked'))return;
+  el.classList.toggle('done');
+  updateProgress();
+}
+function updateProgress(){
+  const all=document.querySelectorAll('.item:not(.locked)');
+  const done=document.querySelectorAll('.item.done').length;
+  const total=all.length;
+  document.getElementById('prog-count').textContent=done+' / '+total+' concluídos';
+  document.getElementById('prog-fill').style.width=((done/total)*100)+'%';
+}
+updateProgress();
+</script>
+</body>
+</html>
