@@ -1,55 +1,72 @@
-# Índice da Documentação
+# Índice da documentação
 
-Central de navegação dos documentos do projeto **Naruto Shinobi RPG**.
+Este menu organiza o projeto por tema e serve como ponto de entrada principal da documentação.
 
-> Use este índice para encontrar rapidamente sistemas, mundo, técnica e planejamento.
+## Conceito
 
----
+| Documento | Tema |
+| --- | --- |
+| [Visão geral](00-visao-geral.md) | Resumo da proposta e do MVP |
+| [Estrutura original](../estrutura-ideia-servidor-naruto.md) | Documento base do projeto |
 
-## Navegação Rápida
+## Mundo
 
-| 🧭 Conceito | ⚔️ Sistemas de Jogo | 🏯 Mundo | 🛠️ Técnico |
-| --- | --- | --- | --- |
-| [Visão geral](00-visao-geral.md) | [Progressão e ranks](sistemas/progressao-ranks-classes.md) | [Aldeias e NPCs](mundo/aldeias-npcs-missoes-da-aldeia.md) | [Servidor TFS](tecnico/estrutura-servidor-tfs.md) |
-| [Template de sistema](TEMPLATE-SISTEMA.md) | [Atributos e builds](sistemas/atributos-builds.md) | [Mapa e regiões](mundo/mapa-regioes.md) | [Cliente OTCv8](tecnico/estrutura-cliente-otcv8.md) |
-| [README principal](../README.md) | [Elementos e jutsus](sistemas/elementos-jutsus-invocacoes.md) | Missões da aldeia | Estrutura de módulos |
-|  | [Itens e raridade](sistemas/itens-raridade-equipamentos.md) | Casas e vilas | Storages |
-|  | [Economia](sistemas/economia.md) |  |  |
-|  | [Crafting e profissões](sistemas/crafting-profissoes-coleta.md) |  |  |
-|  | [Missões](sistemas/missoes.md) |  |  |
-|  | [Dungeons e bosses](sistemas/dungeons-bosses.md) |  |  |
-|  | [Eventos e estações](sistemas/eventos-estacoes.md) |  |  |
-|  | [Casas e habitação](sistemas/habitacao-casas.md) |  |  |
+| Documento | Tema |
+| --- | --- |
+| [História do mundo](mundo/historia-do-mundo.md) | Lore, aldeias e contexto |
+| [Aldeias, NPCs e missões da aldeia](mundo/aldeias-npcs-missoes-da-aldeia.md) | Estrutura social da aldeia |
+| [Mapa e regiões](mundo/mapa-regioes.md) | Exploração e regiões iniciais |
 
----
+## Personagem
 
-## Documentação Completa
+| Documento | Tema |
+| --- | --- |
+| [Criação de personagem](personagem/criacao-de-personagem.md) | Entrada do jogador no mundo |
+| [Sistema de chakra](personagem/chakra.md) | Consumo, controle e regeneração |
+| [Atributos](personagem/atributos.md) | Vida, chakra e atributos principais |
+| [Atributos e builds](sistemas/atributos-builds.md) | Variações de build e progressão |
 
-| Tipo | Documento | Conteúdo |
-| --- | --- | --- |
-| 🧭 Conceito | [Visão geral](00-visao-geral.md) | Proposta, diferencial, fantasia do jogador e MVP. |
-| 🥷 Progressão | [Ranks, classes e promoções](sistemas/progressao-ranks-classes.md) | Academia, Genin, Chunin, Jonin, ANBU, exames e especializações. |
-| 💪 Personagem | [Atributos e builds](sistemas/atributos-builds.md) | Level, treino, mentalidade, vida, chakra e estilos de build. |
-| 🔥 Combate | [Elementos, jutsus e invocações](sistemas/elementos-jutsus-invocacoes.md) | Elementos base, aprendizado, domínio, contratos e summons. |
-| 🎒 Itens | [Itens, equipamentos e raridade](sistemas/itens-raridade-equipamentos.md) | Armas ninja, pergaminhos, raridades, materiais e relíquias. |
-| 🪙 Economia | [Economia](sistemas/economia.md) | Ryo, reputação, mercado, fontes e gastos do jogador. |
-| ⛏️ Profissões | [Crafting, profissões e coleta](sistemas/crafting-profissoes-coleta.md) | Pesca, lenha, plantas, mineração, artesão, escriba e cozinheiro. |
-| 📜 Missões | [Missões](sistemas/missoes.md) | Academia, aldeia, ranks D-S, diárias, semanais e história. |
-| 🏆 PvE | [Dungeons e bosses](sistemas/dungeons-bosses.md) | Instâncias, bosses locais, bijuus, Otsutsuki e recompensas. |
-| 🍂 Eventos | [Eventos e estações](sistemas/eventos-estacoes.md) | Primavera, verão, outono, inverno, invasões e calendário. |
-| 🏠 Social | [Casas e habitação](sistemas/habitacao-casas.md) | Casas pessoais, casas de clã, decoração, baús e bancadas. |
-| 🏯 Mundo | [Aldeias, NPCs e missões da aldeia](mundo/aldeias-npcs-missoes-da-aldeia.md) | Konoha, NPCs principais, reputação e aldeias futuras. |
-| 🗺️ Exploração | [Mapa e regiões](mundo/mapa-regioes.md) | Camadas do mapa, regiões iniciais, clima e exploração. |
-| 🛠️ Server | [Estrutura do servidor TFS](tecnico/estrutura-servidor-tfs.md) | Pastas, scripts, sistemas e padrão de storages. |
-| 🖥️ Client | [Estrutura do cliente OTCv8](tecnico/estrutura-cliente-otcv8.md) | Módulos, UI, perfil shinobi, jutsus e profissões. |
-| 🚩 Planejamento | [Roadmap](planejamento/roadmap.md) | Fases do projeto, MVP, protótipo, expansão e endgame. |
-| 💡 Ideias | [Backlog](planejamento/backlog-ideias.md) | Sistemas futuros, PvP, social, monetização e dúvidas abertas. |
+## Progressão e combate
 
----
+| Documento | Tema |
+| --- | --- |
+| [Progressão](sistemas/progressao.md) | Evolução geral do personagem |
+| [Ranks ninja](sistemas/ranks-ninja.md) | Academia, Genin, Chunin e acima |
+| [Elementos](sistemas/elementos.md) | Afinidades elementais |
+| [Kekkei Genkai](sistemas/kekkei-genkai.md) | Combinações e requisitos especiais |
+| [Especializações](sistemas/especializacoes.md) | Caminhos de combate e domínio |
+| [Sistema de jutsus](sistemas/sistema-de-jutsus.md) | Estrutura, custo e balanceamento |
+| [Catálogo de jutsus](sistemas/catalogo-de-jutsus.md) | Lista organizada de técnicas |
+| [Maestria](sistemas/maestria.md) | Evolução por uso |
+| [Slots de jutsus](sistemas/slots-de-jutsus.md) | Limites de equipagem |
+| [Sistema PvP](combate/pvp.md) | Arena, guerras e torneios |
+| [Balanceamento](sistemas/balanceamento.md) | Escala, fórmulas e ajustes |
 
-## Fluxo de Atualização
+## Sistemas e economia
 
-1. Ideia solta entra no [backlog](planejamento/backlog-ideias.md).
-2. Quando ficar mais clara, vira seção em um documento de sistema.
-3. Quando tiver escopo definido, entra no [roadmap](planejamento/roadmap.md).
-4. Quando for implementada, ganha detalhes técnicos no documento do servidor ou cliente.
+| Documento | Tema |
+| --- | --- |
+| [Missões](sistemas/missoes.md) | Conteúdo de progressão e recompensa |
+| [Clãs](sistemas/clas.md) | Habilidades e identidade de grupo |
+| [Economia](sistemas/economia.md) | Dinheiro, mercado e circulação |
+| [Itens, equipamentos e raridade](sistemas/itens-raridade-equipamentos.md) | Progressão por loot e equipagem |
+| [Crafting, profissões e coleta](sistemas/crafting-profissoes-coleta.md) | Produção e recursos |
+| [Dungeons e bosses](sistemas/dungeons-bosses.md) | Conteúdo de grupo e desafio |
+| [Eventos e estações](sistemas/eventos-estacoes.md) | Conteúdo dinâmico |
+| [Casas e habitação](sistemas/habitacao-casas.md) | Economia social e moradia |
+
+## Técnico
+
+| Documento | Tema |
+| --- | --- |
+| [Estrutura do servidor TFS](tecnico/estrutura-servidor-tfs.md) | Base técnica e organização |
+| [Estrutura do cliente OTCv8](tecnico/estrutura-cliente-otcv8.md) | UI, módulos e experiência |
+
+## Planejamento
+
+| Documento | Tema |
+| --- | --- |
+| [Roadmap](planejamento/roadmap.md) | Fases do projeto |
+| [Backlog](planejamento/backlog-ideias.md) | Ideias e expansões futuras |
+| [Princípios do projeto](planejamento/principios-do-projeto.md) | Regras de design |
+| [Template de sistema](TEMPLATE-SISTEMA.md) | Padrão para novos documentos |

@@ -6,7 +6,7 @@ O servidor propõe uma jornada ninja autoral. O jogador começa como um personag
 
 ## Diferencial
 
-Em vez de vender a fantasia de "ser Naruto" ou "ser Sasuke", o projeto vende a fantasia de "ser um ninja original dentro de uma aldeia viva".
+Em vez de vender a fantasia de “ser Naruto” ou “ser Sasuke”, o projeto vende a fantasia de “ser um ninja original dentro de uma aldeia viva”.
 
 Isso permite:
 
@@ -17,7 +17,7 @@ Isso permite:
 - Conteúdos de aldeia, profissão e exploração.
 - Expansões futuras sem depender só de personagens famosos.
 
-## Fantasia Principal
+## Fantasia principal
 
 O jogador deve sentir que:
 
@@ -31,10 +31,10 @@ O jogador deve sentir que:
 - Enfrentou ameaças maiores.
 - Virou alguém respeitado por mérito.
 
-## Diretrizes de Design
+## Pilares do projeto
 
-- Progressão antes de fanservice.
 - Identidade própria antes de personagem pronto.
+- Progressão antes de fanservice.
 - Jutsus como conquista, não como presente automático.
 - Economia útil em todas as fases.
 - Profissões integradas à vila e ao crafting.
@@ -42,7 +42,7 @@ O jogador deve sentir que:
 - Eventos e estações para manter o mundo vivo.
 - Expansão gradual por aldeias, regiões e sistemas.
 
-## Escopo Inicial Recomendado
+## Escopo inicial recomendado
 
 | Área | MVP |
 | --- | --- |
@@ -56,3 +56,13 @@ O jogador deve sentir que:
 | Bosses | Bosses locais e 1 boss de evento |
 | Cliente | UI básica para missão, atributos, jutsus e profissões |
 
+## Estrutura da documentação
+
+A documentação principal foi reorganizada para refletir os temas da pasta atualizar e o fluxo do projeto:
+
+- Conceito e visão geral.
+- Mundo e história.
+- Criação de personagem e sistema de chakra.
+- Progressão e combate.
+- Economia, equipamentos e PvP.
+- Planejamento, roadmap e princípios de projeto.

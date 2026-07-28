@@ -1,7 +1,9 @@
 # Roadmap
 
-## Fase 0: Organização da Ideia
+## Fase 0: base e documentação
 
+- [x] Consolidar a documentação principal.
+- [x] Organizar a pasta atualizar como referência do projeto.
 - [x] Criar README principal.
 - [x] Separar documentos por sistema.
 - [x] Criar roadmap.
@@ -9,7 +11,7 @@
 - [ ] Revisar nomes definitivos do projeto.
 - [ ] Definir licença do repositório.
 
-## Fase 1: Design Fechado do MVP
+## Fase 1: design fechado do MVP
 
 - [ ] Definir atributos e fórmulas iniciais.
 - [ ] Definir ranks até Chunin.
@@ -21,7 +23,7 @@
 - [ ] Criar missões de academia e rank D.
 - [ ] Criar mapa inicial de Konoha e arredores.
 
-## Fase 2: Protótipo Técnico
+## Fase 2: protótipo técnico
 
 - [ ] Preparar base TFS 1.4.2.
 - [ ] Preparar cliente OTCv8.
@@ -33,7 +35,7 @@
 - [ ] Implementar 1 profissão.
 - [ ] Implementar 1 boss simples.
 
-## Fase 3: MVP Jogável
+## Fase 3: MVP jogável
 
 - [ ] Konoha funcional.
 - [ ] Academia completa.
@@ -47,7 +49,7 @@
 - [ ] 3 bosses.
 - [ ] Evento semanal.
 
-## Fase 4: Expansão
+## Fase 4: expansão
 
 - [ ] Promoção Chunin completa.
 - [ ] Segundo elemento.
@@ -58,7 +60,7 @@
 - [ ] Eventos sazonais.
 - [ ] Primeira aldeia secundária.
 
-## Fase 5: Endgame
+## Fase 5: endgame
 
 - [ ] Jonin.
 - [ ] ANBU.
@@ -68,4 +70,3 @@
 - [ ] Sistema de clãs.
 - [ ] Raids.
 - [ ] Ranking e temporadas.
-
