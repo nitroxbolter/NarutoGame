@@ -8,12 +8,19 @@ A progressão não deve depender apenas de level. O personagem evolui por uma co
 
 | Rank | Função | Conteúdo liberado |
 | --- | --- | --- |
-| Estudante da Academia | Tutorial e introdução | Treino básico, missões simples, primeiros NPCs |
+| Academia | Tutorial e introdução | Treino básico, missões simples, primeiros NPCs |
 | Genin | Início real da carreira | Missões D e C, jutsus básicos, profissões |
 | Chunin | Ninja intermediário | Missões B, dungeons iniciais, segundo elemento |
+| Tokubetsu Jonin | Especialista | Funções de elite em área específica |
 | Jonin | Elite da aldeia | Missões A, bosses fortes, técnicas avançadas |
-| ANBU | Especialização avançada | Missões secretas, stealth, caçadas, conteúdo de elite |
-| Sannin/Kage simbólico | Prestígio endgame | Conteúdo lendário, eventos globais, liderança |
+
+## Cargos especiais
+
+| Cargo | Regra | Observação |
+| --- | --- | --- |
+| ANBU | Cargo especial adquirido por missão secreta | Foco em stealth, caça e operações de elite |
+| Sannin | Cargo lendário adquirido por missão e reputação | Título raro com peso social e mecânico |
+| Kage / Hokage | Liderança máxima da aldeia | Um jogador por vila, geralmente o de maior nível, com reputação e aprovação |
 
 ## Classes ou Arquétipos
 
@@ -37,8 +44,11 @@ Cada promoção deve exigir uma mistura de requisitos.
 | --- | --- |
 | Academia para Genin | Tutorial completo, prova prática, jutsu básico aprendido |
 | Genin para Chunin | Level mínimo, missões D/C, exame Chunin, boss de prova |
-| Chunin para Jonin | Reputação, missão de liderança, dungeon concluída, domínio de jutsus |
+| Chunin para Tokubetsu Jonin | Especialização definida, reputação e missão de mérito |
+| Tokubetsu Jonin para Jonin | Reputação, liderança, dungeon concluída, domínio de jutsus |
 | Jonin para ANBU | Quest secreta, teste de combate, reputação alta, recomendação de NPC |
+| Jonin para Sannin | Série de missões lendárias, contribuição histórica e validação rara |
+| Jonin / Sannin para Hokage | Liderança da aldeia, maior nível, reputação e eleição ou reconhecimento |
 
 ## Exames
 
@@ -58,4 +68,3 @@ Tipos de prova possíveis:
 - [ ] Criar roteiro do exame Genin.
 - [ ] Criar roteiro do exame Chunin.
 - [ ] Definir se ANBU será rank, classe ou facção.
-
