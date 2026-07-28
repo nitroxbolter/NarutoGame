@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NarutoGame — Wiki do Projeto</title>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
+<style>
+:root,[data-theme="light"]{
+  --bg:#f5f3ee;--surface:#faf9f6;--surface2:#fff;--surface-off:#ede9e2;
+  --border:rgba(40,30,10,0.1);--text:#1e1a10;--muted:#7a7060;--faint:#bbb5a8;
+  --primary:#c84b00;--primary-h:#ff6a1a;--accent:#b8860b;
+  --done:#437a22;--shadow:0 2px 12px rgba(40,30,10,0.08);
+  --r:0.6rem;--rl:1rem;--rf:9999px;
+  --fs:clamp(0.875rem,0.8rem+0.35vw,1rem);
+  --fbase:clamp(1rem,0.95rem+0.25vw,1.125rem);
+  --flg:clamp(1.2rem,1rem+0.75vw,1.6rem);
+  --fxl:clamp(1.6rem,1.2rem+1.5vw,2.4rem);
+  --f2xl:clamp(2rem,1rem+3vw,3.6rem);
+  --font-d:'Cabinet Grotesk',Georgia,serif;
+  --font-b:'Satoshi',Inter,sans-serif;
+}
+[data-theme="dark"]{
+  --bg:#0c0b09;--surface:#131210;--surface2:#191714;--surface-off:#1e1c19;
+  --border:rgba(255,220,160,0.08);--text:#ddd8ce;--muted:#807868;--faint:#3e3c38;
+  --primary:#e8701a;--primary-h:#ff8c40;--accent:#d4aa30;
+  --done:#6daa45;--shadow:0 2px 16px rgba(0,0,0,0.4);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:var(--font-b);background:var(--bg);color:var(--text);font-size:var(--fbase);line-height:1.6;min-height:100dvh}
+button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.nav{position:sticky;top:0;z-index:100;background:color-mix(in oklch,var(--bg) 80%,transparent);
+  backdrop-filter:blur(16px);border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0.75rem 2rem;gap:1rem}
+.nav-logo{display:flex;align-items:center;gap:0.75rem;font-family:var(--font-d);font-weight:800;font-size:var(--flg);letter-spacing:-0.02em}
+.nav-logo svg{width:32px;height:32px;flex-shrink:0}
+.nav-links{display:flex;align-items:center;gap:0.25rem}
+.nav-links a{font-size:var(--fs);padding:0.4rem 0.9rem;border-radius:var(--rf);color:var(--muted);transition:color 180ms,background 180ms}
+.nav-links a:hover{color:var(--text);background:var(--surface-off)}
+.nav-links a.active{color:var(--primary);background:color-mix(in oklch,var(--primary) 10%,var(--surface))}
+.theme-btn{width:38px;height:38px;border-radius:var(--rf);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted);transition:color 180ms,background 180ms}
+.theme-btn:hover{color:var(--text);background:var(--surface-off)}
+.hero{max-width:900px;margin:0 auto;padding:5rem 2rem 3rem;text-align:center}
+.badge{display:inline-flex;align-items:center;gap:0.5rem;
+  background:color-mix(in oklch,var(--primary) 10%,var(--surface));
+  color:var(--primary);border:1px solid color-mix(in oklch,var(--primary) 22%,transparent);
+  padding:0.35rem 1rem;border-radius:var(--rf);font-size:0.72rem;font-weight:700;
+  letter-spacing:0.07em;text-transform:uppercase;margin-bottom:1.5rem}
+.hero h1{font-family:var(--font-d);font-size:var(--f2xl);font-weight:800;line-height:1.05;letter-spacing:-0.03em;margin-bottom:1rem}
+.hero h1 em{color:var(--primary);font-style:normal}
+.hero p{color:var(--muted);max-width:55ch;margin:0 auto 2.5rem}
+.hero-btns{display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.65rem 1.5rem;border-radius:var(--rf);font-size:var(--fs);font-weight:600;transition:all 180ms}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-primary:hover{background:var(--primary-h)}
+.btn-ghost{border:1px solid var(--border);color:var(--muted)}
+.btn-ghost:hover{background:var(--surface-off);color:var(--text)}
+.stats{display:flex;justify-content:center;gap:3rem;padding:2rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin:0 2rem 4rem;max-width:900px;margin-inline:auto}
+.stat{text-align:center}
+.stat-num{font-family:var(--font-d);font-size:var(--fxl);font-weight:800;color:var(--primary)}
+.stat-label{font-size:var(--fs);color:var(--muted)}
+.section{max-width:900px;margin:0 auto;padding:0 2rem 4rem}
+.section-header{display:flex;align-items:center;gap:0.75rem;margin-bottom:1.5rem}
+.section-num{width:28px;height:28px;border-radius:var(--rf);background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700;flex-shrink:0}
+.section-title{font-family:var(--font-d);font-size:var(--flg);font-weight:800}
+.section-tag{font-size:0.7rem;color:var(--muted);border:1px solid var(--border);padding:2px 10px;border-radius:var(--rf);margin-left:auto;text-transform:uppercase;letter-spacing:0.05em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));gap:1rem;margin-bottom:2rem}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:1.25rem;
+  display:flex;flex-direction:column;gap:0.75rem;transition:box-shadow 180ms,transform 180ms,background 180ms;box-shadow:var(--shadow)}
+.card:hover{box-shadow:0 6px 24px rgba(0,0,0,0.15);background:var(--surface2);transform:translateY(-2px)}
+.card-icon{font-size:1.4rem;line-height:1}
+.card-title{font-weight:700;font-size:var(--fs)}
+.card-desc{font-size:0.82rem;color:var(--muted);line-height:1.5;flex:1}
+.card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:0.25rem}
+.tag{display:inline-block;padding:2px 9px;border-radius:var(--rf);font-size:0.68rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase}
+.tag-alta{background:color-mix(in oklch,#bb653b 14%,var(--surface));color:#bb653b}
+.tag-media{background:color-mix(in oklch,var(--accent) 14%,var(--surface));color:var(--accent)}
+.tag-baixa{background:color-mix(in oklch,var(--done) 14%,var(--surface));color:var(--done)}
+.tag-lock{background:var(--surface-off);color:var(--faint)}
+.card-link{font-size:0.75rem;color:var(--primary);display:flex;align-items:center;gap:0.3rem;transition:gap 180ms}
+.card-link:hover{gap:0.5rem}
+.card.locked{opacity:0.4;pointer-events:none}
+.divider{height:1px;background:var(--border);margin:0 2rem 3rem;max-width:900px;margin-inline:auto}
+footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:var(--muted);font-size:var(--fs)}
+footer strong{color:var(--primary)}
+@media(max-width:640px){
+  .nav{padding:0.6rem 1rem}.nav-links{display:none}
+  .hero{padding:3rem 1rem 2rem}.stats{gap:1.5rem;flex-wrap:wrap}
+  .section{padding:0 1rem 3rem}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-logo">
+    <svg viewBox="0 0 32 32" fill="none" aria-label="logo">
+      <circle cx="16" cy="16" r="14" stroke="var(--primary)" stroke-width="1.5" opacity="0.3"/>
+      <circle cx="16" cy="16" r="8" fill="none" stroke="var(--primary)" stroke-width="2"/>
+      <circle cx="16" cy="16" r="3.5" fill="var(--primary)"/>
+      <path d="M16 7L18.5 12 16 10.5 13.5 12Z" fill="var(--primary)" opacity="0.8"/>
+      <path d="M25 16L20 18.5 21.5 16 20 13.5Z" fill="var(--primary)" opacity="0.8"/>
+      <path d="M16 25L13.5 20 16 21.5 18.5 20Z" fill="var(--primary)" opacity="0.8"/>
+      <path d="M7 16L12 13.5 10.5 16 12 18.5Z" fill="var(--primary)" opacity="0.8"/>
+    </svg>
+    NarutoGame
+  </div>
+  <div class="nav-links">
+    <a href="#visao" class="active">Visão</a>
+    <a href="#sistemas">Sistemas</a>
+    <a href="#mundo">Mundo</a>
+    <a href="#economia">Economia</a>
+    <a href="#tecnico">Técnico</a>
+  </div>
+  <button class="theme-btn" data-theme-toggle aria-label="tema">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+</nav>
+<section class="hero">
+  <div class="badge">
+    <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+    TFS 1.4.2 + OTCv8 — Em Desenvolvimento
+  </div>
+  <h1>Wiki do <em>Servidor Naruto</em></h1>
+  <p>Documentação completa do projeto: sistemas, mecânicas, mundo, economia e planejamento técnico. Crie sua própria identidade ninja.</p>
+  <div class="hero-btns">
+    <a href="planejamento/checklist-documentacao.html" class="btn btn-primary">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+      Ver Checklist
+    </a>
+    <a href="00-visao-geral.md" class="btn btn-ghost" target="_blank">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+      Visão Geral
+    </a>
+  </div>
+</section>
+<div class="stats">
+  <div class="stat"><div class="stat-num">6</div><div class="stat-label">Fases de Doc</div></div>
+  <div class="stat"><div class="stat-num">20</div><div class="stat-label">Documentos</div></div>
+  <div class="stat"><div class="stat-num">5</div><div class="stat-label">Elementos</div></div>
+  <div class="stat"><div class="stat-num">1</div><div class="stat-label">Aldeia MVP</div></div>
+</div>
+<section class="section" id="visao">
+  <div class="section-header"><div class="section-num">1</div><h2 class="section-title">Visão e Conceito</h2><span class="section-tag">Base de tudo</span></div>
+  <div class="grid">
+    <a href="00-visao-geral.md" target="_blank" class="card"><div class="card-icon">🎯</div><div class="card-title">Visão Geral do Projeto</div><div class="card-desc">Proposta, diferencial e tom do jogo. Por que este servidor é diferente dos outros.</div><div class="card-footer"><span class="tag tag-alta">Prioridade Alta</span><span class="card-link">Abrir →</span></div></a>
+    <div class="card"><div class="card-icon">⚔️</div><div class="card-title">Fantasia do Jogador e Loop</div><div class="card-desc">Experiência emocional do início ao endgame. Loop: missão → treino → jutsu → rank → boss.</div><div class="card-footer"><span class="tag tag-alta">Prioridade Alta</span><span class="card-link" style="color:var(--muted)">Em breve</span></div></div>
+    <div class="card"><div class="card-icon">🗓️</div><div class="card-title">Escopo do MVP</div><div class="card-desc">O que entra no primeiro lançamento. 1 aldeia, até Jonin, 3-5 elementos, jutsus base.</div><div class="card-footer"><span class="tag tag-alta">Prioridade Alta</span><span class="card-link" style="color:var(--muted)">Em breve</span></div></div>
+  </div>
+</section>
+<div class="divider"></div>
+<section class="section" id="sistemas">
+  <div class="section-header"><div class="section-num">2</div><h2 class="section-title">Sistemas Base</h2><span class="section-tag">Mecânicas centrais</span></div>
+  <div class="grid">
+    <div class="card"><div class="card-icon">📊</div><div class="card-title">Atributos e Fórmulas</div><div class="card-desc">Nível, Treino e Mentalidade. Fórmulas de escalonamento de dano, vida e chakra.</div><div class="card-footer"><span class="tag tag-alta">Prioridade Alta</span><span class="card-link" style="color:var(--muted)">Em breve</span></div></div>
+    <div class="card"><div class="card-icon">🥋</div><div class="card-title">Progressão de Rank Ninja</div><div class="card-desc">Requisitos por rank: nível, missões, provas. O que cada rank desbloqueia.</div><div class="card-footer"><span class="tag tag-alta">Prioridade Alta</span><span class="card-link" style="color:var(--muted)">Em breve</span></div></div>
+    <div class="card"><div class="card-icon">🌊</div><div class="card-title">Elementos e Árvore de Jutsus</div><div class="card-desc">Os 5 elementos base. Regras de aprendizado do 2º e 3º elemento. Mapa da árvore.</div><div class="card-footer"><span class="tag tag-alta">Prioridade Alta</span><span class="card-link" style="color:var(--muted)">Em breve</span></div></div>
+    <div class="card"><div class="card-icon">📜</div><div class="card-title">Sistema de Jutsus (Detalhado)</div><div class="card-desc">Estrutura de aprendizado, domínio (Aprendido → Mestre), custo de chakra e cooldown.</div><div class="card-footer"><span class="tag tag-media">Prioridade Média</span><span class="card-link" style="color:var(--muted)">Em breve</span></div></div>
+    <div class="card"><div class="card-icon">🧬</div><div class="card-title">Estilos de Combate e Builds</div><div class="card-desc">Arquétipos: físico, elemental, híbrido, tático, especialista, versátil.</div><div class="card-footer"><span class="tag tag-media">Prioridade Média</span><span class="card-link" style="color:var(--muted)">Em breve</span></div></div>
+  </div>
+</section>
+<div class="divider"></div>
+<section class="section" id="mundo">
+  <div class="section-header"><div class="section-num">3</div><h2 class="section-title">Mundo e Conteúdo</h2><span class="section-tag">Mapa, missões, bosses</span></div>
+  <div class="grid">
+    <div class="card"><div class="card-icon">🗺️</div><div class="card-title">Mapa Inicial — Konoha MVP</div><div class="card-desc">Esboço do mapa e arredores. Zonas por nível de perigo. Fluxo de progressão geográfica.</div><div class="card-footer"><span class="tag tag-alta">Prioridade Alta</span><span class="card-link" style="color:var(--muted)">Em breve</span></div></div>
+    <div class="card"><div class="card-icon">📋</div><div class="card-title">Sistema de Missões</div><div class="card-desc">Categorias D a S, diárias e semanais. Recompensas e fluxo para progressão de rank.</div><div class="card-footer"><span class="tag tag-alta">Prioridade Alta</span><span class="card-link" style="color:var(--muted)">Em breve</span></div></div>
+    <div class="card"><div class="card-icon">🐉</div><div class="card-title">Bosses e Conteúdo de Alto Nível</div><div class="card-desc">Bosses do MVP, mecânicas, loot e requisitos. Papel das Bijuus no mid/endgame.</div><div class="card-footer"><span class="tag tag-media">Prioridade Média</span><span class="card-link" style="color:var(--muted)">Em breve</span></div></div>
+  </div>
+</section>
+<div class="divider"></div>
+<section class="section" id="economia">
+  <div class="section-header"><div class="section-num">4</div><h2 class="section-title">Economia e Itens</h2><span class="section-tag">Fluxo de recursos</span></div>
+  <div class="grid">
+    <div class="card"><div class="card-icon">💰</div><div class="card-title">Economia Inicial</div><div class="card-desc">Fontes de dinheiro, gastos por fase, balanço entrada/saída. Tabela de preços de jutsus e itens.</div><div class="card-footer"><span class="tag tag-alta">Prioridade Alta</span><span class="card-link" style="color:var(--muted)">Em breve</span></div></div>
+    <div class="card"><div class="card-icon">🗡️</div><div class="card-title">Itens e Equipamentos</div><div class="card-desc">Categorias (kunai, pergaminhos, armaduras), raridades Comum → Lendário e bônus de cada tipo.</div><div class="card-footer"><span class="tag tag-media">Prioridade Média</span><span class="card-link" style="color:var(--muted)">Em breve</span></div></div>
+  </div>
+</section>
+<div class="divider"></div>
+<section class="section" id="tecnico">
+  <div class="section-header"><div class="section-num">5</div><h2 class="section-title">Técnico e Implementação</h2><span class="section-tag">TFS 1.4.2 + OTCv8</span></div>
+  <div class="grid">
+    <div class="card"><div class="card-icon">🛠️</div><div class="card-title">Arquitetura Técnica do MVP</div><div class="card-desc">Estrutura Lua no TFS 1.4.2. Scripts de atributos, spells de jutsu, storage IDs de rank.</div><div class="card-footer"><span class="tag tag-alta">Prioridade Alta</span><span class="card-link" style="color:var(--muted)">Em breve</span></div></div>
+    <div class="card"><div class="card-icon">🖥️</div><div class="card-title">Integração OTCv8 (Interface)</div><div class="card-desc">UI customizada: HUD de chakra/vida, menu de jutsus, janela de rank e painel de missões.</div><div class="card-footer"><span class="tag tag-media">Prioridade Média</span><span class="card-link" style="color:var(--muted)">Em breve</span></div></div>
+    <div class="card"><div class="card-icon">💎</div><div class="card-title">Monetização e Retenção</div><div class="card-desc">Cosméticos vs. vantagens, daily login, progressão visível e eventos sazonais.</div><div class="card-footer"><span class="tag tag-baixa">Prioridade Baixa</span><span class="card-link" style="color:var(--muted)">Em breve</span></div></div>
+  </div>
+</section>
+<div class="divider"></div>
+<section class="section">
+  <div class="section-header"><div class="section-num" style="background:var(--muted)">6</div><h2 class="section-title" style="color:var(--muted)">Expansão Futura</h2><span class="section-tag">🔒 Pós-MVP</span></div>
+  <div class="grid">
+    <div class="card locked"><div class="card-icon">🩸</div><div class="card-title">Clãs e Kekkei Genkai</div><div class="card-desc">Clãs jogáveis, traços iniciais e técnicas únicas de linhagem.</div><div class="card-footer"><span class="tag tag-lock">Bloqueado</span></div></div>
+    <div class="card locked"><div class="card-icon">🏘️</div><div class="card-title">Outras Aldeias</div><div class="card-desc">Suna, Kiri, Kumo, Iwa com missões e afinidades próprias.</div><div class="card-footer"><span class="tag tag-lock">Bloqueado</span></div></div>
+    <div class="card locked"><div class="card-icon">⚔️</div><div class="card-title">PvP, Crafting e Invocações</div><div class="card-desc">Arena PvP, guerra entre vilas, crafting avançado e summons.</div><div class="card-footer"><span class="tag tag-lock">Bloqueado</span></div></div>
+  </div>
+</section>
+<footer>
+  <strong>NarutoGame</strong> — TFS 1.4.2 + OTCv8 &nbsp;·&nbsp; Documentação do Projeto &nbsp;·&nbsp;
+  <a href="https://github.com/nitroxbolter/NarutoGame" target="_blank" rel="noopener" style="color:var(--primary)">Ver no GitHub →</a>
+</footer>
+<script>
+(function(){
+  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+  let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+  r.setAttribute('data-theme',d);
+  if(t)t.addEventListener('click',()=>{
+    d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);
+    t.innerHTML=d==='dark'
+      ?'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
+      :'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+  });
+  const sections=document.querySelectorAll('section[id]');
+  const links=document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll',()=>{
+    let cur='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)cur=s.id});
+    links.forEach(l=>{l.classList.toggle('active',l.getAttribute('href')==='#'+cur)});
+  });
+})();
+</script>
+</body>
+</html>
