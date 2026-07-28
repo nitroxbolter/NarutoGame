@@ -1,15 +1,42 @@
-# Índice da documentação
+<div align="center">
 
-Este menu organiza o projeto por tema e serve como ponto de entrada principal da documentação.
+![Naruto Game](../assets/banner-shinobi-rpg.svg)
+
+# Naruto Game
+
+<p>
+<a href="#conceito">⚡ Conceito</a> · <a href="#mundo">🗺️ Mundo</a> · <a href="#personagem">👤 Personagem</a> · <a href="#progressão-e-combate">🥋 Progressão e combate</a> · <a href="#sistemas-e-economia">💰 Sistemas</a> · <a href="#técnico">🛠️ Técnico</a> · <a href="#planejamento">🧭 Planejamento</a>
+</p>
+
+<p>
+<img src="https://img.shields.io/badge/Docs-Organizadas-111827?style=for-the-badge&logo=markdown&logoColor=white" alt="Docs" />
+<img src="https://img.shields.io/badge/Foco-Shinobi%20RPG-dc2626?style=for-the-badge" alt="Foco" />
+<img src="https://img.shields.io/badge/Base-TFS%201.4.2-2563eb?style=for-the-badge" alt="Base" />
+<img src="https://img.shields.io/badge/Cliente-OTCv8-16a34a?style=for-the-badge" alt="Cliente" />
+</p>
+
+</div>
+
+> Menus por tema, submenus por assunto e navegação direta para cada documento principal.
+
+---
 
 ## Conceito
+
+<details open>
+<summary><strong>⚡ Abrir conceito</strong></summary>
 
 | Documento | Tema |
 | --- | --- |
 | [Visão geral](00-visao-geral.md) | Resumo da proposta e do MVP |
 | [Estrutura original](../estrutura-ideia-servidor-naruto.md) | Documento base do projeto |
 
+</details>
+
 ## Mundo
+
+<details>
+<summary><strong>🗺️ Abrir mundo</strong></summary>
 
 | Documento | Tema |
 | --- | --- |
@@ -17,7 +44,12 @@ Este menu organiza o projeto por tema e serve como ponto de entrada principal da
 | [Aldeias, NPCs e missões da aldeia](mundo/aldeias-npcs-missoes-da-aldeia.md) | Estrutura social da aldeia |
 | [Mapa e regiões](mundo/mapa-regioes.md) | Exploração e regiões iniciais |
 
+</details>
+
 ## Personagem
+
+<details>
+<summary><strong>👤 Abrir personagem</strong></summary>
 
 | Documento | Tema |
 | --- | --- |
@@ -26,7 +58,12 @@ Este menu organiza o projeto por tema e serve como ponto de entrada principal da
 | [Atributos](personagem/atributos.md) | Vida, chakra e atributos principais |
 | [Atributos e builds](sistemas/atributos-builds.md) | Variações de build e progressão |
 
+</details>
+
 ## Progressão e combate
+
+<details>
+<summary><strong>🥋 Abrir progressão e combate</strong></summary>
 
 | Documento | Tema |
 | --- | --- |
@@ -42,7 +79,12 @@ Este menu organiza o projeto por tema e serve como ponto de entrada principal da
 | [Sistema PvP](combate/pvp.md) | Arena, guerras e torneios |
 | [Balanceamento](sistemas/balanceamento.md) | Escala, fórmulas e ajustes |
 
+</details>
+
 ## Sistemas e economia
+
+<details>
+<summary><strong>💰 Abrir sistemas</strong></summary>
 
 | Documento | Tema |
 | --- | --- |
@@ -55,14 +97,24 @@ Este menu organiza o projeto por tema e serve como ponto de entrada principal da
 | [Eventos e estações](sistemas/eventos-estacoes.md) | Conteúdo dinâmico |
 | [Casas e habitação](sistemas/habitacao-casas.md) | Economia social e moradia |
 
+</details>
+
 ## Técnico
+
+<details>
+<summary><strong>🛠️ Abrir técnico</strong></summary>
 
 | Documento | Tema |
 | --- | --- |
 | [Estrutura do servidor TFS](tecnico/estrutura-servidor-tfs.md) | Base técnica e organização |
 | [Estrutura do cliente OTCv8](tecnico/estrutura-cliente-otcv8.md) | UI, módulos e experiência |
 
+</details>
+
 ## Planejamento
+
+<details>
+<summary><strong>🧭 Abrir planejamento</strong></summary>
 
 | Documento | Tema |
 | --- | --- |
@@ -70,3 +122,5 @@ Este menu organiza o projeto por tema e serve como ponto de entrada principal da
 | [Backlog](planejamento/backlog-ideias.md) | Ideias e expansões futuras |
 | [Princípios do projeto](planejamento/principios-do-projeto.md) | Regras de design |
 | [Template de sistema](TEMPLATE-SISTEMA.md) | Padrão para novos documentos |
+
+</details>

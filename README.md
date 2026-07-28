@@ -1,4 +1,10 @@
+<div align="center">
+
+![Naruto Shinobi RPG](assets/banner-shinobi-rpg.svg)
+
 # Naruto Shinobi RPG
+
+</div>
 
 Projeto de servidor MMORPG inspirado em uma jornada shinobi original para TFS 1.4.2 + OTCv8.
 
