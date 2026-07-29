@@ -31,8 +31,8 @@ O jogador deve sentir evolução em quatro camadas:
 - Academia.
 - Genin.
 - Chunin.
-- Tokubetsu Jonin.
-- Jonin.
+- Jounin.
+- Ninja Elite.
 - ANBU ou Sannin como cargos especiais.
 - Hokage como liderança máxima da aldeia.
 
@@ -41,11 +41,25 @@ O jogador deve sentir evolução em quatro camadas:
 A progressão pode refletir marcos típicos de Naruto:
 
 - Entrada na Academia Ninja.
+- Primeira promoção real no nivel 20.
 - Primeira missão D fora da vila.
 - Exame Chunin como teste de maturidade.
 - Enfrentamento de ninjas renegados e invasões.
+- Promoções seguintes no nivel 100, 250 e 500.
 - Missões de nível A e S com risco real.
 - Conquista de um cargo de elite ou liderança.
+
+## Promoções do personagem
+
+As promoções principais do jogador ficam descritas aqui para servir de base ao sistema de personagem:
+
+| Promocao | Nivel minimo | Descricao resumida |
+| --- | --- | --- |
+| Genin | 20 | Primeira validação da carreira shinobi. |
+| Chunin | 100 | Ninja intermediario com mais autoridade. |
+| Jounin | 250 | Elite de combate e missao. |
+| Ninja Elite | 500 | Patamar de alto prestgio e perigos maiores. |
+| ANBU | Especial | Entrada por missao, segredo e recomendacao. |
 
 ## Direção de design
 
@@ -53,3 +67,4 @@ A progressão pode refletir marcos típicos de Naruto:
 - Cada fase deve abrir novas opções, não apenas números maiores.
 - A progressão deve combinar treino, missão, exploração e combate.
 - A progressão deve sempre parecer a formação de um shinobi, não só uma barra de level.
+- Cada promocao precisa ter um simbolo visual no cliente para leitura rapida.

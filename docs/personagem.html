@@ -1,14 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Personagem - NarutoGame Wiki</title><link rel="stylesheet" href="layout.css"></head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personagem - NarutoGame Wiki</title>
+<link rel="stylesheet" href="layout.css">
+</head>
 <body>
-<nav class="nav"><a href="index.html" class="nav-logo">NarutoGame</a><div class="nav-links"><a href="index.html">Inicio</a><a href="mundo.html">Mundo</a><a href="personagem.html" class="active">Personagem</a><a href="equipamentos.html">Equipamentos</a><a href="economia.html">Economia</a><a href="missoes.html">Missoes</a><a href="bosses.html">Bosses</a><a href="dungeons.html">Dungeons</a><a href="arquitetura.html">Arquitetura</a></div><button class="theme-btn" data-theme-toggle aria-label="tema">◐</button></nav>
-<div class="page-header"><div class="breadcrumb"><a href="index.html">Wiki</a><span>/</span><span>Personagem</span></div><div class="badge">👤 Atributos, chakra e skills</div><h1>Personagem</h1><p class="lead">Pagina dedicada ao personagem: atributos, chakra, skills, elementos, jutsus e a evolução do ninja.</p></div>
-<div class="content">
-<div class="section"><div class="section-label"><div class="dot"></div><h2>Base do Personagem</h2></div><div class="grid"><div class="card"><div class="card-title">Atributos</div><div class="card-desc">Vida, chakra, treino, mentalidade e escalonamento da build.</div></div><div class="card"><div class="card-title">Chakra</div><div class="card-desc">Reserva, regeneração, custo de jutsus e controle de uso.</div></div><div class="card"><div class="card-title">Level</div><div class="card-desc">Progresso bruto e acesso a conteudos.</div></div><div class="card"><div class="card-title">Skills</div><div class="card-desc">Taijutsu, ninjutsu, genjutsu, mobilidade e defesa.</div></div></div></div>
-<div class="divider"></div>
-<div class="section"><div class="section-label"><div class="dot"></div><h2>Elementos e Jutsus</h2></div><div class="box"><div class="box-title">Elementos base</div><ul><li>Katon</li><li>Suiton</li><li>Raiton</li><li>Doton</li><li>Fuuton</li></ul></div><div class="box"><div class="box-title">Jutsus</div><ul><li>Jutsus ofensivos, defensivos, utilitarios e de mobilidade.</li><li>Aprendizado por rank, requisito e mestre NPC.</li><li>Dominio por uso: aprendido, treinado, aperfeicoado e mestre.</li></ul></div></div>
+<nav class="nav">
+  <a href="index.html" class="nav-logo">NarutoGame</a>
+  <div class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="mundo.html">Mundo</a>
+    <a href="personagem.html" class="active">Personagem</a>
+    <a href="equipamentos.html">Equipamentos</a>
+    <a href="economia.html">Economia</a>
+    <a href="missoes.html">Missoes</a>
+    <a href="bosses.html">Bosses</a>
+    <a href="dungeons.html">Dungeons</a>
+    <a href="arquitetura.html">Arquitetura</a>
+  </div>
+  <button class="theme-btn" data-theme-toggle aria-label="tema">Tema</button>
+</nav>
+<div class="page-header">
+  <div class="breadcrumb"><a href="index.html">Wiki</a><span>/</span><span>Personagem</span></div>
+  <div class="badge">Personagem, progresso e combate</div>
+  <h1>Personagem</h1>
+  <p class="lead">Atributos, chakra, skills, elementos, jutsus e agora a progressao do ninja em uma unica pagina.</p>
 </div>
-<footer>NarutoGame · Wiki do Projeto</footer>
-<script>(function(){const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';r.setAttribute('data-theme',d);if(t)t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.textContent=d==='dark'?'◐':'◑';});})();</script>
-</body></html>
+<div class="content">
+  <div class="section">
+    <div class="section-label"><div class="dot"></div><h2>Base do Personagem</h2></div>
+    <div class="grid">
+      <div class="card"><div class="card-title">Atributos</div><div class="card-desc">Vida, chakra, treino, mentalidade e escalonamento da build.</div></div>
+      <div class="card"><div class="card-title">Chakra</div><div class="card-desc">Reserva, regeneracao, custo de jutsus e controle de uso.</div></div>
+      <div class="card"><div class="card-title">Level</div><div class="card-desc">Progresso bruto e acesso a conteudos.</div></div>
+      <div class="card"><div class="card-title">Skills</div><div class="card-desc">Taijutsu, ninjutsu, genjutsu, mobilidade e defesa.</div></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <div class="section-label"><div class="dot"></div><h2>Elementos e Jutsus</h2></div>
+    <div class="grid">
+      <div class="card"><div class="card-title">Elementos base</div><div class="card-desc">Katon, Suiton, Raiton, Doton e Fuuton.</div></div>
+      <div class="card"><div class="card-title">Jutsus</div><div class="card-desc">Ofensivos, defensivos, utilitarios e de mobilidade.</div></div>
+      <div class="card"><div class="card-title">Dominio</div><div class="card-desc">Aprendido, treinado, aperfeicoado e mestre.</div></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <div class="section-label"><div class="dot"></div><h2>Progressao</h2></div>
+    <p>A progressao fica dentro da area de personagem porque ela define a identidade do ninja, sua vila inicial, seus simbolos e a evolucao visivel no cliente.</p>
+    <div class="box">
+      <div class="box-title">Criacao do personagem</div>
+      <ul>
+        <li>O jogador cria o personagem com nome e elemento inicial.</li>
+        <li>O inicio sempre acontece em Konoha no MVP.</li>
+        <li>Depois, se houver necessidade de historia ou sistema, ele pode mudar para outra nacao.</li>
+        <li>A criacao prepara o caminho para a primeira promocao e para a leitura visual do cliente.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <div class="box-title">Promocoes e niveis minimos</div>
+      <ul>
+        <li><strong>Genin</strong> - nivel minimo 20.</li>
+        <li><strong>Chunin</strong> - nivel minimo 100.</li>
+        <li><strong>Jounin</strong> - nivel minimo 250.</li>
+        <li><strong>Ninja Elite</strong> - nivel minimo 500.</li>
+        <li><strong>ANBU</strong> - promocao especial por requisito narrativo e missao de elite.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <div class="box-title">Simbolo no cliente</div>
+      <ul>
+        <li>Cada promocao mostra um simbolo ao lado do nome do personagem no cliente.</li>
+        <li>O simbolo muda junto com o rank atual para leitura rapida em party, PvP e cidade.</li>
+        <li>Exemplo de leitura: nome + simbolo de Genin, nome + simbolo de Chunin, e assim por diante.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <div class="section-label"><div class="dot"></div><h2>Como conseguir cada promocao</h2></div>
+    <div class="grid">
+      <div class="card"><div class="card-title">Genin</div><div class="card-desc">Concluir a criacao, chegar ao nivel 20 e passar pela validacao inicial da academia.</div></div>
+      <div class="card"><div class="card-title">Chunin</div><div class="card-desc">Chegar ao nivel 100, completar missoes e provar dominio basico de combate.</div></div>
+      <div class="card"><div class="card-title">Jounin</div><div class="card-desc">Chegar ao nivel 250, mostrar consistencia em missoes e dominar jutsus da propria build.</div></div>
+      <div class="card"><div class="card-title">Ninja Elite</div><div class="card-desc">Chegar ao nivel 500, concluir conteudos de alto risco e ter reputacao acima da media.</div></div>
+      <div class="card"><div class="card-title">ANBU</div><div class="card-desc">Entrar por missao secreta, com recomendacao, teste de infiltracao e perfil de elite.</div></div>
+    </div>
+  </div>
+</div>
+<footer>NarutoGame - Wiki do Projeto</footer>
+<script>(function(){const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';r.setAttribute('data-theme',d);if(t)t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.textContent='Tema';});})();</script>
+</body>
+</html>

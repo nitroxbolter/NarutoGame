@@ -11,8 +11,8 @@ Os ranks representam status, responsabilidade e acesso a conteúdo, como acontec
 | Academia | Tutorial e introdução | Treino básico, missões simples, primeiros NPCs |
 | Genin | Início real da carreira | Missões D e C, jutsus básicos, profissões |
 | Chunin | Ninja intermediário | Missões B, dungeons iniciais, segundo elemento |
-| Tokubetsu Jonin | Especialista | Funções de elite em área específica |
-| Jonin | Elite da aldeia | Missões A, bosses fortes, técnicas avançadas |
+| Jounin | Elite da aldeia | Missões A, bosses fortes, técnicas avançadas |
+| Ninja Elite | Alto escalão | Conteúdo muito perigoso, prestígio e poder alto |
 
 ## Cargos especiais
 
@@ -28,7 +28,8 @@ Esses cargos não são só level. Eles dependem de missão, mérito e validaçã
 
 - Genin lembra a formação após a Academia.
 - Chunin remete ao exame que separa jovens promissores de ninjas maduros.
-- Jonin representa liderança e responsabilidade tática.
+- Jounin representa liderança e responsabilidade tática.
+- Ninja Elite funciona como um degrau acima, reservado para progressao muito alta.
 - ANBU traz o lado secreto e político das vilas.
 - Sannin é o topo do prestígio individual entre shinobi lendários.
 - Hokage é o símbolo máximo de liderança e proteção da vila.
@@ -48,11 +49,11 @@ Cada promoção deve exigir uma mistura de requisitos.
 | --- | --- |
 | Academia para Genin | Tutorial completo, prova prática, jutsu básico aprendido |
 | Genin para Chunin | Level mínimo, missões D/C, exame Chunin, boss de prova |
-| Chunin para Tokubetsu Jonin | Especialização definida, reputação e missão de mérito |
-| Tokubetsu Jonin para Jonin | Reputação, liderança, dungeon concluída, domínio de jutsus |
-| Jonin para ANBU | Quest secreta, teste de combate, reputação alta, recomendação de NPC |
-| Jonin para Sannin | Série de missões lendárias, contribuição histórica e validação rara |
-| Jonin / Sannin para Hokage | Liderança da aldeia, maior nível, reputação e eleição ou reconhecimento |
+| Chunin para Jounin | Level mínimo, reputação, dungeon concluída e dominio de jutsus |
+| Jounin para Ninja Elite | Nivel 500, missões de elite e reputação muito alta |
+| Jounin para ANBU | Quest secreta, teste de combate, reputação alta, recomendação de NPC |
+| Jounin para Sannin | Série de missões lendárias, contribuição histórica e validação rara |
+| Jounin / Sannin para Hokage | Liderança da aldeia, maior nível, reputação e eleição ou reconhecimento |
 
 ## Exames
 
