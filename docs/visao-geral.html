@@ -3,389 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Visão Geral — NarutoGame Wiki</title>
+<title>Visão Geral - NarutoGame Wiki</title>
 <link rel="stylesheet" href="layout.css">
 </head>
 <body>
-
 <nav class="nav">
-  <a href="index.html" class="nav-logo">
-    <svg viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="11" stroke="var(--primary)" stroke-width="1.5" opacity="0.3"/><circle cx="13" cy="13" r="6" fill="none" stroke="var(--primary)" stroke-width="2"/><circle cx="13" cy="13" r="2.5" fill="var(--primary)"/><path d="M13 6L14.8 9.5 13 8.2 11.2 9.5Z" fill="var(--primary)" opacity="0.8"/><path d="M20 13L16.5 14.8 17.8 13 16.5 11.2Z" fill="var(--primary)" opacity="0.8"/><path d="M13 20L11.2 16.5 13 17.8 14.8 16.5Z" fill="var(--primary)" opacity="0.8"/><path d="M6 13L9.5 11.2 8.2 13 9.5 14.8Z" fill="var(--primary)" opacity="0.8"/></svg>
-    NarutoGame
-  </a>
-  <div class="nav-links">
-    <a href="index.html">Início</a>
-    <a href="visao-geral.html" class="active">Visão Geral</a>
-    <a href="sistemas.html">Sistemas</a>
-    <a href="mundo.html">Mundo</a>
-    <a href="economia.html">Economia</a>
-    <a href="tecnico.html">Técnico</a>
-  </div>
-  <div class="nav-right">
-    <button class="theme-btn" data-theme-toggle aria-label="Alternar tema">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-    </button>
-  </div>
+  <a href="index.html" class="nav-logo"><svg viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="11" stroke="var(--primary)" stroke-width="1.5" opacity="0.3"/><circle cx="13" cy="13" r="6" fill="none" stroke="var(--primary)" stroke-width="2"/><circle cx="13" cy="13" r="2.5" fill="var(--primary)"/></svg>NarutoGame</a>
+  <div class="nav-links"><a href="index.html">Início</a><a href="visao-geral.html" class="active">Visão Geral</a><a href="sistemas.html">Sistemas</a><a href="mundo.html">Mundo</a><a href="economia.html">Economia</a><a href="tecnico.html">Técnico</a></div>
+  <div class="nav-right"><button class="theme-btn" data-theme-toggle aria-label="tema">◐</button></div>
 </nav>
-
 <div class="page-header">
   <div class="breadcrumb"><a href="index.html">Wiki</a><span>/</span><span>Visão Geral</span></div>
   <div class="badge">📋 Documento Base do Projeto</div>
   <h1>Visão <em>Geral</em></h1>
-  <p class="lead">Proposta, diferenciais, fantasia do jogador, pilares de design, MVP e roadmap — tudo que define este projeto em um único documento.</p>
+  <p class="lead">Proposta, diferenciais, fantasia do jogador, pilares de design, MVP e roadmap do servidor inspirado em Naruto.</p>
 </div>
-
 <div class="content">
-
-  <!-- PROPOSTA -->
   <div class="section">
     <div class="section-label"><div class="dot"></div><h2>A Proposta Central</h2></div>
-    <p>A grande maioria dos servidores Naruto faz o jogador controlar personagens famosos do anime. Aqui, a proposta é oposta: o jogador cria um ninja original, com nome, aparência, build e caminho próprios, dentro de um universo inspirado no anime — mas com uma jornada autoral.</p>
+    <p>O jogador cria um ninja original dentro do universo de Naruto. A jornada é autoral, mas apoiada em elementos clássicos como Konoha, Exame Chunin, ANBU, Sannin e Hokage.</p>
     <div class="grid">
-      <div class="card">
-        <div class="card-icon">❌</div>
-        <div class="card-title">Servidores comuns</div>
-        <div class="card-body">"Eu sou o Naruto" — o personagem vem pronto, com técnicas e identidade definidas pelo anime. Pouca liberdade de construção.</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">✅</div>
-        <div class="card-title">Este servidor</div>
-        <div class="card-body">"Eu sou um ninja do meu clã" — com meus elementos, meu treinamento e minhas técnicas. Jornada 100% autoral.</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">⚡</div>
-        <div class="card-title">O resultado</div>
-        <div class="card-body">Mais longevidade, mais diversidade de builds e mais espaço para progressão, economia e conteúdo de longo prazo.</div>
-      </div>
+      <div class="card"><div class="card-icon">❌</div><div class="card-title">Servidores comuns</div><div class="card-body">"Eu sou o Naruto" - o personagem vem pronto e a build já nasce fechada.</div></div>
+      <div class="card"><div class="card-icon">✅</div><div class="card-title">Este servidor</div><div class="card-body">"Eu sou um ninja do meu clã" - com elementos, treino, jutsus e escolhas próprias.</div></div>
+      <div class="card"><div class="card-icon">⚡</div><div class="card-title">O resultado</div><div class="card-body">Mais longevidade, mais diversidade de builds e mais espaço para progressão e economia.</div></div>
     </div>
   </div>
-
   <div class="divider"></div>
-
-  <!-- FANTASIA DO JOGADOR -->
   <div class="section">
     <div class="section-label"><div class="dot"></div><h2>Fantasia do Jogador</h2></div>
-    <p>A experiência deve transmitir a sensação de construir uma carreira ninja de verdade — começando pequeno e conquistando poder através do esforço, do treino e das escolhas certas.</p>
+    <p>A experiência deve transmitir a sensação de construir uma carreira ninja de verdade, começando pequeno e ficando mais forte por treino, missão e mérito.</p>
     <div class="box">
       <div class="box-title">🎯 Sensações que o servidor deve entregar</div>
       <ul>
-        <li><strong>Evolução real</strong> de iniciante para elite ninja — sentir que construiu sua força</li>
-        <li><strong>Liberdade</strong> para escolher o estilo de combate e a build</li>
-        <li><strong>Descoberta gradual</strong> de técnicas mais avançadas como recompensa</li>
-        <li><strong>Valor no treinamento</strong>, não apenas no level</li>
-        <li><strong>Recompensa</strong> por dedicação, especialização e planejamento</li>
-        <li><strong>Imersão</strong> em uma vila ninja viva, com missões, economia e ameaças globais</li>
-        <li><strong>Prestígio</strong> conquistado por mérito — não herdado de um personagem famoso</li>
-      </ul>
-    </div>
-    <div class="box">
-      <div class="box-title">🚫 O que o servidor NUNCA deve fazer</div>
-      <ul>
-        <li>Dar poder sem esforço — jutsus e ranks devem ser conquistados</li>
-        <li>Forçar fanservice em detrimento de sistemas sólidos</li>
-        <li>Deixar a economia sem propósito real no progresso</li>
-        <li>Criar builds únicas obrigatórias — a diversidade é um pilar</li>
+        <li><strong>Evolução real</strong> de iniciante para elite ninja.</li>
+        <li><strong>Liberdade</strong> para escolher o estilo de combate.</li>
+        <li><strong>Descoberta gradual</strong> de técnicas mais avançadas.</li>
+        <li><strong>Valor no treinamento</strong>, não só no level.</li>
+        <li><strong>Recompensa</strong> por dedicação, especialização e planejamento.</li>
+        <li><strong>Imersão</strong> em uma vila ninja viva, com missões e ameaças globais.</li>
       </ul>
     </div>
   </div>
-
   <div class="divider"></div>
-
-  <!-- IDENTIDADE DO JOGADOR -->
   <div class="section">
-    <div class="section-label"><div class="dot"></div><h2>Identidade Própria do Jogador</h2></div>
-    <p>Ao entrar no jogo, o personagem não é um herói conhecido. É um ninja original com total liberdade de construção. Isso abre espaço para sistemas de progressão mais ricos e para a expansão gradual do universo.</p>
-    <div class="grid">
-      <div class="card"><div class="card-icon">👤</div><div class="card-title">Nome e Aparência</div><div class="card-body">Identidade visual própria, sem vínculo com personagens do anime.</div></div>
-      <div class="card"><div class="card-icon">🌿</div><div class="card-title">Elemento Próprio</div><div class="card-body">Escolha de afinidade elemental no início. Base de toda a build e das técnicas disponíveis.</div></div>
-      <div class="card"><div class="card-icon">📈</div><div class="card-title">Evolução Própria</div><div class="card-body">Atributos, rank e jutsus evoluem por esforço — não por herdar um personagem pronto.</div></div>
-      <div class="card"><div class="card-icon">🔮</div><div class="card-title">Especializações</div><div class="card-body">Builds diferentes: físico, elemental, híbrido, tático, especialista ou versátil.</div></div>
-      <div class="card"><div class="card-icon">🏯</div><div class="card-title">Rank Ninja</div><div class="card-body">Progressão social e funcional: Academia → Genin → Chunin → Jonin → ANBU.</div></div>
-      <div class="card"><div class="card-icon">⚔️</div><div class="card-title">Jutsus como Conquista</div><div class="card-body">Técnicas aprendidas por requisitos de nível, rank, elemento, missão ou mestre NPC.</div></div>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- ATRIBUTOS -->
-  <div class="section">
-    <div class="section-label"><div class="dot"></div><h2>Três Eixos de Evolução</h2></div>
-    <p>A base do servidor gira em torno de três pilares que, combinados, geram estilos completamente diferentes de personagem — sem depender de vocações fixas.</p>
+    <div class="section-label"><div class="dot"></div><h2>Escopo Inicial</h2></div>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>Atributo</th><th>O que representa</th><th>Impacta principalmente</th></tr></thead>
+        <thead><tr><th>Área</th><th>MVP</th></tr></thead>
         <tbody>
-          <tr><td><strong>Nível</strong></td><td>Maturidade geral do ninja — experiência de combate e sobrevivência</td><td>Vida, Chakra, Força geral, Requisitos de progressão</td></tr>
-          <tr><td><strong>Treino</strong></td><td>Desenvolvimento físico e corporal — disciplina do corpo</td><td>Taijutsu, Dano físico, Armas ninja, Resistência corporal</td></tr>
-          <tr><td><strong>Mentalidade</strong></td><td>Domínio interno de chakra, foco e capacidade técnica</td><td>Ninjutsu, Chakra extra, Dano elemental, Jutsus avançados</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="box">
-      <div class="box-title">⚙️ Combinações de Build possíveis</div>
-      <ul>
-        <li><strong>Nível alto + Treino alto:</strong> ninja resistente com bom combate físico</li>
-        <li><strong>Nível alto + Mentalidade alta:</strong> ninja forte em jutsus e chakra</li>
-        <li><strong>Treino alto + Mentalidade média:</strong> híbrido funcional e versátil</li>
-        <li><strong>Mentalidade muito alta + elementos raros:</strong> especialista em ninjutsu avançado</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- ELEMENTOS -->
-  <div class="section">
-    <div class="section-label"><div class="dot"></div><h2>Sistema de Elementos</h2></div>
-    <p>Um dos pilares mais fortes do servidor. O jogador escolhe um elemento principal no início da jornada — ele define a primeira árvore de jutsus, o estilo visual inicial e as rotas de build disponíveis.</p>
-    <div class="grid">
-      <div class="card"><div class="card-icon">🔥</div><div class="card-title">Katon <span class="tag tag-fire">Fogo</span></div><div class="card-body">Alto dano em área, pressão ofensiva, forte no mid e late game com técnicas explosivas.</div></div>
-      <div class="card"><div class="card-icon">💧</div><div class="card-title">Suiton <span class="tag tag-water">Água</span></div><div class="card-body">Controle de terreno, mobilidade, jutsus de fluxo e suporte — versátil em grupo.</div></div>
-      <div class="card"><div class="card-icon">⚡</div><div class="card-title">Raiton <span class="tag tag-lightning">Raio</span></div><div class="card-body">Velocidade, stuns e dano direto — estilo agressivo e explosivo com alta precisão.</div></div>
-      <div class="card"><div class="card-icon">🪨</div><div class="card-title">Doton <span class="tag tag-earth">Terra</span></div><div class="card-body">Defesa, armadilhas e resistência — ninja tanque com forte presença no campo.</div></div>
-      <div class="card"><div class="card-icon">🌬️</div><div class="card-title">Fuuton <span class="tag tag-wind">Vento</span></div><div class="card-body">Corte, mobilidade e alcance — ninja ágil que controla distância e fluxo de combate.</div></div>
-    </div>
-    <div class="box">
-      <div class="box-title">📜 Regras de progressão elemental</div>
-      <ul>
-        <li><strong>Primeiro elemento:</strong> escolhido no início, mais fácil de desenvolver</li>
-        <li><strong>Segundo elemento:</strong> exige rank mínimo, missão especial e treinamento dedicado</li>
-        <li><strong>Terceiro elemento:</strong> conteúdo avançado e raro — recompensa de progressão real</li>
-        <li><strong>Kekkei Genkai:</strong> combinações especiais reservadas para endgame</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- RANKS -->
-  <div class="section">
-    <div class="section-label"><div class="dot"></div><h2>Progressão de Rank Ninja</h2></div>
-    <p>A promoção de rank não depende apenas de level — exige combinação de fatores para que a progressão pareça narrativa e não automática.</p>
-    <div class="rank-list">
-      <div class="rank-item">
-        <div class="rank-line"><div class="rank-dot"></div><div class="rank-connector"></div></div>
-        <div><div class="rank-name">🎓 Estudante da Academia</div><div class="rank-desc">Ponto de entrada. Tutorial, primeiros NPCs, jutsus básicos e missões introdutórias de Konoha.</div></div>
-      </div>
-      <div class="rank-item">
-        <div class="rank-line"><div class="rank-dot"></div><div class="rank-connector"></div></div>
-        <div><div class="rank-name">🟢 Genin</div><div class="rank-desc">Level mínimo + missões da academia + prova prática. Acesso a missões rank D e C, equipamentos básicos e primeiro elemento.</div></div>
-      </div>
-      <div class="rank-item">
-        <div class="rank-line"><div class="rank-dot"></div><div class="rank-connector"></div></div>
-        <div><div class="rank-name">🔵 Chunin</div><div class="rank-desc">Exame com prova prática + teórica + boss específico + reputação com a aldeia. Acesso a missões B e A, áreas mais perigosas, segundo elemento.</div></div>
-      </div>
-      <div class="rank-item">
-        <div class="rank-line"><div class="rank-dot"></div><div class="rank-connector"></div></div>
-        <div><div class="rank-name">🔴 Jonin</div><div class="rank-desc">Alta progressão em atributos, missões S e bosses avançados. Acesso a técnicas lendárias e dungeons de elite.</div></div>
-      </div>
-      <div class="rank-item">
-        <div class="rank-line"><div class="rank-dot"></div><div class="rank-connector"></div></div>
-        <div><div class="rank-name">⚫ ANBU / Especialização Avançada</div><div class="rank-desc">Caminho de especialização endgame. Requer missões secretas, exames especiais e alto domínio de jutsus.</div></div>
-      </div>
-      <div class="rank-item">
-        <div class="rank-line"><div class="rank-dot" style="background:var(--accent);box-shadow:0 0 8px var(--accent)"></div></div>
-        <div>
-          <div class="rank-name" style="color:var(--accent)">👑 Kage — Derrote o Lendário</div>
-          <div class="rank-desc">O título de Kage <strong>não é um rank fixo nem automático</strong> — é uma conquista de prestígio máximo obtida ao <strong>derrotar o Kage lendário em exercício</strong>, um boss poderoso inspirado nos personagens do anime. Cada aldeia tem seu próprio Kage lendário, e eles reaparecem periodicamente como eventos de mundo. O jogador que derrotar o boss assume o título da aldeia por um <strong>período de tempo a definir</strong> — enquanto durar, colhe todos os privilégios do cargo.</div>
-          <div style="margin-top:1rem;display:flex;flex-direction:column;gap:0.5rem">
-            <div style="font-size:0.82rem;color:var(--muted);display:flex;align-items:flex-start;gap:0.5rem"><span style="color:var(--accent);flex-shrink:0">▸</span><span><strong style="color:var(--text)">Bosses do anime como guardiões</strong> — Tsunade (Konoha), Raikage (Kumo), Tsuchikage (Iwa), Gaara (Suna), Mizukage (Kiri) e outros Kages lendários defendem o título de cada aldeia</span></div>
-            <div style="font-size:0.82rem;color:var(--muted);display:flex;align-items:flex-start;gap:0.5rem"><span style="color:var(--accent);flex-shrink:0">▸</span><span><strong style="color:var(--text)">Nível escalável</strong> — o boss adapta seus atributos e técnicas ao nível do jogador que o desafia, tornando o combate sempre justo e desafiador independentemente da progressão</span></div>
-            <div style="font-size:0.82rem;color:var(--muted);display:flex;align-items:flex-start;gap:0.5rem"><span style="color:var(--accent);flex-shrink:0">▸</span><span><strong style="color:var(--text)">Aparição periódica</strong> — o boss reaparece em intervalos regulares (período a definir), criando um evento de mundo aguardado por todos os jogadores da aldeia</span></div>
-            <div style="font-size:0.82rem;color:var(--muted);display:flex;align-items:flex-start;gap:0.5rem"><span style="color:var(--accent);flex-shrink:0">▸</span><span><strong style="color:var(--text)">Título temporário</strong> — quem derrotar assume o título de Kage da aldeia por um período a definir; ao expirar, o boss retorna e qualquer ninja pode disputar novamente</span></div>
-            <div style="font-size:0.82rem;color:var(--muted);display:flex;align-items:flex-start;gap:0.5rem"><span style="color:var(--accent);flex-shrink:0">▸</span><span><strong style="color:var(--text)">Um Kage por aldeia</strong> — cada cidade mantém seu próprio guardião e seu próprio ciclo de desafio, independentemente das demais</span></div>
-            <div style="font-size:0.82rem;color:var(--muted);display:flex;align-items:flex-start;gap:0.5rem"><span style="color:var(--accent);flex-shrink:0">▸</span><span><strong style="color:var(--text)">Privilégios exclusivos</strong> — o Kage ativo tem acesso a áreas, títulos, skins e conteúdos reservados durante o mandato</span></div>
-          </div>
-          <div style="margin-top:0.9rem;padding:0.6rem 0.85rem;background:color-mix(in oklch,var(--accent) 8%,transparent);border-radius:0.4rem;border-left:2px solid var(--accent)">
-            <div style="font-size:0.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.3rem">Kages lendários por aldeia</div>
-            <div style="display:flex;flex-wrap:wrap;gap:0.4rem">
-              <span style="font-size:0.8rem;padding:0.2rem 0.55rem;background:color-mix(in oklch,var(--accent) 12%,transparent);border-radius:9999px;color:var(--accent)">🔥 Tsunade — Konoha</span>
-              <span style="font-size:0.8rem;padding:0.2rem 0.55rem;background:color-mix(in oklch,var(--accent) 12%,transparent);border-radius:9999px;color:var(--accent)">⚡ Raikage — Kumo</span>
-              <span style="font-size:0.8rem;padding:0.2rem 0.55rem;background:color-mix(in oklch,var(--accent) 12%,transparent);border-radius:9999px;color:var(--accent)">🪨 Tsuchikage — Iwa</span>
-              <span style="font-size:0.8rem;padding:0.2rem 0.55rem;background:color-mix(in oklch,var(--accent) 12%,transparent);border-radius:9999px;color:var(--accent)">🏜️ Gaara — Suna</span>
-              <span style="font-size:0.8rem;padding:0.2rem 0.55rem;background:color-mix(in oklch,var(--accent) 12%,transparent);border-radius:9999px;color:var(--accent)">💧 Mizukage — Kiri</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- LOOP PRINCIPAL -->
-  <div class="section">
-    <div class="section-label"><div class="dot"></div><h2>Loop Principal do Jogador</h2></div>
-    <p>O ciclo de gameplay que mantém o jogador engajado do early ao endgame — com direção clara sem perder a liberdade de build.</p>
-    <div class="loop">
-      <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Missões</strong>Receber e completar missões na aldeia</div></div>
-      <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Treino</strong>Evoluir atributos e subir de level</div></div>
-      <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Recursos</strong>Ganhar dinheiro e materiais</div></div>
-      <div class="step"><div class="step-num">4</div><div class="step-text"><strong>Jutsus</strong>Aprender e dominar novas técnicas</div></div>
-      <div class="step"><div class="step-num">5</div><div class="step-text"><strong>Equipamentos</strong>Melhorar itens e armadura</div></div>
-      <div class="step"><div class="step-num">6</div><div class="step-text"><strong>Rank</strong>Avançar na hierarquia ninja</div></div>
-      <div class="step"><div class="step-num">7</div><div class="step-text"><strong>Exploração</strong>Avançar em áreas mais perigosas</div></div>
-      <div class="step"><div class="step-num">8</div><div class="step-text"><strong>Bosses</strong>Derrotar e desbloquear conteúdo novo</div></div>
-      <div class="step"><div class="step-num">9</div><div class="step-text"><strong>Especialização</strong>Novos elementos e builds</div></div>
-      <div class="step"><div class="step-num">10</div><div class="step-text"><strong>Kage</strong>Derrotar o lendário e reivindicar o título da aldeia</div></div>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- MVP -->
-  <div class="section">
-    <div class="section-label"><div class="dot"></div><h2>Escopo do MVP</h2></div>
-    <p>Para não comprometer a qualidade com escopo excessivo, o MVP foca em uma base sólida e bem terminada antes de expandir para outros sistemas.</p>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Área</th><th>MVP — O que entra</th><th>Pós-MVP — O que fica para depois</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Aldeia</strong></td><td>Konoha completa</td><td>Suna, Kiri, Kumo, Iwa e aldeias menores</td></tr>
-          <tr><td><strong>Ranks</strong></td><td>Academia → Genin → Chunin (→ Jonin inicial)</td><td>ANBU, Kage (boss periódico escalável), especializações avançadas</td></tr>
-          <tr><td><strong>Elementos</strong></td><td>5 elementos base com jutsus iniciais</td><td>Kekkei Genkai, combinações especiais</td></tr>
-          <tr><td><strong>Atributos</strong></td><td>Nível, Treino e Mentalidade</td><td>Traços de clã, talentos passivos</td></tr>
-          <tr><td><strong>Profissões</strong></td><td>Pesca, Lenhador, Herbalismo, Mineração</td><td>Ferreiro, Alquimista, Alfaiate, Cartógrafo</td></tr>
-          <tr><td><strong>Missões</strong></td><td>Academia, rank D, C e B</td><td>Rank A, S, missões de história completa</td></tr>
-          <tr><td><strong>Dungeons</strong></td><td>2 a 4 dungeons iniciais</td><td>Dungeons avançadas, Raids</td></tr>
-          <tr><td><strong>Bosses</strong></td><td>Bosses locais + 1 boss de evento</td><td>Bijuus, Otsutsuki, Kages lendários periódicos</td></tr>
-          <tr><td><strong>PvP</strong></td><td>—</td><td>Arena, torneio Chunin, guerra de aldeias</td></tr>
-          <tr><td><strong>Clãs</strong></td><td>—</td><td>Clãs jogáveis com Kekkei Genkai</td></tr>
-          <tr><td><strong>Cliente</strong></td><td>UI básica: missões, atributos, jutsus, profissões</td><td>Interface expandida com telas sociais</td></tr>
+          <tr><td><strong>Aldeia</strong></td><td>Konoha</td></tr>
+          <tr><td><strong>Ranks</strong></td><td>Academia até Chunin ou Jonin inicial</td></tr>
+          <tr><td><strong>Elementos</strong></td><td>5 básicos</td></tr>
+          <tr><td><strong>Atributos</strong></td><td>Level, treino, mentalidade e chakra</td></tr>
+          <tr><td><strong>Missões</strong></td><td>Academia, D, C e B</td></tr>
+          <tr><td><strong>Bosses</strong></td><td>Bosses locais, invocações corrompidas e 1 boss de evento</td></tr>
         </tbody>
       </table>
     </div>
   </div>
-
-  <div class="divider"></div>
-
-  <!-- ROADMAP -->
-  <div class="section">
-    <div class="section-label"><div class="dot"></div><h2>Roadmap do Projeto</h2></div>
-    <p>O projeto é dividido em fases sequenciais. Cada fase só começa quando a anterior estiver sólida o suficiente para sustentar a próxima.</p>
-    <div class="grid">
-      <div class="card">
-        <div class="card-icon">📁</div>
-        <div class="card-title">Fase 0 — Base e Documentação <span class="tag tag-baixa" style="margin-left:0.3rem">Em andamento</span></div>
-        <div class="card-body">Consolidar toda a documentação. Organizar pastas, criar README, separar documentos por sistema, definir roadmap e backlog.</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">🎨</div>
-        <div class="card-title">Fase 1 — Design Fechado do MVP</div>
-        <div class="card-body">Definir atributos e fórmulas, árvore de elementos, lista de jutsus, itens básicos, economia inicial, missões e mapa de Konoha.</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">🔧</div>
-        <div class="card-title">Fase 2 — Protótipo Técnico</div>
-        <div class="card-body">Base TFS 1.4.2 + OTCv8. Implementar personagem, atributos, primeiro elemento, 3 jutsus, 3 missões, 1 profissão e 1 boss simples.</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">🏯</div>
-        <div class="card-title">Fase 3 — MVP Jogável</div>
-        <div class="card-body">Konoha funcional, Academia, promoção Genin, missões D e C, 5 elementos, economia, profissões, 2 dungeons, 3 bosses e evento semanal.</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">🌍</div>
-        <div class="card-title">Fase 4 — Expansão</div>
-        <div class="card-body">Promoção Chunin, segundo elemento, casas, mercado entre jogadores, invocações, eventos sazonais e primeira aldeia secundária.</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">⚡</div>
-        <div class="card-title">Fase 5 — Endgame</div>
-        <div class="card-body">Jonin, ANBU, Bijuus, conteúdo Otsutsuki, guerra entre vilas, sistema de clãs, Raids e Kages lendários periódicos por aldeia.</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- PRINCÍPIOS -->
-  <div class="section">
-    <div class="section-label"><div class="dot"></div><h2>Princípios de Design</h2></div>
-    <p>Toda nova mecânica deve ser testada contra estes princípios antes de entrar no MVP. Eles funcionam como filtro de decisão do projeto.</p>
-    <div class="grid">
-      <div class="card"><div class="card-icon">🎯</div><div class="card-title">Progressão antes de fanservice</div><div class="card-body">Sistemas sólidos valem mais que referências ao anime sem profundidade.</div></div>
-      <div class="card"><div class="card-icon">🆔</div><div class="card-title">Identidade própria primeiro</div><div class="card-body">O jogador constrói seu ninja — não escolhe um arquétipo fixo ou personagem pronto.</div></div>
-      <div class="card"><div class="card-icon">⚖️</div><div class="card-title">Liberdade com limites saudáveis</div><div class="card-body">Builds diversas, mas com restrições que mantêm o balanceamento e a identidade de cada estilo.</div></div>
-      <div class="card"><div class="card-icon">📜</div><div class="card-title">Jutsus como conquista</div><div class="card-body">Técnicas são aprendidas por requisitos — não dadas automaticamente ao subir de nível.</div></div>
-      <div class="card"><div class="card-icon">💰</div><div class="card-title">Economia útil em todas as fases</div><div class="card-body">O dinheiro tem valor prático real no progresso — não é opcional ou irrelevante.</div></div>
-      <div class="card"><div class="card-icon">🌍</div><div class="card-title">Expansão gradual</div><div class="card-body">MVP sólido primeiro. Novas aldeias, clãs e sistemas são construídos sobre uma base funcionando.</div></div>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- BACKLOG RESUMO -->
-  <div class="section">
-    <div class="section-label"><div class="dot"></div><h2>Ideias em Aberto (Backlog)</h2></div>
-    <p>Ideias ainda não fechadas, reservadas para fases futuras ou para discussão antes de entrar no escopo.</p>
-    <div class="grid">
-      <div class="card"><div class="card-icon">🥷</div><div class="card-title">Gameplay</div><div class="card-body">Clãs jogáveis, traços iniciais, Kekkei Genkai, Genjutsu com mecânicas próprias, jutsus médicos, sistema de selamento, reputação por facção.</div></div>
-      <div class="card"><div class="card-icon">🗺️</div><div class="card-title">Mundo</div><div class="card-body">Aldeias secundárias com economia própria, territórios neutros, fronteiras com eventos de guerra, rotas comerciais, áreas secretas.</div></div>
-      <div class="card"><div class="card-icon">⚒️</div><div class="card-title">Profissões</div><div class="card-body">Fazendeiro, Alquimista, Ferreiro Ninja, Alfaiate, Cartógrafo, Caçador de Recompensas.</div></div>
-      <div class="card"><div class="card-icon">⚔️</div><div class="card-title">PvP</div><div class="card-body">Arena, duelo amistoso, Torneio Chunin, guerra de aldeias, caçada a renegados, sistema de recompensa por criminoso.</div></div>
-      <div class="card"><div class="card-icon">👥</div><div class="card-title">Social</div><div class="card-body">Casas de clã, guilds como times ninja, sensei e alunos, rankings por profissão.</div></div>
-      <div class="card"><div class="card-icon">💎</div><div class="card-title">Monetização Saudável</div><div class="card-body">Cosméticos, skins visuais de jutsu, decorações de casa, conveniências leves, passe sazonal sem pay-to-win.</div></div>
-    </div>
-    <div class="box" style="margin-top:1rem">
-      <div class="box-title">❓ Perguntas em Aberto</div>
-      <ul>
-        <li>O jogador escolhe aldeia no início ou começa sempre em Konoha?</li>
-        <li>Clã será cosmético, mecânico ou progressão profunda?</li>
-        <li>Terceiro elemento deve ser comum ou raro?</li>
-        <li>Invocações serão por contrato fixo ou escolha livre?</li>
-        <li>Casas serão instanciadas ou no mapa aberto?</li>
-        <li>PvP será central ou opcional?</li>
-        <li>Qual será o intervalo entre aparições do boss Kage? (diário, semanal, por evento?)</li>
-        <li>Por quanto tempo o título de Kage dura após a vitória?</li>
-        <li>O boss Kage poderá ser desafiado por mais de um jogador ao mesmo tempo (raid) ou é solo?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- LINKS DA DOCUMENTAÇÃO -->
-  <div class="section">
-    <div class="section-label"><div class="dot"></div><h2>Estrutura da Documentação</h2></div>
-    <p>Os documentos do projeto estão organizados por tema. Cada sistema tem seu próprio arquivo dentro da pasta <code>docs/</code>.</p>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Área</th><th>Documentos</th></tr></thead>
-        <tbody>
-          <tr><td><strong>📋 Conceito</strong></td><td>Visão geral (este arquivo), Estrutura original</td></tr>
-          <tr><td><strong>🌍 Mundo</strong></td><td>História do mundo, Aldeias e NPCs, Mapa e regiões</td></tr>
-          <tr><td><strong>👤 Personagem</strong></td><td>Criação de personagem, Sistema de chakra, Atributos, Builds</td></tr>
-          <tr><td><strong>🥋 Progressão</strong></td><td>Progressão, Ranks ninja, Elementos, Kekkei Genkai, Especializações, Jutsus, Maestria</td></tr>
-          <tr><td><strong>💰 Economia</strong></td><td>Missões, Clãs, Economia, Itens e raridade, Crafting e profissões, Dungeons e bosses, Eventos</td></tr>
-          <tr><td><strong>🛠️ Técnico</strong></td><td>Estrutura do servidor TFS 1.4.2, Estrutura do cliente OTCv8</td></tr>
-          <tr><td><strong>🧭 Planejamento</strong></td><td>Roadmap, Backlog de ideias, Princípios do projeto</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-</div><!-- /content -->
-
-<footer>
-  <strong>NarutoGame</strong> · Wiki do Projeto · <a href="https://github.com/nitroxbolter/NarutoGame" target="_blank" rel="noopener" style="color:var(--primary)">GitHub →</a>
-  &nbsp;·&nbsp; <a href="checklist.html" style="color:var(--primary)">Checklist →</a>
-</footer>
-
-<script>
-(function(){
-  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
-  let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
-  r.setAttribute('data-theme',d);
-  if(t) t.addEventListener('click',()=>{
-    d=d==='dark'?'light':'dark';
-    r.setAttribute('data-theme',d);
-    t.innerHTML=d==='dark'
-      ?'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
-      :'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
-  });
-})();
-</script>
-
+</div>
+<footer><strong>NarutoGame</strong> · Wiki do Projeto · <a href="https://github.com/nitroxbolter/NarutoGame" target="_blank" rel="noopener" style="color:var(--primary)">GitHub ↗</a></footer>
+<script>(function(){const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';r.setAttribute('data-theme',d);if(t)t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.textContent=d==='dark'?'◐':'◑';});})();</script>
 </body>
 </html>

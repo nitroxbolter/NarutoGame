@@ -3,133 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sistemas Base — NarutoGame Wiki</title>
+<title>Sistemas Base - NarutoGame Wiki</title>
 <link rel="stylesheet" href="layout.css">
 </head>
 <body>
-<nav class="nav">
-  <a href="index.html" class="nav-logo">
-    <svg viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="11" stroke="var(--primary)" stroke-width="1.5" opacity="0.3"/><circle cx="13" cy="13" r="6" fill="none" stroke="var(--primary)" stroke-width="2"/><circle cx="13" cy="13" r="2.5" fill="var(--primary)"/><path d="M13 6L14.8 9.5 13 8.2 11.2 9.5Z" fill="var(--primary)" opacity="0.8"/><path d="M20 13L16.5 14.8 17.8 13 16.5 11.2Z" fill="var(--primary)" opacity="0.8"/><path d="M13 20L11.2 16.5 13 17.8 14.8 16.5Z" fill="var(--primary)" opacity="0.8"/><path d="M6 13L9.5 11.2 8.2 13 9.5 14.8Z" fill="var(--primary)" opacity="0.8"/></svg>
-    NarutoGame
-  </a>
-  <div class="nav-links">
-    <a href="index.html">Início</a><a href="visao.html">Visão</a><a href="sistemas.html" class="active">Sistemas</a><a href="mundo.html">Mundo</a><a href="economia.html">Economia</a><a href="tecnico.html">Técnico</a>
-  </div>
-  <div class="nav-right"><button class="theme-btn" data-theme-toggle aria-label="tema"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div>
-</nav>
-<div class="page-header">
-  <div class="breadcrumb"><a href="index.html">Wiki</a><span>/</span><span>Sistemas Base</span></div>
-  <div class="badge">⚙️ Fase 2 — Mecânicas Centrais</div>
-  <h1>Sistemas <em>Base</em></h1>
-  <p class="lead">Atributos, ranks, elementos e jutsus — os pilares mecânicos que sustentam toda a progressão do servidor.</p>
-</div>
+<nav class="nav"><a href="index.html" class="nav-logo">NarutoGame</a><div class="nav-links"><a href="index.html">Início</a><a href="visao.html">Visão</a><a href="sistemas.html" class="active">Sistemas</a><a href="mundo.html">Mundo</a><a href="economia.html">Economia</a><a href="tecnico.html">Técnico</a></div><div class="nav-right"><button class="theme-btn" data-theme-toggle aria-label="tema">◐</button></div></nav>
+<div class="page-header"><div class="breadcrumb"><a href="index.html">Wiki</a><span>/</span><span>Sistemas Base</span></div><div class="badge">⚙️ Fase 2 - Mecânicas Centrais</div><h1>Sistemas <em>Base</em></h1><p class="lead">Atributos, ranks, elementos e jutsus são os pilares mecânicos do servidor.</p></div>
 <div class="content">
-  <div class="section">
-    <div class="section-label"><div class="dot"></div><h2>Atributos Principais</h2></div>
-    <p>A evolução gira em torno de três eixos independentes que se combinam para criar builds diversas.</p>
-    <div class="grid">
-      <div class="card"><div class="card-icon">⬆️</div><div class="card-title">Nível</div><div class="card-body">Vida máxima · Chakra base · Força geral · Resistência · Requisitos de progressão.</div></div>
-      <div class="card"><div class="card-icon">💪</div><div class="card-title">Treino</div><div class="card-body">Desenvolvimento físico. Taijutsu, dano físico, corpo a corpo, armas ninja e resistência corporal.</div></div>
-      <div class="card"><div class="card-icon">🧠</div><div class="card-title">Mentalidade</div><div class="card-body">Domínio de chakra. Poder de ninjutsu, chakra extra, eficiência de jutsus e dano elemental.</div></div>
-    </div>
-    <div class="box">
-      <div class="box-title">🔀 Combinações de Build</div>
-      <ul>
-        <li><strong>Level alto + Treino alto</strong> → Ninja resistente com bom combate físico</li>
-        <li><strong>Level alto + Mentalidade alta</strong> → Ninja forte em jutsus e chakra</li>
-        <li><strong>Treino alto + Mentalidade média</strong> → Híbrido funcional</li>
-        <li><strong>Mentalidade muito alta + elementos raros</strong> → Especialista em ninjutsu avançado</li>
-      </ul>
-    </div>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <div class="section-label"><div class="dot"></div><h2>Progressão de Rank Ninja</h2></div>
-    <p>A promoção exige combinação de fatores para parecer uma carreira narrativa real, não só level.</p>
-    <div class="box" style="margin-bottom:1.25rem">
-      <div class="box-title">📋 Requisitos de promoção</div>
-      <ul>
-        <li>Level mínimo atingido</li><li>Missões concluídas por categoria</li>
-        <li>Prova prática de combate</li><li>Prova teórica ou escolha de respostas</li>
-        <li>Bosses específicos derrotados</li><li>Reputação mínima com a aldeia</li>
-      </ul>
-    </div>
-    <div class="box">
-      <div class="box-title">🥋 Hierarquia ninja</div>
-      <div class="rank-list">
-        <div class="rank-item"><div class="rank-line"><div class="rank-dot"></div><div class="rank-connector"></div></div><div><div class="rank-name">Estudante da Academia</div><div class="rank-desc">Início da jornada. Tutorial, habilidades básicas, primeiras missões simples.</div></div></div>
-        <div class="rank-item"><div class="rank-line"><div class="rank-dot"></div><div class="rank-connector"></div></div><div><div class="rank-name">Genin</div><div class="rank-desc">Primeiro rank de campo. Missões D e C, áreas iniciais, primeiros jutsus elementais.</div></div></div>
-        <div class="rank-item"><div class="rank-line"><div class="rank-dot"></div><div class="rank-connector"></div></div><div><div class="rank-name">Chunin</div><div class="rank-desc">Exame de seleção. Missões B, acesso a zonas intermediárias e técnicas avançadas.</div></div></div>
-        <div class="rank-item"><div class="rank-line"><div class="rank-dot"></div><div class="rank-connector"></div></div><div><div class="rank-name">Jonin</div><div class="rank-desc">Elite ninja. Missões A e S, áreas perigosas, segundo elemento e técnicas raras.</div></div></div>
-        <div class="rank-item"><div class="rank-line"><div class="rank-dot" style="background:var(--accent)"></div><div class="rank-connector"></div></div><div><div class="rank-name">ANBU / Especialização Avançada</div><div class="rank-desc">Caminho alternativo de alto nível. Técnicas secretas, missões especiais.</div></div></div>
-        <div class="rank-item"><div class="rank-line"><div class="rank-dot" style="background:var(--accent)"></div></div><div><div class="rank-name">Kage / Equivalente Endgame</div><div class="rank-desc">Topo da hierarquia. Conteúdo narrativo final e prestígio máximo.</div></div></div>
-      </div>
-    </div>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <div class="section-label"><div class="dot"></div><h2>Sistema de Elementos</h2></div>
-    <p>A afinidade elemental define a primeira árvore de jutsus e o estilo visual inicial do ninja.</p>
-    <div class="grid">
-      <div class="card"><div class="card-icon">🔥</div><div class="card-title">Katon <span class="tag tag-fire">Fogo</span></div><div class="card-body">Técnicas ofensivas de área. Alta pressão, queimaduras, dano contínuo.</div></div>
-      <div class="card"><div class="card-icon">💧</div><div class="card-title">Suiton <span class="tag tag-water">Água</span></div><div class="card-body">Controle, mobilidade e suporte. Ondas, aprisionamento e utilidade.</div></div>
-      <div class="card"><div class="card-icon">⚡</div><div class="card-title">Raiton <span class="tag tag-lightning">Raio</span></div><div class="card-body">Velocidade e penetração. Paralisia, dano instantâneo e alcance.</div></div>
-      <div class="card"><div class="card-icon">🪨</div><div class="card-title">Doton <span class="tag tag-earth">Terra</span></div><div class="card-body">Defesa e armadilhas. Alta resistência, controle de terreno.</div></div>
-      <div class="card"><div class="card-icon">🌀</div><div class="card-title">Fuuton <span class="tag tag-wind">Vento</span></div><div class="card-body">Corte e alcance. Dano em linha, redução de defesa, mobilidade.</div></div>
-    </div>
-    <div class="box">
-      <div class="box-title">📚 Regras de aprendizado de novos elementos</div>
-      <ul>
-        <li><strong>1º elemento</strong> — escolhido no início, fácil de desenvolver</li>
-        <li><strong>2º elemento</strong> — exige rank mínimo, missão especial e treinamento dedicado</li>
-        <li><strong>3º elemento</strong> — conteúdo avançado e raro, disponível em endgame</li>
-        <li><strong>Combinações especiais</strong> — kekkei genkai reservado para expansão futura</li>
-      </ul>
-    </div>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <div class="section-label"><div class="dot"></div><h2>Sistema de Jutsus</h2></div>
-    <p>Jutsus não são entregues automaticamente. O jogador precisa aprender, desbloquear, treinar e dominar cada técnica.</p>
-    <div class="box">
-      <div class="box-title">📋 Requisitos por jutsu</div>
-      <ul>
-        <li>Nível mínimo · Rank ninja mínimo · Elemento necessário</li>
-        <li>Mentalidade mínima · Missão específica concluída</li>
-        <li>Mestre NPC ou pergaminho · Custo em dinheiro ou recursos</li>
-      </ul>
-    </div>
-    <div class="box">
-      <div class="box-title">🏆 Progressão de domínio</div>
-      <ul>
-        <li><strong>Aprendido</strong> — técnica desbloqueada com poder base</li>
-        <li><strong>Treinado</strong> — melhora dano e reduz custo de chakra</li>
-        <li><strong>Aperfeiçoado</strong> — aumenta alcance e efeitos secundários</li>
-        <li><strong>Mestre</strong> — potencial máximo, tempo de recarga reduzido</li>
-      </ul>
-    </div>
-    <div class="grid">
-      <div class="card"><div class="card-icon">⚔️</div><div class="card-title">Ninjutsu Ofensivo</div><div class="card-body">Técnicas de ataque elemental e não-elemental. Dano direto ou em área.</div></div>
-      <div class="card"><div class="card-icon">🛡️</div><div class="card-title">Ninjutsu Defensivo</div><div class="card-body">Barreiras, escudos de chakra e técnicas de absorção de dano.</div></div>
-      <div class="card"><div class="card-icon">💨</div><div class="card-title">Mobilidade</div><div class="card-body">Teleporte, velocidade, esquiva e movimentos especiais.</div></div>
-      <div class="card"><div class="card-icon">🌀</div><div class="card-title">Utilitários</div><div class="card-body">Suporte, debuffs, cura e controle de campo.</div></div>
-      <div class="card"><div class="card-icon">👁️</div><div class="card-title">Genjutsu</div><div class="card-body">Ilusões, confusão e controle mental.</div></div>
-      <div class="card"><div class="card-icon">🥊</div><div class="card-title">Taijutsu Especial</div><div class="card-body">Combos físicos avançados e estilos únicos corporais.</div></div>
-    </div>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <div class="section-label"><div class="dot"></div><h2>Estilos de Combate</h2></div>
-    <div class="grid">
-      <div class="card"><div class="card-icon">👊</div><div class="card-title">Ninja Físico</div><div class="card-body">Alto Treino. Taijutsu, armas ninja, pressão corpo a corpo e alta resistência.</div></div>
-      <div class="card"><div class="card-icon">🌊</div><div class="card-title">Ninja Elemental</div><div class="card-body">Alta Mentalidade. Chakra abundante, combos de ninjutsu e dano elemental escalado.</div></div>
-      <div class="card"><div class="card-icon">⚡</div><div class="card-title">Ninja Híbrido</div><div class="card-body">Equilíbrio entre dano físico e técnicas. Versátil e adaptável.</div></div>
-      <div class="card"><div class="card-icon">🎯</div><div class="card-title">Ninja Tático</div><div class="card-body">Utilidade, controle, debuffs e movimentação. Difícil de matar.</div></div>
-      <div class="card"><div class="card-icon">💎</div><div class="card-title">Ninja Especialista</div><div class="card-body">Um único elemento ao máximo com altissíma eficiência.</div></div>
-      <div class="card"><div class="card-icon">🔄</div><div class="card-title">Ninja Versátil</div><div class="card-body">Múltiplos elementos com poder moderado. Responde a qualquer situação.</div></div>
-    </div>
-  </div>
+<div class="section"><div class="section-label"><div class="dot"></div><h2>Atributos Principais</h2></div><div class="grid"><div class="card"><div class="card-icon">⬆️</div><div class="card-title">Nível</div><div class="card-body">Base geral de progresso, vida, chakra e acesso a conteúdo.</div></div><div class="card"><div class="card-icon">💪</div><div class="card-title">Treino</div><div class="card-body">Desenvolvimento físico, taijutsu e resistência corporal.</div></div><div class="card"><div class="card-icon">🧠</div><div class="card-title">Mentalidade</div><div class="card-body">Domínio de chakra, ninjutsu, elementos e jutsus avançados.</div></div></div></div>
+<div class="divider"></div>
+<div class="section"><div class="section-label"><div class="dot"></div><h2>Progressão de Rank Ninja</h2></div><div class="box"><div class="box-title">📋 Requisitos de promoção</div><ul><li>Level mínimo atingido.</li><li>Missões concluídas por categoria.</li><li>Prova prática de combate.</li><li>Prova teórica ou escolha de respostas.</li><li>Bosses específicos derrotados.</li><li>Reputação mínima com a aldeia.</li></ul></div></div>
+<div class="divider"></div>
+<div class="section"><div class="section-label"><div class="dot"></div><h2>Sistema de Elementos</h2></div><div class="grid"><div class="card"><div class="card-icon">🔥</div><div class="card-title">Katon</div><div class="card-body">Fogo, pressão e dano contínuo.</div></div><div class="card"><div class="card-icon">💧</div><div class="card-title">Suiton</div><div class="card-body">Água, controle e utilidade.</div></div><div class="card"><div class="card-icon">⚡</div><div class="card-title">Raiton</div><div class="card-body">Raio, velocidade e perfuração.</div></div><div class="card"><div class="card-icon">🪨</div><div class="card-title">Doton</div><div class="card-body">Terra, defesa e armadilhas.</div></div><div class="card"><div class="card-icon">🌀</div><div class="card-title">Fuuton</div><div class="card-body">Vento, corte e alcance.</div></div></div></div>
+<div class="divider"></div>
+<div class="section"><div class="section-label"><div class="dot"></div><h2>Sistema de Jutsus</h2></div><div class="box"><div class="box-title">📋 Requisitos por jutsu</div><ul><li>Nível mínimo, rank ninja mínimo e elemento necessário.</li><li>Mentalidade mínima, missão específica ou mestre NPC.</li><li>Custo em dinheiro, pergaminho ou materiais.</li></ul></div></div>
 </div>
-<footer><strong>NarutoGame</strong> · Wiki do Projeto · <a href="https://github.com/nitroxbolter/NarutoGame" target="_blank" rel="noopener" style="color:var(--primary)">GitHub →</a></footer>
-<script>(function(){const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';r.setAttribute('data-theme',d);if(t)t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.innerHTML=d==='dark'?'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>':'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';});})();</script>
-</body></html>
+<footer><strong>NarutoGame</strong> · Wiki do Projeto · <a href="https://github.com/nitroxbolter/NarutoGame" target="_blank" rel="noopener" style="color:var(--primary)">GitHub ↗</a></footer>
+</body>
+</html>
