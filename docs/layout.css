@@ -122,6 +122,23 @@ td strong{color:var(--text)}
 .checklist label{display:flex;align-items:flex-start;gap:0.6rem;color:var(--muted);font-size:0.9rem}
 .checklist input{margin-top:0.23rem}
 .checklist-list{display:flex;flex-direction:column;gap:0.6rem}
+.panel{background:linear-gradient(180deg,color-mix(in oklch,var(--surface) 82%,transparent),var(--surface));border:1px solid var(--border);border-radius:1.25rem;padding:1.15rem 1.2rem;box-shadow:var(--shadow)}
+.panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:0.8rem}
+.panel-title{display:flex;flex-direction:column;gap:0.25rem}
+.panel-kicker{font-size:0.7rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary)}
+.panel-title h2{font-family:var(--font-d);font-size:var(--flg);font-weight:800;letter-spacing:-0.01em}
+.panel-meta{font-size:0.75rem;color:var(--muted);border:1px solid var(--border);padding:0.3rem 0.65rem;border-radius:var(--rf);text-transform:uppercase;letter-spacing:0.05em;white-space:nowrap}
+.panel-body{display:grid;gap:1rem}
+.progress-shell{display:grid;gap:0.65rem}
+.progress-top{display:flex;align-items:baseline;justify-content:space-between;gap:1rem}
+.progress-top strong{font-size:0.98rem}
+.progress-top span{font-variant-numeric:tabular-nums;color:var(--primary);font-weight:800}
+.progress-track{height:16px;background:var(--surface-off);border:1px solid var(--border);border-radius:999px;overflow:hidden}
+.progress-track span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--primary),var(--primary-h));box-shadow:0 0 20px color-mix(in oklch,var(--primary) 35%,transparent);transition:width 220ms ease}
+.progress-note{font-size:0.82rem;color:var(--muted)}
+.checklist-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:0.7rem}
+.check-card{background:var(--surface);border:1px solid var(--border);border-radius:0.9rem;padding:0.9rem 1rem;color:var(--muted);font-size:0.88rem;line-height:1.5}
+.check-card strong{color:var(--text)}
 
 footer{border-top:1px solid var(--border);padding:1.5rem 2rem;text-align:center;color:var(--muted);font-size:var(--fs)}
 footer strong{color:var(--primary)}
@@ -133,4 +150,7 @@ footer strong{color:var(--primary)}
   .content{padding:0 1rem 3rem}
   .grid{grid-template-columns:1fr}
   .progress-wrap{padding:0 1rem}
+  .panel{padding:1rem}
+  .panel-head{flex-direction:column}
+  .panel-meta{align-self:flex-start}
 }
