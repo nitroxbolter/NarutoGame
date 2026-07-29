@@ -8,9 +8,20 @@
 </head>
 <body>
 <nav class="nav">
-  <a href="index.html" class="nav-logo"><svg viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="11" stroke="var(--primary)" stroke-width="1.5" opacity="0.3"/><circle cx="13" cy="13" r="6" fill="none" stroke="var(--primary)" stroke-width="2"/><circle cx="13" cy="13" r="2.5" fill="var(--primary)"/></svg>NarutoGame</a>
-  <div class="nav-links"><a href="index.html">Inicio</a><a href="visao-geral.html" class="active">Visão Geral</a><a href="sistemas.html">Sistemas</a><a href="mundo.html">Mundo</a><a href="economia.html">Economia</a><a href="tecnico.html">Técnico</a></div>
-  <div class="nav-right"><button class="theme-btn" data-theme-toggle aria-label="tema">◐</button></div>
+  <div class="nav-logo">NarutoGame</div>
+  <div class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="visao-geral.html" class="active">Visão Geral</a>
+    <a href="mundo.html">Mundo</a>
+    <a href="personagem.html">Personagem</a>
+    <a href="equipamentos.html">Equipamentos</a>
+    <a href="economia.html">Economia</a>
+    <a href="missoes.html">Missoes</a>
+    <a href="bosses.html">Bosses</a>
+    <a href="dungeons.html">Dungeons</a>
+    <a href="arquitetura.html">Arquitetura</a>
+  </div>
+  <button class="theme-btn" data-theme-toggle aria-label="tema">Tema</button>
 </nav>
 <div class="page-header">
   <div class="breadcrumb"><a href="index.html">Wiki</a><span>/</span><span>Visão Geral</span></div>
@@ -23,7 +34,7 @@
     <div class="section-label"><div class="dot"></div><h2>A Proposta Central</h2></div>
     <p>O jogador cria um ninja original dentro do universo de Naruto. A jornada é autoral, mas apoiada em elementos clássicos como Konoha, Exame Chunin, ANBU, Sannin e Hokage.</p>
     <div class="grid">
-      <div class="card"><div class="card-icon">❌</div><div class="card-title">Servidores comuns</div><div class="card-body">"Eu sou o Naruto" - o personagem vem pronto e a build já nasce fechada.</div></div>
+      <div class="card"><div class="card-icon">✖</div><div class="card-title">Servidores comuns</div><div class="card-body">"Eu sou o Naruto" - o personagem vem pronto e a build já nasce fechada.</div></div>
       <div class="card"><div class="card-icon">✅</div><div class="card-title">Este servidor</div><div class="card-body">"Eu sou um ninja do meu clã" - com elementos, treino, jutsus e escolhas próprias.</div></div>
       <div class="card"><div class="card-icon">⚡</div><div class="card-title">O resultado</div><div class="card-body">Mais longevidade, mais diversidade de builds e mais espaço para progressão e economia.</div></div>
     </div>
@@ -38,31 +49,22 @@
         <li><strong>Evolução real</strong> de iniciante para elite ninja.</li>
         <li><strong>Liberdade</strong> para escolher o estilo de combate.</li>
         <li><strong>Descoberta gradual</strong> de técnicas mais avançadas.</li>
-        <li><strong>Valor no treinamento</strong>, não só no level.</li>
-        <li><strong>Recompensa</strong> por dedicação, especialização e planejamento.</li>
-        <li><strong>Imersão</strong> em uma vila ninja viva, com missões e ameaças globais.</li>
+        <li><strong>Sentido de mundo</strong> com vilas, nações e política.</li>
       </ul>
     </div>
   </div>
   <div class="divider"></div>
   <div class="section">
-    <div class="section-label"><div class="dot"></div><h2>Escopo Inicial</h2></div>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Área</th><th>MVP</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Aldeia</strong></td><td>Konoha</td></tr>
-          <tr><td><strong>Ranks</strong></td><td>Academia até Chunin ou Jonin inicial</td></tr>
-          <tr><td><strong>Elementos</strong></td><td>5 básicos</td></tr>
-          <tr><td><strong>Atributos</strong></td><td>Level, treino, mentalidade e chakra</td></tr>
-          <tr><td><strong>Missões</strong></td><td>Academia, D, C e B</td></tr>
-          <tr><td><strong>Bosses</strong></td><td>Bosses locais, invocações corrompidas e 1 boss de evento</td></tr>
-        </tbody>
-      </table>
+    <div class="section-label"><div class="dot"></div><h2>Pilares de Design</h2></div>
+    <div class="grid">
+      <div class="card"><div class="card-title">Progressão por mérito</div><div class="card-desc">Treino, ranks, missões e eventos fazem a progressão andar.</div></div>
+      <div class="card"><div class="card-title">Build de personagem</div><div class="card-desc">Chakra, elemento, skills, atributos, equipamentos e promoção formam a identidade.</div></div>
+      <div class="card"><div class="card-title">Lore expansível</div><div class="card-desc">A linha principal começa simples, mas o mundo cresce com atos, bosses e guerras.</div></div>
+      <div class="card"><div class="card-title">Economia viva</div><div class="card-desc">Mercado, shop, craft e loot precisam se alimentar entre si.</div></div>
     </div>
   </div>
 </div>
-<footer><strong>NarutoGame</strong> · Wiki do Projeto · <a href="https://github.com/nitroxbolter/NarutoGame" target="_blank" rel="noopener" style="color:var(--primary)">GitHub ↗</a></footer>
-<script>(function(){const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';r.setAttribute('data-theme',d);if(t)t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.textContent=d==='dark'?'◐':'◑';});})();</script>
+<footer>NarutoGame · Wiki do Projeto</footer>
+<script>(function(){const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';r.setAttribute('data-theme',d);if(t)t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.textContent=d==='dark'?'Tema':'Tema';});})();</script>
 </body>
 </html>
