@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checklist — Naruto Game Docs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root,[data-theme="light"]{
+  --bg:#f7f6f2;--surface:#f9f8f5;--surface-2:#fbfbf9;
+  --border:#d4d1ca;--divider:#dcd9d5;
+  --text:#28251d;--muted:#7a7974;--faint:#bab9b4;
+  --primary:#01696f;--primary-h:#0c4e54;--primary-hl:#cedcd8;
+  --orange:#da7101;--orange-hl:#e7d7c4;
+  --gold:#d19900;--gold-hl:#e9e0c6;
+  --success:#437a22;--success-hl:#d4dfcc;
+  --error:#a12c7b;--error-hl:#e0ced7;
+  --blue:#006494;--blue-hl:#c6d8e4;
+  --purple:#7a39bb;--purple-hl:#dacfde;
+  --shadow-sm:0 1px 3px oklch(0.2 0.01 80/0.08);
+  --shadow-md:0 4px 16px oklch(0.2 0.01 80/0.1);
+  --r:0.5rem;
+}
+[data-theme="dark"]{
+  --bg:#171614;--surface:#1c1b19;--surface-2:#201f1d;
+  --border:#393836;--divider:#262523;
+  --text:#cdccca;--muted:#797876;--faint:#5a5957;
+  --primary:#4f98a3;--primary-h:#227f8b;--primary-hl:#313b3b;
+  --orange:#fdab43;--orange-hl:#564b3e;
+  --gold:#e8af34;--gold-hl:#4d4332;
+  --success:#6daa45;--success-hl:#3a4435;
+  --error:#d163a7;--error-hl:#4c3d46;
+  --blue:#5591c7;--blue-hl:#3a4550;
+  --purple:#a86fdf;--purple-hl:#4e4652;
+  --shadow-sm:0 1px 3px oklch(0 0 0/0.25);
+  --shadow-md:0 4px 16px oklch(0 0 0/0.35);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{
+  font-family:'Inter',sans-serif;
+  font-size:clamp(0.9rem,0.85rem+0.25vw,1rem);
+  background:var(--bg);color:var(--text);
+  min-height:100dvh;line-height:1.6;
+  transition:background .2s,color .2s;
+}
+
+/* ── HEADER ── */
+header{
+  position:sticky;top:0;z-index:100;
+  background:var(--surface);border-bottom:1px solid var(--border);
+  padding:.75rem 1.25rem;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;
+  box-shadow:var(--shadow-sm);
+}
+.logo{display:flex;align-items:center;gap:.6rem}
+.logo svg{flex-shrink:0}
+.logo-text{font-weight:700;font-size:.95rem;letter-spacing:-.01em}
+.logo-sub{font-size:.75rem;color:var(--muted);font-weight:400}
+.header-right{display:flex;align-items:center;gap:.75rem}
+#theme-toggle{
+  background:none;border:1px solid var(--border);cursor:pointer;
+  border-radius:var(--r);padding:.35rem .5rem;
+  color:var(--muted);transition:all .18s;
+}
+#theme-toggle:hover{border-color:var(--primary);color:var(--primary)}
+
+/* ── PROGRESS BAR GLOBAL ── */
+.global-progress{
+  background:var(--surface);border-bottom:1px solid var(--divider);
+  padding:.6rem 1.25rem;
+  display:flex;align-items:center;gap:1rem;
+}
+.progress-track{
+  flex:1;height:6px;background:var(--divider);
+  border-radius:99px;overflow:hidden;
+}
+.progress-fill{
+  height:100%;background:var(--primary);
+  border-radius:99px;transition:width .4s ease;
+  width:0%;
+}
+.progress-label{
+  font-size:.78rem;color:var(--muted);white-space:nowrap;
+  font-variant-numeric:tabular-nums;
+}
+.progress-pct{
+  font-size:.78rem;font-weight:600;color:var(--primary);
+  min-width:2.5rem;text-align:right;
+  font-variant-numeric:tabular-nums;
+}
+
+/* ── MAIN LAYOUT ── */
+main{
+  max-width:860px;margin:0 auto;
+  padding:1.5rem 1.25rem 4rem;
+}
+.page-title{
+  font-size:clamp(1.3rem,1rem+1.5vw,1.75rem);
+  font-weight:700;letter-spacing:-.02em;
+  margin-bottom:.25rem;
+}
+.page-sub{color:var(--muted);font-size:.875rem;margin-bottom:2rem}
+
+/* ── PHASE CARD ── */
+.phase{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:calc(var(--r)*1.5);margin-bottom:1rem;
+  box-shadow:var(--shadow-sm);overflow:hidden;
+}
+.phase-header{
+  display:flex;align-items:center;gap:.75rem;
+  padding:.85rem 1.1rem;
+  cursor:pointer;user-select:none;
+  border-bottom:1px solid transparent;
+  transition:background .15s;
+}
+.phase-header:hover{background:var(--surface-2)}
+.phase-header.open{border-bottom-color:var(--divider)}
+.phase-badge{
+  font-size:.7rem;font-weight:700;letter-spacing:.04em;
+  padding:.2rem .5rem;border-radius:99px;
+  text-transform:uppercase;white-space:nowrap;
+}
+.phase-title{font-weight:600;font-size:.95rem;flex:1}
+.phase-meta{font-size:.78rem;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.phase-arrow{
+  color:var(--muted);transition:transform .2s;
+  flex-shrink:0;
+}
+.phase-header.open .phase-arrow{transform:rotate(180deg)}
+
+.phase-mini-bar{
+  height:3px;width:100%;
+  background:var(--divider);
+}
+.phase-mini-fill{
+  height:3px;transition:width .4s ease;
+}
+
+/* phase colors */
+.phase-1 .phase-badge{background:var(--success-hl);color:var(--success)}
+.phase-1 .phase-mini-fill{background:var(--success)}
+.phase-2 .phase-badge{background:var(--primary-hl);color:var(--primary)}
+.phase-2 .phase-mini-fill{background:var(--primary)}
+.phase-3 .phase-badge{background:var(--orange-hl);color:var(--orange)}
+.phase-3 .phase-mini-fill{background:var(--orange)}
+.phase-4 .phase-badge{background:var(--gold-hl);color:var(--gold)}
+.phase-4 .phase-mini-fill{background:var(--gold)}
+.phase-5 .phase-badge{background:var(--blue-hl);color:var(--blue)}
+.phase-5 .phase-mini-fill{background:var(--blue)}
+.phase-6 .phase-badge{background:var(--purple-hl);color:var(--purple)}
+.phase-6 .phase-mini-fill{background:var(--purple)}
+
+/* ── ITEMS ── */
+.phase-body{padding:.5rem 0;display:none}
+.phase-body.open{display:block}
+
+.item{
+  display:flex;align-items:flex-start;gap:.75rem;
+  padding:.6rem 1.1rem;
+  transition:background .15s;
+  cursor:pointer;
+}
+.item:hover{background:var(--surface-2)}
+.item.done .item-label{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--faint)}
+.item.done .item-check{background:var(--primary);border-color:var(--primary)}
+.item.done .item-check::after{opacity:1}
+
+.item-check{
+  flex-shrink:0;width:18px;height:18px;margin-top:2px;
+  border:1.5px solid var(--border);
+  border-radius:4px;background:var(--surface-2);
+  position:relative;transition:all .15s;
+}
+.item-check::after{
+  content:'';
+  position:absolute;inset:0;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2 6l3 3 5-5' stroke='white' stroke-width='1.8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/10px no-repeat;
+  opacity:0;transition:opacity .12s;
+}
+
+.item-content{flex:1;min-width:0}
+.item-label{font-size:.875rem;line-height:1.45}
+.item-desc{font-size:.78rem;color:var(--muted);margin-top:.15rem;line-height:1.4}
+
+.item-tag{
+  font-size:.68rem;font-weight:600;padding:.15rem .4rem;
+  border-radius:99px;text-transform:uppercase;letter-spacing:.03em;
+  white-space:nowrap;flex-shrink:0;margin-top:2px;
+}
+.tag-done{background:var(--success-hl);color:var(--success)}
+.tag-priority{background:var(--error-hl);color:var(--error)}
+.tag-blocked{background:var(--faint);color:var(--bg)}
+
+.divider{height:1px;background:var(--divider);margin:.25rem 0}
+
+/* ── STATS ROW ── */
+.stats{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));
+  gap:.75rem;margin-bottom:1.75rem;
+}
+.stat{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--r);padding:.75rem;
+  box-shadow:var(--shadow-sm);
+}
+.stat-val{font-size:1.4rem;font-weight:700;letter-spacing:-.02em;line-height:1}
+.stat-lbl{font-size:.72rem;color:var(--muted);margin-top:.2rem;text-transform:uppercase;letter-spacing:.04em}
+
+/* ── ACTIONS ── */
+.actions{display:flex;gap:.5rem;margin-bottom:1.5rem;flex-wrap:wrap}
+.btn{
+  font-size:.8rem;font-weight:600;padding:.4rem .85rem;
+  border-radius:var(--r);border:1px solid var(--border);
+  cursor:pointer;background:var(--surface);color:var(--text);
+  transition:all .15s;
+}
+.btn:hover{border-color:var(--primary);color:var(--primary)}
+.btn-primary{
+  background:var(--primary);color:#fff;border-color:var(--primary);
+}
+.btn-primary:hover{background:var(--primary-h);border-color:var(--primary-h);color:#fff}
+
+/* ── FOOTER ── */
+footer{
+  text-align:center;padding:1.5rem;
+  font-size:.75rem;color:var(--faint);
+  border-top:1px solid var(--divider);
+}
+
+@media(max-width:520px){
+  header{padding:.6rem 1rem}
+  main{padding:1rem 1rem 3rem}
+  .stats{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-label="Naruto Game">
+      <circle cx="14" cy="14" r="13" stroke="var(--primary)" stroke-width="1.5"/>
+      <path d="M14 5 L17 11 L23 11 L18.5 15 L20.5 21 L14 17.5 L7.5 21 L9.5 15 L5 11 L11 11 Z" fill="var(--primary)" opacity=".18"/>
+      <path d="M14 7 L16.5 12 L22 12 L17.5 15.5 L19.5 21 L14 18 L8.5 21 L10.5 15.5 L6 12 L11.5 12 Z" stroke="var(--primary)" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
+    </svg>
+    <div>
+      <div class="logo-text">Naruto Game</div>
+      <div class="logo-sub">Checklist de Documentação</div>
+    </div>
+  </div>
+  <div class="header-right">
+    <button id="theme-toggle" aria-label="Alternar tema">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="global-progress">
+  <span class="progress-label">Progresso geral</span>
+  <div class="progress-track"><div class="progress-fill" id="global-fill"></div></div>
+  <span class="progress-pct" id="global-pct">0%</span>
+</div>
+
+<main>
+  <h1 class="page-title">📋 Checklist do Projeto</h1>
+  <p class="page-sub">Clique em cada item para marcar como concluído. O progresso é salvo automaticamente.</p>
+
+  <div class="stats" id="stats-row">
+    <div class="stat">
+      <div class="stat-val" id="s-total">0</div>
+      <div class="stat-lbl">Total de tarefas</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val" id="s-done" style="color:var(--success)">0</div>
+      <div class="stat-lbl">Concluídas</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val" id="s-left" style="color:var(--primary)">0</div>
+      <div class="stat-lbl">Restantes</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val" id="s-phase">—</div>
+      <div class="stat-lbl">Fase atual</div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button class="btn btn-primary" onclick="expandAll()">Expandir tudo</button>
+    <button class="btn" onclick="collapseAll()">Recolher tudo</button>
+    <button class="btn" onclick="resetAll()">Resetar progresso</button>
+  </div>
+
+  <div id="checklist">
+
+    <!-- FASE 1 -->
+    <div class="phase phase-1" id="phase-1">
+      <div class="phase-header" onclick="togglePhase('phase-1')">
+        <span class="phase-badge">Fase 1</span>
+        <span class="phase-title">Fundação e Visão</span>
+        <span class="phase-meta" id="meta-phase-1">0 / 3</span>
+        <svg class="phase-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="phase-mini-bar"><div class="phase-mini-fill" id="bar-phase-1" style="width:0%"></div></div>
+      <div class="phase-body" id="body-phase-1">
+        <div class="item done" data-id="f1-1" data-phase="phase-1" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Visão geral do projeto</div>
+            <div class="item-desc">Arquivo estrutura-ideia-servidor-naruto.md — conceito, pilar central e diferenciais</div>
+          </div>
+          <span class="item-tag tag-done">Feito</span>
+        </div>
+        <div class="item" data-id="f1-2" data-phase="phase-1" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Documento de MVP — escopo definitivo</div>
+            <div class="item-desc">Lista exata do que entra no MVP vs. o que fica para fases posteriores, com justificativas</div>
+          </div>
+          <span class="item-tag tag-priority">Prioritário</span>
+        </div>
+        <div class="item" data-id="f1-3" data-phase="phase-1" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Fantasia do jogador — resumo de referência</div>
+            <div class="item-desc">1 página: loop principal, sensações que o servidor deve entregar, o que NUNCA fazer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FASE 2 -->
+    <div class="phase phase-2" id="phase-2">
+      <div class="phase-header" onclick="togglePhase('phase-2')">
+        <span class="phase-badge">Fase 2</span>
+        <span class="phase-title">Sistemas Centrais</span>
+        <span class="phase-meta" id="meta-phase-2">0 / 5</span>
+        <svg class="phase-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="phase-mini-bar"><div class="phase-mini-fill" id="bar-phase-2" style="width:0%"></div></div>
+      <div class="phase-body" id="body-phase-2">
+        <div class="item" data-id="f2-1" data-phase="phase-2" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Atributos e Fórmulas</div>
+            <div class="item-desc">Nível, Treino, Mentalidade com fórmulas reais: HP = nivel×10 + treino×5, escalonamento de dano, etc.</div>
+          </div>
+          <span class="item-tag tag-priority">Prioritário</span>
+        </div>
+        <div class="item" data-id="f2-2" data-phase="phase-2" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Progressão de Rank com requisitos exatos</div>
+            <div class="item-desc">Academia → Genin → Chunin → Jonin → ANBU: level mínimo, missões, provas, bosses por rank</div>
+          </div>
+          <span class="item-tag tag-priority">Prioritário</span>
+        </div>
+        <div class="item" data-id="f2-3" data-phase="phase-2" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Elementos e Árvore de Jutsus</div>
+            <div class="item-desc">5 elementos base (Katon, Suiton, Raiton, Doton, Fuuton) com lista de jutsus por tier e requisitos</div>
+          </div>
+        </div>
+        <div class="item" data-id="f2-4" data-phase="phase-2" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Sistema de Jutsus detalhado</div>
+            <div class="item-desc">Categorias, sistema de domínio (Aprendido→Treinado→Aperfeiçoado→Mestre), custos de chakra base</div>
+          </div>
+        </div>
+        <div class="item" data-id="f2-5" data-phase="phase-2" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Builds e Estilos de Combate</div>
+            <div class="item-desc">Tabela de arquétipos (Físico, Elemental, Híbrido, Tático, Especialista) com pontos fortes e fracos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FASE 3 -->
+    <div class="phase phase-3" id="phase-3">
+      <div class="phase-header" onclick="togglePhase('phase-3')">
+        <span class="phase-badge">Fase 3</span>
+        <span class="phase-title">Mundo e Conteúdo</span>
+        <span class="phase-meta" id="meta-phase-3">0 / 3</span>
+        <svg class="phase-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="phase-mini-bar"><div class="phase-mini-fill" id="bar-phase-3" style="width:0%"></div></div>
+      <div class="phase-body" id="body-phase-3">
+        <div class="item" data-id="f3-1" data-phase="phase-3" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Mapa inicial de Konoha</div>
+            <div class="item-desc">Zonas por nível, NPCs e funções: Academia, Hospital, Loja, Quadro de Missões, Mestres de Treino</div>
+          </div>
+        </div>
+        <div class="item" data-id="f3-2" data-phase="phase-3" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Sistema de Missões</div>
+            <div class="item-desc">Categorias D→S, recompensas por rank, tabela de progressão, missões diárias e de história</div>
+          </div>
+        </div>
+        <div class="item" data-id="f3-3" data-phase="phase-3" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Bosses do MVP</div>
+            <div class="item-desc">Lista de bosses com level recomendado, mecânicas, recompensas e papel na progressão do jogador</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FASE 4 -->
+    <div class="phase phase-4" id="phase-4">
+      <div class="phase-header" onclick="togglePhase('phase-4')">
+        <span class="phase-badge">Fase 4</span>
+        <span class="phase-title">Economia e Itens</span>
+        <span class="phase-meta" id="meta-phase-4">0 / 2</span>
+        <svg class="phase-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="phase-mini-bar"><div class="phase-mini-fill" id="bar-phase-4" style="width:0%"></div></div>
+      <div class="phase-body" id="body-phase-4">
+        <div class="item" data-id="f4-1" data-phase="phase-4" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Balanço econômico</div>
+            <div class="item-desc">Tabela de preços, fontes de ganho vs. gastos, curva de ouro por hora, evitar inflação</div>
+          </div>
+        </div>
+        <div class="item" data-id="f4-2" data-phase="phase-4" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Itens e Equipamentos</div>
+            <div class="item-desc">Categorias (Kunai, Shuriken, Pergaminhos, Roupas…), raridades Comum→Lendário, atributos por slot</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FASE 5 -->
+    <div class="phase phase-5" id="phase-5">
+      <div class="phase-header" onclick="togglePhase('phase-5')">
+        <span class="phase-badge">Fase 5</span>
+        <span class="phase-title">Técnico — TFS 1.4.2 + OTCv8</span>
+        <span class="phase-meta" id="meta-phase-5">0 / 3</span>
+        <svg class="phase-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="phase-mini-bar"><div class="phase-mini-fill" id="bar-phase-5" style="width:0%"></div></div>
+      <div class="phase-body" id="body-phase-5">
+        <div class="item" data-id="f5-1" data-phase="phase-5" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Arquitetura TFS 1.4.2 em Lua</div>
+            <div class="item-desc">Estrutura de pastas, padrões de script, sistemas de atributos e jutsus no servidor</div>
+          </div>
+          <span class="item-tag tag-blocked">Bloqueado*</span>
+        </div>
+        <div class="item" data-id="f5-2" data-phase="phase-5" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Interface OTCv8</div>
+            <div class="item-desc">Telas necessárias para o MVP: HUD de atributos, tela de jutsus, rank, missões</div>
+          </div>
+          <span class="item-tag tag-blocked">Bloqueado*</span>
+        </div>
+        <div class="item" data-id="f5-3" data-phase="phase-5" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Monetização saudável</div>
+            <div class="item-desc">O que é pago vs. gratuito sem afetar balanceamento — cosméticos, conveniência, não pay-to-win</div>
+          </div>
+          <span class="item-tag tag-blocked">Bloqueado*</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FASE 6 -->
+    <div class="phase phase-6" id="phase-6">
+      <div class="phase-header" onclick="togglePhase('phase-6')">
+        <span class="phase-badge">Fase 6</span>
+        <span class="phase-title">Pós-MVP — Expansão</span>
+        <span class="phase-meta" id="meta-phase-6">0 / 6</span>
+        <svg class="phase-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="phase-mini-bar"><div class="phase-mini-fill" id="bar-phase-6" style="width:0%"></div></div>
+      <div class="phase-body" id="body-phase-6">
+        <div class="item" data-id="f6-1" data-phase="phase-6" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Sistema de Clãs e Kekkei Genkai</div>
+            <div class="item-desc">Clãs jogáveis com traços passivos, Kekkei Genkai por combinação de elementos</div>
+          </div>
+          <span class="item-tag tag-blocked">Pós-MVP</span>
+        </div>
+        <div class="item" data-id="f6-2" data-phase="phase-6" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Outras Aldeias</div>
+            <div class="item-desc">Sunagakure, Kirigakure, Kumogakure, Iwagakure — missões, elementos e NPCs exclusivos</div>
+          </div>
+          <span class="item-tag tag-blocked">Pós-MVP</span>
+        </div>
+        <div class="item" data-id="f6-3" data-phase="phase-6" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">PvP estruturado e guerras entre vilas</div>
+            <div class="item-desc">Arena PvP, sistema de guerra, reputação entre facções, eventos de conflito</div>
+          </div>
+          <span class="item-tag tag-blocked">Pós-MVP</span>
+        </div>
+        <div class="item" data-id="f6-4" data-phase="phase-6" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Crafting avançado e profissões</div>
+            <div class="item-desc">Crafting de armas, pergaminhos, sistema de coleta de recursos, profissões secundárias</div>
+          </div>
+          <span class="item-tag tag-blocked">Pós-MVP</span>
+        </div>
+        <div class="item" data-id="f6-5" data-phase="phase-6" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Sistema de Invocações</div>
+            <div class="item-desc">Contratos de invocação, requisitos de aprendizado, criaturas e seus poderes</div>
+          </div>
+          <span class="item-tag tag-blocked">Pós-MVP</span>
+        </div>
+        <div class="item" data-id="f6-6" data-phase="phase-6" onclick="toggleItem(this)">
+          <div class="item-check"></div>
+          <div class="item-content">
+            <div class="item-label">Conteúdo Otsutsuki e Bijuus completo</div>
+            <div class="item-desc">Endgame com Bijuus, Momoshiki, mecânicas especiais, lutas em equipe, recompensas de prestígio</div>
+          </div>
+          <span class="item-tag tag-blocked">Pós-MVP</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /checklist -->
+
+  <p style="font-size:.75rem;color:var(--faint);margin-top:1.5rem">* Itens marcados como Bloqueado só devem ser iniciados após as fases anteriores estarem concluídas.</p>
+
+</main>
+
+<footer>
+  Naruto Game — TFS 1.4.2 + OTCv8 &nbsp;·&nbsp; Checklist de Documentação
+</footer>
+
+<script>
+const STORAGE_KEY='narutodocs_checklist_v1';
+const PHASES=['phase-1','phase-2','phase-3','phase-4','phase-5','phase-6'];
+
+// Load saved state
+let saved={};
+try{saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}');}catch(e){}
+
+function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(saved));}catch(e){}}
+
+function toggleItem(el){
+  const id=el.dataset.id;
+  const isDone=el.classList.toggle('done');
+  saved[id]=isDone;
+  save();
+  updateAll();
+}
+
+function togglePhase(id){
+  const header=document.querySelector('#'+id+' .phase-header');
+  const body=document.getElementById('body-'+id);
+  header.classList.toggle('open');
+  body.classList.toggle('open');
+}
+
+function expandAll(){
+  PHASES.forEach(id=>{
+    const h=document.querySelector('#'+id+' .phase-header');
+    const b=document.getElementById('body-'+id);
+    h.classList.add('open'); b.classList.add('open');
+  });
+}
+function collapseAll(){
+  PHASES.forEach(id=>{
+    const h=document.querySelector('#'+id+' .phase-header');
+    const b=document.getElementById('body-'+id);
+    h.classList.remove('open'); b.classList.remove('open');
+  });
+}
+function resetAll(){
+  if(!confirm('Resetar todo o progresso?'))return;
+  saved={}; save();
+  document.querySelectorAll('.item.done').forEach(el=>el.classList.remove('done'));
+  updateAll();
+}
+
+function updateAll(){
+  let totalAll=0,doneAll=0;
+  PHASES.forEach(pid=>{
+    const items=document.querySelectorAll('[data-phase="'+pid+'"]');
+    const total=items.length;
+    let done=0;
+    items.forEach(el=>{if(el.classList.contains('done'))done++;});
+    totalAll+=total; doneAll+=done;
+    document.getElementById('meta-'+pid).textContent=done+' / '+total;
+    const pct=total>0?Math.round(done/total*100):0;
+    document.getElementById('bar-'+pid).style.width=pct+'%';
+  });
+  const gPct=totalAll>0?Math.round(doneAll/totalAll*100):0;
+  document.getElementById('global-fill').style.width=gPct+'%';
+  document.getElementById('global-pct').textContent=gPct+'%';
+  document.getElementById('s-total').textContent=totalAll;
+  document.getElementById('s-done').textContent=doneAll;
+  document.getElementById('s-left').textContent=totalAll-doneAll;
+  // current phase
+  let curPhase='Fase 1';
+  for(let i=0;i<PHASES.length;i++){
+    const pid=PHASES[i];
+    const items=document.querySelectorAll('[data-phase="'+pid+'"]');
+    const done=[...items].filter(el=>el.classList.contains('done')).length;
+    if(done<items.length){curPhase='Fase '+(i+1);break;}
+    curPhase='Concluído ✓';
+  }
+  document.getElementById('s-phase').textContent=curPhase;
+}
+
+// Apply saved state on load
+function applySaved(){
+  document.querySelectorAll('.item[data-id]').forEach(el=>{
+    // items marked done in HTML keep their state unless overridden
+    const id=el.dataset.id;
+    if(id in saved){
+      if(saved[id]) el.classList.add('done');
+      else el.classList.remove('done');
+    }
+  });
+}
+
+// Theme toggle
+const tt=document.getElementById('theme-toggle');
+const html=document.documentElement;
+let theme=html.getAttribute('data-theme')||'dark';
+function setTheme(t){
+  theme=t;
+  html.setAttribute('data-theme',t);
+  tt.innerHTML=t==='dark'
+    ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+    : '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+}
+tt.addEventListener('click',()=>setTheme(theme==='dark'?'light':'dark'));
+setTheme(theme);
+
+applySaved();
+// Open first incomplete phase by default
+for(let i=0;i<PHASES.length;i++){
+  const pid=PHASES[i];
+  const items=document.querySelectorAll('[data-phase="'+pid+'"]');
+  const done=[...items].filter(el=>el.classList.contains('done')).length;
+  if(done<items.length){
+    const h=document.querySelector('#'+pid+' .phase-header');
+    const b=document.getElementById('body-'+pid);
+    h.classList.add('open'); b.classList.add('open');
+    break;
+  }
+}
+updateAll();
+</script>
+</body>
+</html>
