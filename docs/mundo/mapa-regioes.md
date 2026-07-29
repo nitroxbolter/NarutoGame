@@ -2,7 +2,7 @@
 
 ## Estrutura do Mundo
 
-O mapa pode crescer em camadas ao redor da aldeia inicial.
+O mapa pode crescer em camadas ao redor da aldeia inicial, usando referências diretas ao mundo de Naruto.
 
 | Camada | Conteúdo |
 | --- | --- |
@@ -26,6 +26,21 @@ O mapa pode crescer em camadas ao redor da aldeia inicial.
 | Mina Abandonada | Mineração e dungeon |
 | Estrada Comercial | Escolta e eventos |
 | Ruína do Selo | História e boss |
+
+## Locais icônicos de Naruto para inspiração
+
+| Local | Função no projeto |
+| --- | --- |
+| Monumento Hokage | Marco visual e social de Konoha |
+| Campo de treino do Time 7 | Área inicial de prática e tutorial |
+| Floresta da Morte | Dificuldade elevada para exame e sobrevivência |
+| Arena do Exame Chunin | Combates individuais e promoção |
+| Vale do Fim | Batalhas lendárias e eventos narrativos |
+| Ichiraku Ramen | Social, buffs e cotidiano da vila |
+| Ponte do País das Ondas | Missões de escolta e progresso inicial |
+| Monte Myoboku | Conteúdo sagrado de invocação e Senjutsu |
+| Caverna Ryuchi | Conteúdo sagrado de cobra e técnicas raras |
+| Floresta Shikkotsu | Região sagrada de cura e suporte |
 
 ## Locais Importantes do Anime
 

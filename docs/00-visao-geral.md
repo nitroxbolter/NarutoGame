@@ -2,43 +2,43 @@
 
 ## Proposta
 
-O servidor propõe uma jornada ninja autoral. O jogador começa como um personagem próprio, sem ser um herói pronto do anime, e constrói sua força por meio de treino, missões, escolhas de elemento, aprendizado de jutsus, equipamentos, profissões e promoções de rank.
+O servidor propõe uma jornada ninja autoral dentro do universo de Naruto. O jogador começa como um personagem próprio, sem ser um herói pronto do anime, e constrói sua força por meio de treino, missões, escolhas de elemento, aprendizado de jutsus, equipamentos, profissões e promoções de rank.
 
 ## Diferencial
 
-Em vez de vender a fantasia de “ser Naruto” ou “ser Sasuke”, o projeto vende a fantasia de “ser um ninja original dentro de uma aldeia viva”.
+Em vez de vender a fantasia de “ser Naruto” ou “ser Sasuke”, o projeto vende a fantasia de “ser um ninja original dentro de uma aldeia viva”, com referências diretas a Konoha, ao Exame Chunin, aos Sannin e às grandes ameaças do mundo shinobi.
 
 Isso permite:
 
 - Mais liberdade de build.
 - Progressão mais longa.
-- Técnicas como recompensa.
-- Economia mais importante.
+- Técnicas como recompensa, como acontece quando um ninja aprende jutsus de sua vila ou por meio de mestres.
+- Economia mais importante, com recursos usados em pergaminhos, armas, comida, remédios e materiais de treino.
 - Conteúdos de aldeia, profissão e exploração.
-- Expansões futuras sem depender só de personagens famosos.
+- Expansões futuras sem depender só de personagens famosos, mas ainda usando o peso de vilas, clãs e organizações como Akatsuki, ANBU e ninjas renegados.
 
 ## Fantasia principal
 
 O jogador deve sentir que:
 
 - Entrou na academia.
-- Aprendeu técnicas básicas.
-- Fez missões pequenas.
+- Aprendeu técnicas básicas como Bunshin no Jutsu, Henge e Kawarimi.
+- Fez missões pequenas de escolta, captura, patrulha e coleta.
 - Ganhou reputação.
 - Subiu de rank.
 - Treinou corpo e mente.
-- Dominou elementos.
-- Enfrentou ameaças maiores.
-- Virou alguém respeitado por mérito.
+- Dominou elementos como Katon, Suiton, Raiton, Doton e Fuuton.
+- Enfrentou ameaças maiores, como ninjas renegados, bosses de vila e criaturas lendárias.
+- Virou alguém respeitado por mérito, como acontece com shinobi que conquistam liderança, reconhecimento ou cargo especial.
 
 ## Pilares do projeto
 
 - Identidade própria antes de personagem pronto.
 - Progressão antes de fanservice.
-- Jutsus como conquista, não como presente automático.
+- Jutsus como conquista, não como presente automático, com mestre, pergaminho e requisito de rank.
 - Economia útil em todas as fases.
 - Profissões integradas à vila e ao crafting.
-- Bosses e dungeons como objetivos de grupo.
+- Bosses e dungeons como objetivos de grupo, inspirados em missões de escolta, resgate, invasão e contenção.
 - Eventos e estações para manter o mundo vivo.
 - Expansão gradual por aldeias, regiões e sistemas.
 
@@ -49,16 +49,16 @@ O jogador deve sentir que:
 | Aldeia | Konoha |
 | Ranks | Academia até Chunin ou Jonin inicial |
 | Elementos | 5 básicos |
-| Atributos | Level, treino e mentalidade |
-| Profissões | Pesca, lenha, plantas e mineração |
+| Atributos | Level, treino, mentalidade e chakra |
+| Profissões | Pesca, lenha, plantas, mineração e coleta de materiais shinobi |
 | Missões | Academia, D, C e B |
 | Conteúdo de grupo | 2 a 4 dungeons iniciais |
-| Bosses | Bosses locais e 1 boss de evento |
+| Bosses | Bosses locais, invocações corrompidas e 1 boss de evento |
 | Cliente | UI básica para missão, atributos, jutsus e profissões |
 
 ## Estrutura da documentação
 
-A documentação principal foi reorganizada para refletir os temas da pasta atualizar e o fluxo do projeto:
+A documentação principal foi reorganizada para refletir os temas da pasta e o fluxo do projeto:
 
 - Conceito e visão geral.
 - Mundo e história.
@@ -66,3 +66,14 @@ A documentação principal foi reorganizada para refletir os temas da pasta atua
 - Progressão e combate.
 - Economia, equipamentos e PvP.
 - Planejamento, roadmap e princípios de projeto.
+
+## Referência de anime
+
+A base conceitual segue elementos clássicos de Naruto:
+
+- Konoha como aldeia inicial.
+- Academia Ninja como tutorial.
+- Exame Chunin como marco de progressão.
+- ANBU, Sannin e Hokage como cargos especiais.
+- Clãs, elementos, invocações e selamentos como parte da fantasia shinobi.
+- Akatsuki, ninjas renegados e bijuus como conteúdo de médio e alto nível.

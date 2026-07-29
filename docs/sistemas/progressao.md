@@ -2,7 +2,7 @@
 
 ## Papel no projeto
 
-A progressão organiza a evolução do jogador ao longo do tempo, desde o início da carreira até o conteúdo mais avançado.
+A progressão organiza a evolução do jogador ao longo do tempo, desde o início da carreira até o conteúdo mais avançado, seguindo a lógica de um shinobi que sobe de academia até os cargos de elite.
 
 ## Eixos de progressão
 
@@ -14,6 +14,8 @@ A progressão organiza a evolução do jogador ao longo do tempo, desde o iníci
 - Especializações.
 - Equipamentos e economia.
 - Cargos especiais.
+- Reputação com a vila.
+- Experiência com missões.
 
 ## Estrutura da progressão
 
@@ -34,8 +36,20 @@ O jogador deve sentir evolução em quatro camadas:
 - ANBU ou Sannin como cargos especiais.
 - Hokage como liderança máxima da aldeia.
 
+## Paralelo com o anime
+
+A progressão pode refletir marcos típicos de Naruto:
+
+- Entrada na Academia Ninja.
+- Primeira missão D fora da vila.
+- Exame Chunin como teste de maturidade.
+- Enfrentamento de ninjas renegados e invasões.
+- Missões de nível A e S com risco real.
+- Conquista de um cargo de elite ou liderança.
+
 ## Direção de design
 
 - O jogo precisa recompensar tempo e dedicação.
 - Cada fase deve abrir novas opções, não apenas números maiores.
 - A progressão deve combinar treino, missão, exploração e combate.
+- A progressão deve sempre parecer a formação de um shinobi, não só uma barra de level.
