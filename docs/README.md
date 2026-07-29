@@ -10,7 +10,7 @@
 
 </div>
 
-> Documento índice com navegação por tema. Aqui estão as páginas principais da wiki do projeto.
+> Guia principal da documentação. Use esta página para navegar entre visão do projeto, mundo, personagem, sistemas, economia, conteúdo e arquitetura técnica.
 
 ---
 
@@ -18,8 +18,10 @@
 
 | Página | Tema |
 | --- | --- |
-| [Visão geral](00-visao-geral.md) | Proposta, pilares e escopo inicial |
+| [Visão geral](00-visao-geral.md) | Proposta, pilares, MVP e direção do projeto |
 | [Estrutura original](../estrutura-ideia-servidor-naruto.md) | Documento base do projeto |
+| [Checklist de desenvolvimento](CHECKLIST_DESENVOLVIMENTO.md) | Ordem prática de execução |
+| [Decisões pendentes](DECISOES_PENDENTES.md) | Perguntas em aberto e opções |
 
 ## Personagem
 
@@ -31,6 +33,7 @@
 | [Level](personagem/level.md) | Progressão base do personagem |
 | [Skills](personagem/skills.md) | Técnicas, domínio e uso |
 | [Elementos](personagem/elementos.md) | Afinidades e rotas de build |
+| [Progressão do personagem](personagem.html) | Ranks, símbolos no cliente e promoções |
 
 ## Sistemas
 
@@ -54,6 +57,7 @@
 | [Elementos, jutsus e invocações](sistemas/elementos-jutsus-invocacoes.md) | Relação entre sistemas |
 | [Atributos e builds](sistemas/atributos-builds.md) | Modelos de build |
 | [Balanceamento](sistemas/balanceamento.md) | Fórmulas e ajuste fino |
+| [PvP e reputação](combate/pvp.md) | Injustiças, honra e combate entre jogadores |
 
 ## Equipamentos
 
@@ -62,6 +66,7 @@
 | [Equipamentos](equipamentos/README.md) | Visão geral dos itens shinobi |
 | [Tipos de equipamentos shinobi](equipamentos/tipos-de-equipamentos-shinobi.md) | Armas, vestimentas e bônus |
 | [Crafting de equipamentos](equipamentos/crafting.md) | Forja, melhorias e receitas |
+| [Comidas e regeneração](comidas.html) | Buffs, receitas e consumíveis |
 
 ## Mundo
 
@@ -70,6 +75,7 @@
 | [História do mundo](mundo/historia-do-mundo.md) | Lore, aldeias e contexto |
 | [Aldeias, NPCs e missões da aldeia](mundo/aldeias-npcs-missoes-da-aldeia.md) | Estrutura social da aldeia |
 | [Mapa e regiões](mundo/mapa-regioes.md) | Exploração e regiões iniciais |
+| [Mundo](mundo.html) | Países, nações, aldeias e atos da história |
 
 ## Técnico
 
@@ -77,3 +83,12 @@
 | --- | --- |
 | [Estrutura do servidor TFS](tecnico/estrutura-servidor-tfs.md) | Base técnica e organização |
 | [Estrutura do cliente OTCv8](tecnico/estrutura-cliente-otcv8.md) | UI, módulos e experiência |
+| [Arquitetura](arquitetura.html) | TFS, cliente, checklist e plano de ação |
+
+## Arquivos essenciais
+
+| Arquivo | Uso |
+| --- | --- |
+| [CHECKLIST_DESENVOLVIMENTO.md](CHECKLIST_DESENVOLVIMENTO.md) | Sequência prática de desenvolvimento |
+| [DECISOES_PENDENTES.md](DECISOES_PENDENTES.md) | Lista de decisões em aberto |
+| [TEMPLATE-SISTEMA.md](TEMPLATE-SISTEMA.md) | Modelo para novos sistemas |

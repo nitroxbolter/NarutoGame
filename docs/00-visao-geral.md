@@ -1,5 +1,11 @@
 # Visão Geral
 
+## Papel da documentação
+
+Este documento serve como visão-mãe do projeto. Ele define a essência do servidor, o escopo do MVP, a lógica de progressão e a direção de design que todas as outras páginas precisam respeitar.
+
+O objetivo da documentação não é ser só explicativa. Ela precisa funcionar como um guia de desenvolvimento, com regras, tabelas, fluxos, dependências, checklists e decisões pendentes.
+
 ## Proposta
 
 O servidor propõe uma jornada ninja autoral dentro do universo de Naruto. O jogador começa como um personagem próprio, sem ser um herói pronto do anime, e constrói sua força por meio de treino, missões, escolhas de elemento, aprendizado de jutsus, equipamentos, profissões e promoções de rank.
@@ -47,7 +53,7 @@ O jogador deve sentir que:
 | Área | MVP |
 | --- | --- |
 | Aldeia | Konoha |
-| Ranks | Academia até Chunin ou Jonin inicial |
+| Ranks | Academia até Chunin ou Jounin inicial |
 | Elementos | 5 básicos |
 | Atributos | Level, treino, mentalidade e chakra |
 | Profissões | Pesca, lenha, plantas, mineração e coleta de materiais shinobi |
@@ -55,6 +61,16 @@ O jogador deve sentir que:
 | Conteúdo de grupo | 2 a 4 dungeons iniciais |
 | Bosses | Bosses locais, invocações corrompidas e 1 boss de evento |
 | Cliente | UI básica para missão, atributos, jutsus e profissões |
+
+## O que fica fora do MVP
+
+- Kekkei genkai profundo.
+- Guerra entre vilas.
+- Sistema completo de títulos políticos.
+- Economia avançada entre jogadores.
+- Mais de uma aldeia jogável no lançamento.
+- Bosses lendários de escala final.
+- Sistema completo de clãs jogáveis.
 
 ## Estrutura da documentação
 
@@ -66,6 +82,14 @@ A documentação principal foi reorganizada para refletir os temas da pasta e o 
 - Progressão e combate.
 - Economia, equipamentos e PvP.
 - Planejamento, roadmap e princípios de projeto.
+
+## Próximos arquivos centrais
+
+| Arquivo | Objetivo |
+| --- | --- |
+| [CHECKLIST_DESENVOLVIMENTO.md](CHECKLIST_DESENVOLVIMENTO.md) | Ordem de execução prática |
+| [DECISOES_PENDENTES.md](DECISOES_PENDENTES.md) | Decisões que ainda não foram fechadas |
+| [README.md](README.md) | Índice principal da wiki |
 
 ## Referência de anime
 
