@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mundo e Conteúdo — NarutoGame Wiki</title>
-<link rel="stylesheet" href="_layout.css">
+<link rel="stylesheet" href="layout.css">
 </head>
 <body>
 <nav class="nav">
@@ -13,30 +13,22 @@
     NarutoGame
   </a>
   <div class="nav-links">
-    <a href="index.html">Início</a>
-    <a href="visao.html">Visão</a>
-    <a href="sistemas.html">Sistemas</a>
-    <a href="mundo.html" class="active">Mundo</a>
-    <a href="economia.html">Economia</a>
-    <a href="tecnico.html">Técnico</a>
+    <a href="index.html">Início</a><a href="visao.html">Visão</a><a href="sistemas.html">Sistemas</a><a href="mundo.html" class="active">Mundo</a><a href="economia.html">Economia</a><a href="tecnico.html">Técnico</a>
   </div>
   <div class="nav-right"><button class="theme-btn" data-theme-toggle aria-label="tema"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div>
 </nav>
-
 <div class="page-header">
   <div class="breadcrumb"><a href="index.html">Wiki</a><span>/</span><span>Mundo e Conteúdo</span></div>
   <div class="badge">🗺️ Fase 3 — Mapa, Missões, Bosses</div>
   <h1>Mundo e <em>Conteúdo</em></h1>
-  <p class="lead">Konoha como hub central do MVP, estrutura do mapa por zonas de progressão, sistema de missões e bosses.</p>
+  <p class="lead">Konoha como hub central do MVP, estrutura do mapa por zonas, sistema de missões e bosses.</p>
 </div>
-
 <div class="content">
-
   <div class="section">
     <div class="section-label"><div class="dot"></div><h2>Konoha — Aldeia Inicial (MVP)</h2></div>
-    <p>A aldeia de Konoha funciona como centro do early e mid game. Todos os sistemas fundamentais passam por ela.</p>
+    <p>Konoha funciona como centro do early e mid game. Todos os sistemas fundamentais passam por ela.</p>
     <div class="grid">
-      <div class="card"><div class="card-icon">🏠</div><div class="card-title">Spawn e Tutorial</div><div class="card-body">Ponto de entrada do jogador. Apresenta os sistemas básicos e direciona para os primeiros NPCs.</div></div>
+      <div class="card"><div class="card-icon">🏠</div><div class="card-title">Spawn e Tutorial</div><div class="card-body">Ponto de entrada. Apresenta os sistemas e direciona para os primeiros NPCs.</div></div>
       <div class="card"><div class="card-icon">🎓</div><div class="card-title">Academia Ninja</div><div class="card-body">Exames de progressão, promoções de rank e ensino de técnicas base.</div></div>
       <div class="card"><div class="card-icon">📋</div><div class="card-title">Quadro de Missões</div><div class="card-body">Hub central de missões D a S, diárias, semanais e missões de história.</div></div>
       <div class="card"><div class="card-icon">🏥</div><div class="card-title">Hospital</div><div class="card-body">Cura, suporte e NPCs de utilidade.</div></div>
@@ -44,12 +36,9 @@
       <div class="card"><div class="card-icon">🥋</div><div class="card-title">Mestres de Treino</div><div class="card-body">NPCs especializados para ensinar jutsus e evoluir atributos.</div></div>
     </div>
   </div>
-
   <div class="divider"></div>
-
   <div class="section">
     <div class="section-label"><div class="dot"></div><h2>Estrutura do Mapa por Zonas</h2></div>
-    <p>O mundo é dividido em camadas de progressão, do mais seguro ao mais perigoso.</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>#</th><th>Zona</th><th>Dificuldade</th><th>Conteúdo</th></tr></thead>
@@ -66,67 +55,35 @@
       </table>
     </div>
   </div>
-
   <div class="divider"></div>
-
   <div class="section">
     <div class="section-label"><div class="dot"></div><h2>Sistema de Missões</h2></div>
-    <p>As missões são a principal forma de dar direção ao jogador e alimentar a economia. Cada categoria tem função específica na progressão.</p>
-    <div class="box">
-      <div class="box-title">🎯 Funções das missões</div>
-      <ul>
-        <li>Gerar dinheiro e experiência</li>
-        <li>Liberar progressão de rank ninja</li>
-        <li>Introduzir lore e história do mundo</li>
-        <li>Guiar o jogador pelo mapa progressivamente</li>
-        <li>Oferecer reputação com a aldeia</li>
-        <li>Ensinar sistemas e mecânicas</li>
-      </ul>
-    </div>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Rank</th><th>Tipo</th><th>Recompensas</th></tr></thead>
         <tbody>
           <tr><td><strong>Academia</strong></td><td>Introdutórias, tutoriais</td><td>XP inicial, dinheiro baixo</td></tr>
           <tr><td><strong>D</strong></td><td>Caça simples, coleta, patrulha</td><td>XP, dinheiro, itens comuns</td></tr>
-          <tr><td><strong>C</strong></td><td>Escolta, investigação, bandidos</td><td>XP, dinheiro, materiais</td></tr>
+          <tr><td><strong>C</strong></td><td>Escolta, investigação</td><td>XP, dinheiro, materiais</td></tr>
           <tr><td><strong>B</strong></td><td>Combate intermediário, boss menor</td><td>Pergaminhos, equipamentos raros</td></tr>
           <tr><td><strong>A</strong></td><td>Inimigos de elite, ninjas renegados</td><td>Itens raros, reputação alta</td></tr>
           <tr><td><strong>S</strong></td><td>Bosses principais, ameaças globais</td><td>Loot lendário, títulos, prestígio</td></tr>
           <tr><td><strong>Diárias</strong></td><td>Tarefas variadas recorrentes</td><td>Dinheiro, materiais de craft</td></tr>
-          <tr><td><strong>Semanais</strong></td><td>Objetivos maiores, bosses especiais</td><td>Recompensas exclusivas</td></tr>
         </tbody>
       </table>
     </div>
   </div>
-
   <div class="divider"></div>
-
   <div class="section">
     <div class="section-label"><div class="dot"></div><h2>Bosses e Ameaças</h2></div>
-    <p>Os bosses funcionam como objetivos de progressão, desafio, teste de build e fonte de loot raro.</p>
     <div class="grid">
       <div class="card"><div class="card-icon">🦹</div><div class="card-title">Vilões Clássicos</div><div class="card-body">Membros de organizações criminosas e ninjas renegados do universo Naruto.</div></div>
       <div class="card"><div class="card-icon">🐉</div><div class="card-title">Bijuus</div><div class="card-body">Conteúdo central de mid/endgame. Eventos periódicos globais e recompensas únicas.</div></div>
-      <div class="card"><div class="card-icon">👽</div><div class="card-title">Otsutsuki</div><div class="card-body">Topo do conteúdo. Mecânicas especiais, lutas em equipe, requisitos de progressão máxima.</div></div>
-      <div class="card"><div class="card-icon">🏆</div><div class="card-title">Bosses de Evento</div><div class="card-body">Spawns globais temporários com recompensas de prestígio e competição entre jogadores.</div></div>
+      <div class="card"><div class="card-icon">👽</div><div class="card-title">Otsutsuki</div><div class="card-body">Topo do conteúdo. Mecânicas especiais, lutas em equipe, progressão máxima.</div></div>
+      <div class="card"><div class="card-icon">🏆</div><div class="card-title">Bosses de Evento</div><div class="card-body">Spawns globais temporários com recompensas de prestígio.</div></div>
     </div>
   </div>
-
-  <div class="divider"></div>
-
-  <div class="section">
-    <div class="section-label"><div class="dot" style="background:var(--muted)"></div><h2 style="color:var(--muted)">Expansão Futura — Outras Aldeias</h2></div>
-    <p style="color:var(--faint)">Desbloqueado após o MVP de Konoha estar consolidado.</p>
-    <div class="grid">
-      <div class="card" style="opacity:0.4"><div class="card-icon">🏜️</div><div class="card-title">Sunagakure</div><div class="card-body">Aldeia da Areia. Fuuton e Doton favorecidos. Economia de recursos raros do deserto.</div></div>
-      <div class="card" style="opacity:0.4"><div class="card-icon">🌊</div><div class="card-title">Kirigakure</div><div class="card-body">Aldeia da Névoa. Suiton favorecido. Facção de assassinos e kenjutsu.</div></div>
-      <div class="card" style="opacity:0.4"><div class="card-icon">⛰️</div><div class="card-title">Kumogakure + Iwagakure</div><div class="card-body">Aldeia da Nuvem (Raiton) e Aldeia da Pedra (Doton). Rivalidades e missões de fronteira.</div></div>
-    </div>
-  </div>
-
 </div>
 <footer><strong>NarutoGame</strong> · Wiki do Projeto · <a href="https://github.com/nitroxbolter/NarutoGame" target="_blank" rel="noopener" style="color:var(--primary)">GitHub →</a></footer>
 <script>(function(){const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';r.setAttribute('data-theme',d);if(t)t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.innerHTML=d==='dark'?'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>':'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';});})();</script>
-</body>
-</html>
+</body></html>
