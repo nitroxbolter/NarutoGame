@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Técnico — NarutoGame Wiki</title>
+<link rel="stylesheet" href="_layout.css">
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav-logo">
+    <svg viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="11" stroke="var(--primary)" stroke-width="1.5" opacity="0.3"/><circle cx="13" cy="13" r="6" fill="none" stroke="var(--primary)" stroke-width="2"/><circle cx="13" cy="13" r="2.5" fill="var(--primary)"/><path d="M13 6L14.8 9.5 13 8.2 11.2 9.5Z" fill="var(--primary)" opacity="0.8"/><path d="M20 13L16.5 14.8 17.8 13 16.5 11.2Z" fill="var(--primary)" opacity="0.8"/><path d="M13 20L11.2 16.5 13 17.8 14.8 16.5Z" fill="var(--primary)" opacity="0.8"/><path d="M6 13L9.5 11.2 8.2 13 9.5 14.8Z" fill="var(--primary)" opacity="0.8"/></svg>
+    NarutoGame
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Início</a>
+    <a href="visao.html">Visão</a>
+    <a href="sistemas.html">Sistemas</a>
+    <a href="mundo.html">Mundo</a>
+    <a href="economia.html">Economia</a>
+    <a href="tecnico.html" class="active">Técnico</a>
+  </div>
+  <div class="nav-right"><button class="theme-btn" data-theme-toggle aria-label="tema"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div>
+</nav>
+
+<div class="page-header">
+  <div class="breadcrumb"><a href="index.html">Wiki</a><span>/</span><span>Técnico e Implementação</span></div>
+  <div class="badge">🛠️ Fase 5 — TFS 1.4.2 + OTCv8</div>
+  <h1>Implementação <em>Técnica</em></h1>
+  <p class="lead">Arquitetura do servidor em TFS 1.4.2 com Lua, interface customizada via OTCv8 e estratégia de monetização.</p>
+</div>
+
+<div class="content">
+
+  <div class="section">
+    <div class="section-label"><div class="dot"></div><h2>Stack Tecnológica</h2></div>
+    <div class="grid">
+      <div class="card"><div class="card-icon">🖥️</div><div class="card-title">TFS 1.4.2</div><div class="card-body">The Forgotten Server. Engine base do servidor OT. Scripts em Lua para sistemas de gameplay.</div></div>
+      <div class="card"><div class="card-icon">🎮</div><div class="card-title">OTCv8</div><div class="card-body">Client customizado. Permite UI avançada com widgets, HUDs e painéis personalizados em Lua.</div></div>
+      <div class="card"><div class="card-icon">🗄️</div><div class="card-title">MySQL / MariaDB</div><div class="card-body">Banco de dados para personagens, storage IDs, progresso de rank e inventário.</div></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <div class="section-label"><div class="dot"></div><h2>Sistemas em Lua (TFS)</h2></div>
+    <p>Cada sistema do jogo precisa de scripts Lua dedicados. Abaixo a estrutura de implementação priorizada para o MVP.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Sistema</th><th>Implementação</th><th>Prioridade</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Atributos</strong></td><td>Storage IDs para Treino e Mentalidade; fórmulas de dano/vida via onDeath e spell damage</td><td><span class="tag tag-alta">Alta</span></td></tr>
+          <tr><td><strong>Rank Ninja</strong></td><td>Storage ID por rank; NPC de promoção com checagem de condições; unlock de áreas por rank</td><td><span class="tag tag-alta">Alta</span></td></tr>
+          <tr><td><strong>Elementos</strong></td><td>Storage de afinidade elemental; árvore de jutsus filtrada por elemento; learn script</td><td><span class="tag tag-alta">Alta</span></td></tr>
+          <tr><td><strong>Jutsus</strong></td><td>Spells customizadas com requisito de storage; sistema de domínio via uso contínuo</td><td><span class="tag tag-alta">Alta</span></td></tr>
+          <tr><td><strong>Missões</strong></td><td>Quest scripts com contador de kills, coleta e NPC de entrega; reputação por storage</td><td><span class="tag tag-alta">Alta</span></td></tr>
+          <tr><td><strong>Economia</strong></td><td>Preços de NPCs em XML; loot tables configuradas; sistema de recompensa de missão</td><td><span class="tag tag-media">Média</span></td></tr>
+          <tr><td><strong>Bosses</strong></td><td>Monsters XML com scripts onDeath para loot especial e eventos globais</td><td><span class="tag tag-media">Média</span></td></tr>
+          <tr><td><strong>Domínio de Jutsu</strong></td><td>Contador de uso por storage; evolução automática ao atingir threshold</td><td><span class="tag tag-media">Média</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <div class="section-label"><div class="dot"></div><h2>Interface OTCv8 (UI)</h2></div>
+    <p>O cliente OTCv8 permite criar uma UI ninja completamente customizada, substituindo a interface padrão do OT.</p>
+    <div class="grid">
+      <div class="card"><div class="card-icon">💚</div><div class="card-title">HUD de Vida e Chakra</div><div class="card-body">Barras visuais customizadas no estilo ninja. Chakra separado da mana padrão do OT.</div></div>
+      <div class="card"><div class="card-icon">📋</div><div class="card-title">Menu de Jutsus</div><div class="card-body">Painel de técnicas organizadas por elemento, categoria e nível de domínio.</div></div>
+      <div class="card"><div class="card-icon">🥋</div><div class="card-title">Janela de Rank</div><div class="card-body">Exibe rank atual, progresso para o próximo e requisitos pendentes.</div></div>
+      <div class="card"><div class="card-icon">📜</div><div class="card-title">Painel de Missões</div><div class="card-body">Lista de missões ativas, objetivos e progresso em tempo real.</div></div>
+      <div class="card"><div class="card-icon">📊</div><div class="card-title">Ficha de Atributos</div><div class="card-body">Valores de Nível, Treino e Mentalidade com bônus calculados e distribuição visual.</div></div>
+      <div class="card"><div class="card-icon">🌿</div><div class="card-title">Árvore de Elementos</div><div class="card-body">Visualização da árvore de jutsus por elemento com status de desbloqueio.</div></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <div class="section-label"><div class="dot"></div><h2>MVP Técnico — Escopo Mínimo</h2></div>
+    <p>O que deve estar funcionando no primeiro lançamento jogável.</p>
+    <div class="box">
+      <div class="box-title">✅ Checklist do MVP Técnico</div>
+      <ul>
+        <li>Sistema de atributos (Nível + Treino + Mentalidade) com fórmulas funcionais</li>
+        <li>Progressão de rank até Jonin com NPC de promoção</li>
+        <li>5 elementos base com árvores de jutsu independentes</li>
+        <li>Spells de jutsu com requisitos de storage e sistema de cooldown</li>
+        <li>Missões D, C e B com contador de progresso e entrega</li>
+        <li>Economia funcional: lojas, loot tables, recompensas de missão</li>
+        <li>Konoha completa com todas as áreas funcionais</li>
+        <li>3 a 5 bosses com loot especial</li>
+        <li>HUD básico de chakra e vida no OTCv8</li>
+        <li>Sistema de domínio de jutsu (Aprendido → Mestre)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <div class="section-label"><div class="dot"></div><h2>Monetização Saudável</h2></div>
+    <p>A monetização deve manter o equilíbrio do servidor e nunca vender vantagens que quebrem a progressão orgânica.</p>
+    <div class="grid">
+      <div class="card"><div class="card-icon">👘</div><div class="card-title">Cosméticos</div><div class="card-body">Roupas, efeitos visuais, auras e aparências exclusivas. Nunca poder de combate.</div></div>
+      <div class="card"><div class="card-icon">📅</div><div class="card-title">Daily Login</div><div class="card-body">Recompensas progressivas por login diário. Retenção sem pay-to-win.</div></div>
+      <div class="card"><div class="card-icon">🎯</div><div class="card-title">Passe de Temporada</div><div class="card-body">Objetivos semanais com recompensas cosméticas e QoL. Nada que afete o PvP ou progressão.</div></div>
+      <div class="card"><div class="card-icon">⚡</div><div class="card-title">Conveniência Limitada</div><div class="card-body">Slots extras de missão ou XP boost com teto máximo. Nunca pula etapas de rank.</div></div>
+    </div>
+    <div class="box">
+      <div class="box-title">🚫 O que NUNCA vender</div>
+      <ul>
+        <li>Jutsus exclusivos não obtíveis por progressão</li>
+        <li>Ranks ninja comprados diretamente</li>
+        <li>Itens com stats melhores que o endgame do servidor</li>
+        <li>Vantagens de PvP que não existem para jogadores gratuitos</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+<footer><strong>NarutoGame</strong> · Wiki do Projeto · <a href="https://github.com/nitroxbolter/NarutoGame" target="_blank" rel="noopener" style="color:var(--primary)">GitHub →</a></footer>
+<script>(function(){const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';r.setAttribute('data-theme',d);if(t)t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.innerHTML=d==='dark'?'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>':'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';});})();</script>
+</body>
+</html>
