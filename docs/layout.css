@@ -115,6 +115,14 @@ td strong{color:var(--text)}
 .step-text{font-size:0.83rem;color:var(--muted);line-height:1.4}
 .step-text strong{color:var(--text);display:block;margin-bottom:0.1rem}
 
+.progress-wrap{max-width:860px;margin:0 auto 1.25rem;padding:0 2rem}
+.progress-label{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:0.45rem;color:var(--muted);font-size:0.84rem}
+.progress-bar{height:12px;background:var(--surface-off);border:1px solid var(--border);border-radius:999px;overflow:hidden}
+.progress-bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--primary),var(--primary-h));transition:width 200ms ease}
+.checklist label{display:flex;align-items:flex-start;gap:0.6rem;color:var(--muted);font-size:0.9rem}
+.checklist input{margin-top:0.23rem}
+.checklist-list{display:flex;flex-direction:column;gap:0.6rem}
+
 footer{border-top:1px solid var(--border);padding:1.5rem 2rem;text-align:center;color:var(--muted);font-size:var(--fs)}
 footer strong{color:var(--primary)}
 
@@ -124,4 +132,5 @@ footer strong{color:var(--primary)}
   .page-header{padding:2rem 1rem 1.5rem}
   .content{padding:0 1rem 3rem}
   .grid{grid-template-columns:1fr}
+  .progress-wrap{padding:0 1rem}
 }

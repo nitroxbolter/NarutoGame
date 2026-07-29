@@ -9,6 +9,13 @@
 <div class="divider"></div>
 <div class="section"><div class="section-label"><div class="dot"></div><h2>Tipos de Dungeon</h2></div><div class="grid"><div class="card"><div class="card-title">Inicio</div><div class="card-desc">Dungeon curta para aprender mecanicas.</div></div><div class="card"><div class="card-title">Intermediaria</div><div class="card-desc">Mais ondas, mais loot e mini bosses.</div></div><div class="card"><div class="card-title">Endgame</div><div class="card-desc">Desafio alto com recompensa rara.</div></div></div></div>
 </div>
+<div class="progress-wrap"><div class="progress-label"><strong>Progresso da documentação</strong><span data-progress-text>0%</span></div><div class="progress-bar" aria-hidden="true"><span data-progress-fill></span></div></div>
+<div class="content"><div class="section"><div class="section-label"><div class="dot"></div><h2>Checklist</h2></div><div class="box checklist"><div class="checklist-list" data-checklist>
+<label><input type="checkbox"><span>Definir conceito de dungeons.</span></label>
+<label><input type="checkbox"><span>Separar dificuldade por fase e nível.</span></label>
+<label><input type="checkbox"><span>Ligá-las a loot e bosses.</span></label>
+<label><input type="checkbox"><span>Definir recompensas e objetivos de grupo.</span></label>
+</div></div></div></div>
 <footer>NarutoGame · Wiki do Projeto</footer>
-<script>(function(){const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';r.setAttribute('data-theme',d);if(t)t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.textContent=d==='dark'?'◐':'◑';});})();</script>
+<script>(function(){const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';r.setAttribute('data-theme',d);if(t)t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.textContent='Tema';});const c=[...document.querySelectorAll('[data-checklist] input[type="checkbox"]')],f=document.querySelector('[data-progress-fill]'),txt=document.querySelector('[data-progress-text]');const u=()=>{const v=c.filter(x=>x.checked).length,w=c.length?Math.round(v/c.length*100):0;f.style.width=w+'%';txt.textContent=w+'%';};c.forEach(x=>x.addEventListener('change',u));u();})();</script>
 </body></html>
