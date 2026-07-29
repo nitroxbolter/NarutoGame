@@ -5,7 +5,7 @@
 # Naruto Game
 
 <p>
-<a href="#conceito">⚡ Conceito</a> · <a href="#mundo">🗺️ Mundo</a> · <a href="#personagem">👤 Personagem</a> · <a href="#progressão-e-combate">🥋 Progressão e combate</a> · <a href="#sistemas-e-economia">💰 Sistemas</a> · <a href="#técnico">🛠️ Técnico</a> · <a href="#planejamento">🧭 Planejamento</a>
+<a href="#conceito">⚡ Conceito</a> · <a href="#mundo">🗺️ Mundo</a> · <a href="#personagem">👤 Personagem</a> · <a href="#comidas-e-regeneracao">?? Comidas</a> · <a href="#equipamentos">??? Equipamentos</a> · <a href="#progressão-e-combate">🥋 Progressão e combate</a> · <a href="#sistemas-e-economia">💰 Sistemas</a> · <a href="#técnico">🛠️ Técnico</a> · <a href="#planejamento">🧭 Planejamento</a>
 </p>
 
 <p>
@@ -78,6 +78,31 @@
 | [Slots de jutsus](sistemas/slots-de-jutsus.md) | Limites de equipagem |
 | [Sistema PvP](combate/pvp.md) | Arena, guerras e torneios |
 | [Balanceamento](sistemas/balanceamento.md) | Escala, fórmulas e ajustes |
+
+</details>
+
+## Comidas e regenera��o
+
+<details>
+<summary><strong>?? Abrir comidas e regenera��o</strong></summary>
+
+| Documento | Tema |
+| --- | --- |
+| [Comidas e regenera��o](comidas.html) | Receitas, regenera��o e buffs consum�veis |
+| [Crafting, profiss�es e coleta](sistemas/crafting-profissoes-coleta.md) | Recursos e receitas de cozinheiro |
+
+</details>
+
+## Equipamentos
+
+<details>
+<summary><strong>??? Abrir equipamentos</strong></summary>
+
+| Documento | Tema |
+| --- | --- |
+| [Equipamentos](equipamentos.html) | Tipos de armas, armaduras, raridades e crafting |
+| [Itens, equipamentos e raridade](sistemas/itens-raridade-equipamentos.md) | Detalhes sobre armas ninja, raridade e b�nus |
+| [Crafting, profiss�es e coleta](sistemas/crafting-profissoes-coleta.md) | Crafting de armas, refor�os e produ��o |
 
 </details>
 
