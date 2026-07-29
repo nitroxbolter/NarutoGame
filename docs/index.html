@@ -8,12 +8,37 @@
 <style>
 :root,[data-theme="light"]{--bg:#f5f3ee;--surface:#faf9f6;--surface2:#fff;--surface-off:#ede9e2;--border:rgba(40,30,10,0.1);--text:#1e1a10;--muted:#7a7060;--primary:#c84b00;--primary-h:#ff6a1a;--shadow:0 2px 12px rgba(40,30,10,0.08);--rf:9999px;--font-d:'Cabinet Grotesk',Georgia,serif;--font-b:'Satoshi',Inter,sans-serif;--f2xl:clamp(2rem,1rem+3vw,3.6rem);--fxl:clamp(1.6rem,1.2rem+1.5vw,2.4rem);--flg:clamp(1.2rem,1rem+0.75vw,1.6rem);--fs:clamp(0.875rem,0.8rem+0.35vw,1rem)}
 [data-theme="dark"]{--bg:#0c0b09;--surface:#131210;--surface2:#191714;--surface-off:#1e1c19;--border:rgba(255,220,160,0.08);--text:#ddd8ce;--muted:#807868;--primary:#e8701a;--primary-h:#ff8c40;--shadow:0 2px 16px rgba(0,0,0,0.4)}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}body{font-family:var(--font-b);background:var(--bg);color:var(--text);font-size:var(--fs);line-height:1.6;min-height:100dvh}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
-.nav{position:sticky;top:0;z-index:100;background:color-mix(in oklch,var(--bg) 80%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0.75rem 2rem;gap:1rem}.nav-logo{display:flex;align-items:center;gap:0.6rem;font-family:var(--font-d);font-weight:800;font-size:1.15rem}.nav-links{display:flex;align-items:center;gap:0.25rem;flex-wrap:wrap}.nav-links a{padding:0.35rem 0.8rem;border-radius:var(--rf);color:var(--muted)}.nav-links a:hover,.nav-links a.active{color:var(--text);background:var(--surface-off)}.theme-btn{width:34px;height:34px;border-radius:var(--rf);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted)}
-.hero{max-width:920px;margin:0 auto;padding:5rem 2rem 3rem;text-align:center}.badge{display:inline-flex;align-items:center;gap:0.5rem;background:color-mix(in oklch,var(--primary) 10%,var(--surface));color:var(--primary);border:1px solid color-mix(in oklch,var(--primary) 22%,transparent);padding:0.35rem 1rem;border-radius:var(--rf);font-size:0.72rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:1.5rem}.hero h1{font-family:var(--font-d);font-size:var(--f2xl);font-weight:800;line-height:1.05;letter-spacing:-0.03em;margin-bottom:1rem}.hero h1 em{color:var(--primary);font-style:normal}.hero p{color:var(--muted);max-width:64ch;margin:0 auto 2rem}
-.hero-btns{display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.7rem 1.2rem;border-radius:var(--rf);font-weight:600}.btn-primary{background:var(--primary);color:#fff}.btn-ghost{border:1px solid var(--border);color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:1rem}.section{max-width:920px;margin:0 auto;padding:0 2rem 4rem}.section-header{display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem}.section-num{width:28px;height:28px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700}.section-title{font-family:var(--font-d);font-size:var(--flg);font-weight:800}.section-tag{margin-left:auto;font-size:0.7rem;color:var(--muted);border:1px solid var(--border);padding:2px 10px;border-radius:var(--rf);text-transform:uppercase;letter-spacing:0.05em}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:1rem;padding:1.2rem;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:.7rem}.card-title{font-weight:700}.card-desc{color:var(--muted);font-size:.88rem;flex:1}.card-link{color:var(--primary);font-size:.8rem}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-b);background:var(--bg);color:var(--text);font-size:var(--fs);line-height:1.6;min-height:100dvh}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.nav{position:sticky;top:0;z-index:100;background:color-mix(in oklch,var(--bg) 80%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0.75rem 2rem;gap:1rem}
+.nav-logo{display:flex;align-items:center;gap:0.6rem;font-family:var(--font-d);font-weight:800;font-size:1.15rem}
+.nav-links{display:flex;align-items:center;gap:0.25rem;flex-wrap:wrap}
+.nav-links a{padding:0.35rem 0.8rem;border-radius:var(--rf);color:var(--muted)}
+.nav-links a:hover,.nav-links a.active{color:var(--text);background:var(--surface-off)}
+.theme-btn{width:34px;height:34px;border-radius:var(--rf);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted)}
+.hero{max-width:960px;margin:0 auto;padding:5rem 2rem 3rem;text-align:center}
+.badge{display:inline-flex;align-items:center;gap:0.5rem;background:color-mix(in oklch,var(--primary) 10%,var(--surface));color:var(--primary);border:1px solid color-mix(in oklch,var(--primary) 22%,transparent);padding:0.35rem 1rem;border-radius:var(--rf);font-size:0.72rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:1.5rem}
+.hero h1{font-family:var(--font-d);font-size:var(--f2xl);font-weight:800;line-height:1.05;letter-spacing:-0.03em;margin-bottom:1rem}
+.hero h1 em{color:var(--primary);font-style:normal}
+.hero p{color:var(--muted);max-width:68ch;margin:0 auto 2rem}
+.hero-btns{display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.7rem 1.2rem;border-radius:var(--rf);font-weight:600}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-ghost{border:1px solid var(--border);color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:1rem}
+.section{max-width:960px;margin:0 auto;padding:0 2rem 4rem}
+.section-header{display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem}
+.section-num{width:28px;height:28px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700}
+.section-title{font-family:var(--font-d);font-size:var(--flg);font-weight:800}
+.section-tag{margin-left:auto;font-size:0.7rem;color:var(--muted);border:1px solid var(--border);padding:2px 10px;border-radius:var(--rf);text-transform:uppercase;letter-spacing:0.05em}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:1rem;padding:1.2rem;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:.7rem}
+.card-title{font-weight:700}
+.card-desc{color:var(--muted);font-size:.88rem;flex:1}
+.card-link{color:var(--primary);font-size:.8rem}
+.box{background:var(--surface);border:1px solid var(--border);border-radius:1rem;padding:1.2rem;box-shadow:var(--shadow)}
+.box-title{font-weight:700;margin-bottom:.7rem}
+.box ul{padding-left:1.2rem;display:flex;flex-direction:column;gap:.35rem;color:var(--muted)}
 footer{border-top:1px solid var(--border);padding:1.5rem 2rem;text-align:center;color:var(--muted)}
 @media(max-width:640px){.nav{padding:0.6rem 1rem}.nav-links{display:none}.hero{padding:3rem 1rem 2rem}.section{padding:0 1rem 3rem}}
 </style>
@@ -32,25 +57,55 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;text-align:center;
     <a href="dungeons.html">Dungeons</a>
     <a href="arquitetura.html">Arquitetura</a>
   </div>
-  <button class="theme-btn" data-theme-toggle aria-label="tema">◐</button>
+  <button class="theme-btn" data-theme-toggle aria-label="tema">Tema</button>
 </nav>
+
 <section class="hero">
   <div class="badge">TFS 1.4.2 + OTCv8 - Wiki do projeto</div>
-  <h1>NarutoGame <em>Wiki</em></h1>
-  <p>Pagina principal do projeto. Use o menu para abrir cada area especifica em uma pagina propria, mantendo o mesmo estilo e navegação.</p>
+  <h1>Um <em>ninja original</em> dentro do mundo de Naruto</h1>
+  <p>A essencia do servidor e essa: o jogador cria sua propria identidade, com elemento inicial, vila, progressao por rank, jutsus aprendidos, equipamentos e reputacao. Konoha e o ponto de partida, mas a jornada pode crescer para outras nacoes e atos da historia.</p>
+  <div class="hero-btns">
+    <a class="btn btn-primary" href="mundo.html">Comecar pelo Mundo</a>
+    <a class="btn btn-ghost" href="personagem.html">Ver Personagem</a>
+  </div>
 </section>
+
 <section class="section">
-  <div class="section-header"><div class="section-num">1</div><h2 class="section-title">Atalhos</h2><span class="section-tag">Acesso rapido</span></div>
+  <div class="section-header"><div class="section-num">1</div><h2 class="section-title">Essencia do Servidor</h2><span class="section-tag">O que define o projeto</span></div>
   <div class="grid">
-    <a class="card" href="mundo.html"><div class="card-title">Mundo</div><div class="card-desc">Paises, nações, aldeias, história e Ato I / Ato II.</div><div class="card-link">Abrir pagina</div></a>
-    <a class="card" href="personagem.html"><div class="card-title">Personagem</div><div class="card-desc">Atributos, chakra, skills, elementos e jutsus.</div><div class="card-link">Abrir pagina</div></a>
+    <div class="card"><div class="card-title">Identidade propria</div><div class="card-desc">O jogador nao assume Naruto, Sasuke ou Kakashi. Ele cria um ninja original dentro do universo.</div></div>
+    <div class="card"><div class="card-title">Konoha como inicio</div><div class="card-desc">O MVP comeca em Konoha. Depois o jogador pode migrar para outra nacao conforme historia e sistema.</div></div>
+    <div class="card"><div class="card-title">Progressao por merito</div><div class="card-desc">O poder cresce por treino, missoes, ranks, jutsus e reputacao. Level sozinho nao resolve tudo.</div></div>
+    <div class="card"><div class="card-title">Elementos e build</div><div class="card-desc">O elemento inicial define a primeira arvore de jutsus e o estilo de jogo do personagem.</div></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header"><div class="section-num">2</div><h2 class="section-title">Visao Geral</h2><span class="section-tag">Resumo rapido</span></div>
+  <div class="box">
+    <div class="box-title">Como o servidor deve funcionar</div>
+    <ul>
+      <li>O jogador entra na Academia e cria um personagem com nome e elemento inicial.</li>
+      <li>Ele comeca em Konoha e cresce por missoes, treino, jutsus e promocoes.</li>
+      <li>Cada rank libera conteudo novo e muda a forma como o cliente mostra o personagem.</li>
+      <li>O mundo se expande em atos, com paises, aldeias, chefs, bosses e conflitos maiores.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header"><div class="section-num">3</div><h2 class="section-title">Atalhos</h2><span class="section-tag">Acesso rapido</span></div>
+  <div class="grid">
+    <a class="card" href="mundo.html"><div class="card-title">Mundo</div><div class="card-desc">Paises, nacoes, aldeias, historia e Ato I / Ato II.</div><div class="card-link">Abrir pagina</div></a>
+    <a class="card" href="personagem.html"><div class="card-title">Personagem</div><div class="card-desc">Atributos, chakra, skills, elementos, jutsus e progressao.</div><div class="card-link">Abrir pagina</div></a>
     <a class="card" href="equipamentos.html"><div class="card-title">Equipamentos</div><div class="card-desc">Armas, armaduras, itens shinobi e crafting.</div><div class="card-link">Abrir pagina</div></a>
     <a class="card" href="economia.html"><div class="card-title">Economia</div><div class="card-desc">Mercado, shop, vendas, moeda e fluxo de recursos.</div><div class="card-link">Abrir pagina</div></a>
     <a class="card" href="missoes.html"><div class="card-title">Missoes</div><div class="card-desc">Tasks, ranks D/C/B/A e progressao por missao.</div><div class="card-link">Abrir pagina</div></a>
     <a class="card" href="arquitetura.html"><div class="card-title">Arquitetura</div><div class="card-desc">TFS, cliente, checklist e plano de acao.</div><div class="card-link">Abrir pagina</div></a>
   </div>
 </section>
-<footer>NarutoGame · Wiki do Projeto</footer>
-<script>(function(){const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';r.setAttribute('data-theme',d);if(t)t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.textContent=d==='dark'?'◐':'◑';});})();</script>
+
+<footer>NarutoGame - Wiki do Projeto</footer>
+<script>(function(){const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';r.setAttribute('data-theme',d);if(t)t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.textContent='Tema';});})();</script>
 </body>
 </html>
