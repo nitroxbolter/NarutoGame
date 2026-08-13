@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PvP e Mortes - NarutoGame Wiki</title>
+<link rel="stylesheet" href="layout.css">
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav-logo">NarutoGame</a>
+  <div class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="visao-geral.html">Visão Geral</a>
+    <a href="mundo.html">Mundo</a>
+    <a href="personagem.html">Personagem</a>
+    <a href="equipamentos.html">Equipamentos</a>
+    <a href="economia.html">Economia</a>
+    <a href="missoes.html">Missoes</a>
+    <a href="bosses.html">Bosses</a>
+    <a href="dungeons.html">Dungeons</a>
+    <a href="pvp.html" class="active">PvP</a>
+    <a href="arquitetura.html">Arquitetura</a>
+  </div>
+  <button class="theme-btn" data-theme-toggle aria-label="tema">Tema</button>
+</nav>
+<div class="page-header">
+  <div class="breadcrumb"><a href="index.html">Wiki</a><span>/</span><span>PvP e Mortes</span></div>
+  <div class="badge">⚔️ Combate, Mortes e Injustiças</div>
+  <h1>Combate <em>PvP</em></h1>
+  <p class="lead">Especificações sobre as punições de morte, acúmulo de feridas, skulls de PK e restrições no mundo.</p>
+</div>
+<div class="content">
+  <div class="section">
+    <div class="section-label"><div class="dot"></div><h2>Punição por Morte Comum</h2></div>
+    <p>A morte no jogo carrega consequências reais e significativas para manter a tensão do combate e valorizar a sobrevivência.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="card-icon">💀</div>
+        <div class="card-title">Perda de Recursos</div>
+        <div class="card-body">Ao morrer, o jogador perde uma porcentagem de experiência (EXP) e níveis de skill.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎒</div>
+        <div class="card-title">Queda de Mochila</div>
+        <div class="card-body">A mochila (backpack) do jogador cai automaticamente no chão (drop total), podendo ser recolhida por qualquer pessoa.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🩹</div>
+        <div class="card-title">Status de Feridas</div>
+        <div class="card-body">Toda morte consecutiva acumula o status de "Feridas", que age como um debuff ativo no personagem.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <div class="section-label"><div class="dot"></div><h2>Sistema de Feridas (Wounds)</h2></div>
+    <p>O acúmulo de feridas representa o desgaste físico e mental das mortes consecutivas.</p>
+    <div class="box">
+      <div class="box-title">🩹 Impacto do status de Feridas</div>
+      <ul>
+        <li>Reduz temporariamente os valores ativos de todas as suas **skills** (Ninjutsu, Taijutsu, etc.).</li>
+        <li>Diminui a **regeneração de vida e chakra**.</li>
+        <li>O debuff piora cumulativamente a cada nova morte.</li>
+        <li>**Como curar:** O status reduz gradualmente com o tempo online ou de forma instantânea usando consumíveis medicinais especiais (ervas e remédios ninja).</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <div class="section-label"><div class="dot"></div><h2>Injusts e PK (Skulls)</h2></div>
+    <p>Matar outros jogadores de forma injustificada gera penalidades sociais e de status no servidor.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Skull</th>
+            <th>Requisito (Kills Injustos)</th>
+            <th>Efeito e Punição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>White Skull (PK)</strong></td>
+            <td>A partir de 1 kill injusto</td>
+            <td>Fica marcado para PvP livre. Mantém a perda normal de EXP/skills e mochila ao morrer.</td>
+          </tr>
+          <tr>
+            <td><strong>Red Skull</strong></td>
+            <td>10 kills injustos</td>
+            <td>Sinalização de alta periculosidade. Sofre restrições de tráfego e missões. Perdas na morte iguais às normais.</td>
+          </tr>
+          <tr>
+            <td><strong>Black Skull</strong></td>
+            <td>50 kills injustos</td>
+            <td>Nível máximo de ameaça. Impedido de entrar em locais protegidos e quests. Perdas na morte iguais às normais.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <div class="section-label"><div class="dot"></div><h2>Remoção de Kills e Restrições</h2></div>
+    <div class="box">
+      <div class="box-title">🛑 Restrições para PKs (Red/Black Skull)</div>
+      <ul>
+        <li><strong>Zonas Protegidas:</strong> Proibição de entrar em locais específicos da aldeia, como templos e bibliotecas.</li>
+        <li><strong>Missões Bloqueadas:</strong> Impossibilidade de aceitar ou completar certas missões (quests) da vila enquanto estiver sob punição.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <div class="box-title">🔄 Métodos para Reduzir Kills Injustos</div>
+      <ul>
+        <li><strong>Mortes Purgadoras:</strong> Cada morte sofrida para monstros ou outros jogadores reduz ativamente o contador de kills injustos.</li>
+        <li><strong>Missões de Redenção:</strong> Concluir tarefas específicas oferecidas por NPCs neutros ou templos para limpar o carma ninja.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<footer>NarutoGame · Wiki do Projeto</footer>
+<script>(function(){const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';r.setAttribute('data-theme',d);if(t)t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.textContent=d==='dark'?'Tema':'Tema';});})();</script>
+</body>
+</html>
