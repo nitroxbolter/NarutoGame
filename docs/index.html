@@ -4,21 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NarutoGame - Wiki</title>
-<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="layout.css">
 <style>
-:root,[data-theme="light"]{--bg:#f5f3ee;--surface:#faf9f6;--surface2:#fff;--surface-off:#ede9e2;--border:rgba(40,30,10,0.1);--text:#1e1a10;--muted:#7a7060;--primary:#c84b00;--primary-h:#ff6a1a;--shadow:0 2px 12px rgba(40,30,10,0.08);--rf:9999px;--font-d:'Cabinet Grotesk',Georgia,serif;--font-b:'Satoshi',Inter,sans-serif;--f2xl:clamp(2rem,1rem+3vw,3.6rem);--fxl:clamp(1.6rem,1.2rem+1.5vw,2.4rem);--flg:clamp(1.2rem,1rem+0.75vw,1.6rem);--fs:clamp(0.875rem,0.8rem+0.35vw,1rem)}
-[data-theme="dark"]{--bg:#0c0b09;--surface:#131210;--surface2:#191714;--surface-off:#1e1c19;--border:rgba(255,220,160,0.08);--text:#ddd8ce;--muted:#807868;--primary:#e8701a;--primary-h:#ff8c40;--shadow:0 2px 16px rgba(0,0,0,0.4)}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:var(--font-b);background:var(--bg);color:var(--text);font-size:var(--fs);line-height:1.6;min-height:100dvh}
-a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
-.nav{position:sticky;top:0;z-index:100;background:color-mix(in oklch,var(--bg) 80%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0.75rem 2rem;gap:1rem}
-.nav-logo{display:flex;align-items:center;gap:0.6rem;font-family:var(--font-d);font-weight:800;font-size:1.15rem}
-.nav-links{display:flex;align-items:center;gap:0.25rem;flex-wrap:wrap}
-.nav-links a{padding:0.35rem 0.8rem;border-radius:var(--rf);color:var(--muted)}
-.nav-links a:hover,.nav-links a.active{color:var(--text);background:var(--surface-off)}
-.theme-btn{width:34px;height:34px;border-radius:var(--rf);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted)}
 .hero{max-width:960px;margin:0 auto;padding:5rem 2rem 3rem;text-align:center}
-.badge{display:inline-flex;align-items:center;gap:0.5rem;background:color-mix(in oklch,var(--primary) 10%,var(--surface));color:var(--primary);border:1px solid color-mix(in oklch,var(--primary) 22%,transparent);padding:0.35rem 1rem;border-radius:var(--rf);font-size:0.72rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:1.5rem}
+.hero-badge{display:inline-flex;align-items:center;gap:0.5rem;background:color-mix(in oklch,var(--primary) 10%,var(--surface));color:var(--primary);border:1px solid color-mix(in oklch,var(--primary) 22%,transparent);padding:0.35rem 1rem;border-radius:var(--rf);font-size:0.72rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:1.5rem}
 .hero h1{font-family:var(--font-d);font-size:var(--f2xl);font-weight:800;line-height:1.05;letter-spacing:-0.03em;margin-bottom:1rem}
 .hero h1 em{color:var(--primary);font-style:normal}
 .hero p{color:var(--muted);max-width:68ch;margin:0 auto 2rem}
@@ -26,26 +15,23 @@ a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
 .btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.7rem 1.2rem;border-radius:var(--rf);font-weight:600}
 .btn-primary{background:var(--primary);color:#fff}
 .btn-ghost{border:1px solid var(--border);color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:1rem}
-.section{max-width:960px;margin:0 auto;padding:0 2rem 4rem}
+.home-section{max-width:960px;margin:0 auto;padding:0 2rem 4rem}
 .section-header{display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem}
 .section-num{width:28px;height:28px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700}
 .section-title{font-family:var(--font-d);font-size:var(--flg);font-weight:800}
 .section-tag{margin-left:auto;font-size:0.7rem;color:var(--muted);border:1px solid var(--border);padding:2px 10px;border-radius:var(--rf);text-transform:uppercase;letter-spacing:0.05em}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:1rem;padding:1.2rem;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:.7rem}
-.card-title{font-weight:700}
-.card-desc{color:var(--muted);font-size:.88rem;flex:1}
-.card-link{color:var(--primary);font-size:.8rem}
-.box{background:var(--surface);border:1px solid var(--border);border-radius:1rem;padding:1.2rem;box-shadow:var(--shadow)}
-.box-title{font-weight:700;margin-bottom:.7rem}
-.box ul{padding-left:1.2rem;display:flex;flex-direction:column;gap:.35rem;color:var(--muted)}
-footer{border-top:1px solid var(--border);padding:1.5rem 2rem;text-align:center;color:var(--muted)}
-@media(max-width:640px){.nav{padding:0.6rem 1rem}.nav-links{display:none}.hero{padding:3rem 1rem 2rem}.section{padding:0 1rem 3rem}}
+.home-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:1rem}
+.home-card{background:var(--surface);border:1px solid var(--border);border-radius:1rem;padding:1.2rem;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:.7rem;color:inherit;transition:box-shadow 180ms,transform 180ms,background 180ms}
+.home-card:hover{box-shadow:0 6px 24px rgba(0,0,0,0.12);background:var(--surface2);transform:translateY(-2px)}
+.home-card-title{font-weight:700}
+.home-card-desc{color:var(--muted);font-size:.88rem;flex:1}
+.home-card-link{color:var(--primary);font-size:.8rem}
+@media(max-width:640px){.hero{padding:3rem 1rem 2rem}.home-section{padding:0 1rem 3rem}}
 </style>
 </head>
 <body>
 <nav class="nav">
-  <div class="nav-logo">NarutoGame</div>
+  <a href="index.html" class="nav-logo">NarutoGame</a>
   <div class="nav-links">
     <a href="index.html" class="active">Inicio</a>
     <a href="visao-geral.html">Visão Geral</a>
@@ -59,11 +45,13 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;text-align:center;
     <a href="pvp.html">PvP</a>
     <a href="arquitetura.html">Arquitetura</a>
   </div>
-  <button class="theme-btn" data-theme-toggle aria-label="tema">Tema</button>
+  <div class="nav-right">
+    <button class="theme-btn" data-theme-toggle aria-label="tema">◐</button>
+  </div>
 </nav>
 
 <section class="hero">
-  <div class="badge">TFS 1.4.2 + OTCv8 - Wiki do projeto</div>
+  <div class="hero-badge">TFS 1.4.2 + OTCv8 - Wiki do projeto</div>
   <h1>Um <em>ninja original</em> dentro do mundo de Naruto</h1>
   <p>A essencia do servidor e essa: o jogador cria sua propria identidade, com elemento inicial, vila, progressao por rank, jutsus aprendidos, equipamentos e reputacao. Konoha e o ponto de partida, mas a jornada pode crescer para outras nacoes e atos da historia.</p>
   <div class="hero-btns">
@@ -72,7 +60,7 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;text-align:center;
   </div>
 </section>
 
-<section class="section">
+<section class="home-section">
   <div class="panel">
     <div class="panel-head">
       <div class="panel-title">
@@ -97,21 +85,21 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;text-align:center;
   </div>
 </section>
 
-<section class="section">
+<section class="home-section">
   <div class="section-header"><div class="section-num">2</div><h2 class="section-title">Atalhos</h2><span class="section-tag">Acesso rapido</span></div>
-  <div class="grid">
-    <a class="card" href="visao-geral.html"><div class="card-title">Visão Geral</div><div class="card-desc">Documento base com proposta, conceito, pilares e direção do servidor.</div><div class="card-link">Abrir pagina</div></a>
-    <a class="card" href="mundo.html"><div class="card-title">Mundo</div><div class="card-desc">Paises, nacoes, aldeias, historia e Ato I / Ato II.</div><div class="card-link">Abrir pagina</div></a>
-    <a class="card" href="personagem.html"><div class="card-title">Personagem</div><div class="card-desc">Atributos, chakra, skills, elementos, jutsus e progressao.</div><div class="card-link">Abrir pagina</div></a>
-    <a class="card" href="equipamentos.html"><div class="card-title">Equipamentos</div><div class="card-desc">Armas, armaduras, itens shinobi e crafting.</div><div class="card-link">Abrir pagina</div></a>
-    <a class="card" href="economia.html"><div class="card-title">Economia</div><div class="card-desc">Mercado, shop, vendas, moeda e fluxo de recursos.</div><div class="card-link">Abrir pagina</div></a>
-    <a class="card" href="missoes.html"><div class="card-title">Missoes</div><div class="card-desc">Tasks, ranks D/C/B/A e progressao por missao.</div><div class="card-link">Abrir pagina</div></a>
-    <a class="card" href="pvp.html"><div class="card-title">PvP e Mortes</div><div class="card-desc">Punições, Feridas (debuff), PK skulls e restrições de tráfego.</div><div class="card-link">Abrir pagina</div></a>
-    <a class="card" href="arquitetura.html"><div class="card-title">Arquitetura</div><div class="card-desc">TFS, cliente, checklist e plano de acao.</div><div class="card-link">Abrir pagina</div></a>
+  <div class="home-grid">
+    <a class="home-card" href="visao-geral.html"><div class="home-card-title">Visão Geral</div><div class="home-card-desc">Documento base com proposta, conceito, pilares e direção do servidor.</div><div class="home-card-link">Abrir pagina</div></a>
+    <a class="home-card" href="mundo.html"><div class="home-card-title">Mundo</div><div class="home-card-desc">Paises, nacoes, aldeias, historia e Ato I / Ato II.</div><div class="home-card-link">Abrir pagina</div></a>
+    <a class="home-card" href="personagem.html"><div class="home-card-title">Personagem</div><div class="home-card-desc">Atributos, chakra, skills, elementos, jutsus e progressao.</div><div class="home-card-link">Abrir pagina</div></a>
+    <a class="home-card" href="equipamentos.html"><div class="home-card-title">Equipamentos</div><div class="home-card-desc">Armas, armaduras, itens shinobi e crafting.</div><div class="home-card-link">Abrir pagina</div></a>
+    <a class="home-card" href="economia.html"><div class="home-card-title">Economia</div><div class="home-card-desc">Mercado, shop, vendas, moeda e fluxo de recursos.</div><div class="home-card-link">Abrir pagina</div></a>
+    <a class="home-card" href="missoes.html"><div class="home-card-title">Missoes</div><div class="home-card-desc">Tasks, ranks D/C/B/A e progressao por missao.</div><div class="home-card-link">Abrir pagina</div></a>
+    <a class="home-card" href="pvp.html"><div class="home-card-title">PvP e Mortes</div><div class="home-card-desc">Punições, Feridas (debuff), PK skulls e restrições de tráfego.</div><div class="home-card-link">Abrir pagina</div></a>
+    <a class="home-card" href="arquitetura.html"><div class="home-card-title">Arquitetura</div><div class="home-card-desc">TFS, cliente, checklist e plano de acao.</div><div class="home-card-link">Abrir pagina</div></a>
   </div>
 </section>
 
-<footer>NarutoGame - Wiki do Projeto</footer>
-<script>(function(){const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';r.setAttribute('data-theme',d);if(t)t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.textContent='Tema';});const prefix='ng-doc-checks:'+ 'index.html' + ':';const c=[...document.querySelectorAll('[data-checklist] input[type="checkbox"]')];c.forEach((x,i)=>{const s=localStorage.getItem(prefix+i);x.checked=s==='1';x.addEventListener('change',()=>localStorage.setItem(prefix+i,x.checked?'1':'0'));});const f=document.querySelector('[data-progress-fill]'),txt=document.querySelector('[data-progress-text]');const map=[['index.html',4],['visao-geral.html',4],['mundo.html',4],['personagem.html',4],['equipamentos.html',4],['economia.html',4],['missoes.html',4],['bosses.html',4],['dungeons.html',4],['arquitetura.html',4]];const total=map.reduce((a,e)=>a+e[1],0);const done=map.reduce((a,e)=>{let n=0;for(let i=0;i<e[1];i++){if(localStorage.getItem('ng-doc-checks:'+e[0]+':'+i)==='1')n++;}return a+n;},0);const pct=total?Math.round(done/total*100):0;if(f)f.style.width=pct+'%';if(txt)txt.textContent=pct+'%';})();</script>
+<footer><strong>NarutoGame</strong> · Wiki do Projeto · <a href="https://github.com/nitroxbolter/NarutoGame" target="_blank" rel="noopener" style="color:var(--primary)">GitHub ↗</a></footer>
+<script>(function(){const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';r.setAttribute('data-theme',d);if(t)t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.textContent='◐';});const f=document.querySelector('[data-progress-fill]'),txt=document.querySelector('[data-progress-text]');const map=[['index.html',4],['visao-geral.html',4],['mundo.html',4],['personagem.html',4],['equipamentos.html',4],['economia.html',4],['missoes.html',4],['bosses.html',4],['dungeons.html',4],['arquitetura.html',4]];const total=map.reduce((a,e)=>a+e[1],0);const done=map.reduce((a,e)=>{let n=0;for(let i=0;i<e[1];i++){if(localStorage.getItem('ng-doc-checks:'+e[0]+':'+i)==='1')n++;}return a+n;},0);const pct=total?Math.round(done/total*100):0;if(f)f.style.width=pct+'%';if(txt)txt.textContent=pct+'%';})();</script>
 </body>
 </html>
