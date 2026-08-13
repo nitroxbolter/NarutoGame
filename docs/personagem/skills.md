@@ -14,27 +14,19 @@ Skills são as habilidades e técnicas que o personagem domina ao longo da jorna
 - Utilidade.
 - Técnicas de elemento.
 
-## Domínio de skill
+## Domínio de skill e Evolução
 
-Cada skill pode ter estágios de domínio:
+- **Sem limite (no cap):** As skills físicas e de chakra do personagem não possuem teto máximo de nível.
+- **Evolução por prática:** O desenvolvimento das skills é contínuo e ocorre de forma orgânica.
 
-1. Aprendida.
-2. Treinada.
-3. Aperfeiçoada.
-4. Mestre.
+## Penalidades por Morte e Feridas
 
-## O que pode evoluir
-
-- Dano.
-- Custo de chakra.
-- Tempo de recarga.
-- Alcance.
-- Precisão.
-- Efeitos secundários.
+- **Perda por Morte:** Ao morrer, o personagem perde pontos/percentuais de progresso nas suas skills.
+- **Feridas (Status Debuff):** Toda morte consecutiva acumula o status de "Feridas" (Wounds). Este status atua como um redutor de atributos, diminuindo temporariamente os valores ativos de suas skills e as taxas de regeneração.
+- **Tratamento:** As feridas reduzem conforme o tempo passa ou por meio do uso de consumíveis medicinais (remédios/ervas).
 
 ## Direção de design
 
-- Skills precisam ser aprendidas com intenção.
-- O uso repetido deve gerar domínio e identidade.
-- O sistema deve permitir builds físicas, técnicas e híbridas.
+- O uso repetido e dedicação definem o avanço das skills.
+- O sistema deve permitir que o jogador construa builds especializadas devido ao progresso sem limites das skills.
 

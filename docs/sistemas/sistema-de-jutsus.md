@@ -20,13 +20,12 @@ O sistema de jutsus precisa ser o centro do combate e da identidade do personage
 
 Cada jutsu possui sua própria proficiência.
 
-### Nível de domínio
+### Nível de domínio e especialização
 
-- Nível 1: aprendizado bruto.
-- Nível 2: execução estável.
-- Nível 3: uso confiável.
-- Nível 4: uso refinado.
-- Nível 5: domínio máximo.
+- **Sem cap de nível:** Não há nível máximo para os jutsus. O domínio cresce indefinidamente.
+- **Evolução baseada em uso:** A proficiência aumenta exclusivamente através do uso repetido em combate real.
+- **Progressão extremamente lenta:** Subir o nível de um jutsu é um processo demorado, premiando a dedicação a longo prazo.
+- **Diferencial competitivo:** Um jogador de nível baixo que focar em treinar exaustivamente um único jutsu pode ter essa técnica muito mais forte do que a de um jogador de level alto que dividiu o foco entre vários jutsus.
 
 ### Ganho de experiência
 
@@ -53,8 +52,7 @@ O rank do jutsu deve influenciar custo, aprendizado e ganho de experiência.
 
 ## Nível máximo
 
-- O nível máximo sugerido para cada jutsu é 5.
-- Depois do nível máximo, o jutsu pode desbloquear variações, não mais níveis.
+- Não existe nível máximo (cap) para o domínio dos jutsus. A progressão de poder, redução de custo/cooldown e melhoria de efeitos é contínua e infinita, embora a curva de XP necessária seja bastante íngreme a cada nível.
 
 ## Dependências
 
@@ -80,20 +78,11 @@ O rank do jutsu deve influenciar custo, aprendizado e ganho de experiência.
 | Jonin | Jutsus avançados e técnicas de assinatura |
 | ANBU / Sannin / Kage | Técnicas raras, secretas ou de elite |
 
-## Limite de jutsus equipados
+## Limite de jutsus equipados (Spellbar)
 
-Os slots servem para forçar decisão de build.
-
-| Rank | Slots sugeridos |
-| --- | --- |
-| Academia | 2 |
-| Genin | 4 |
-| Chunin | 6 |
-| Tokubetsu Jonin | 7 |
-| Jonin | 8 |
-| ANBU | 8 |
-| Sannin | 9 |
-| Kage / Hokage | 10 |
+Para forçar decisões estratégicas de build e evitar que um jogador possua respostas para todas as situações sem precisar se comprometer, haverá um limite fixo:
+- **Máximo de 8 jutsus habilitados** simultaneamente na spellbar (barra de magias ativa) do personagem.
+- Jutsus que não estiverem na spellbar não poderão ser ativados em combate.
 
 ## Direção de design
 

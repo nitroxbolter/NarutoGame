@@ -21,15 +21,13 @@ Os elementos definem a afinidade principal do personagem e orientam quais árvor
 
 ## Direção de progressão
 
-- O primeiro elemento é o mais acessível.
-- O segundo exige rank, missão e treinamento.
-- O terceiro deve ser avançado e raro.
-- Combinações especiais ficam para o endgame.
+- **1º Elemento:** Escolhido pelo jogador no momento da criação do personagem.
+- **2º Elemento:** Liberado no rank Chunin após missão e treino.
+- **3º ao 5º Elemento:** Conseguir os demais elementos é possível, porém torna-se progressivamente muito difícil. Exige nível de personagem alto, missões complexas e desenvolvimento prévio de nível dos elementos que o ninja já possui.
 
 ## Possibilidades futuras
 
-- Kekkei Genkai.
+- Kekkei Genkai por combinação de elementos.
 - Técnicas exclusivas por linhagem.
-- Mestres elementais.
 - Pergaminhos raros e especializações secretas.
 

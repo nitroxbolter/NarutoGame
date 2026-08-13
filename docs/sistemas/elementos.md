@@ -44,15 +44,14 @@ Cada elemento possui um nível próprio de 1 a 10.
 
 | Slot | Requisito sugerido |
 | --- | --- |
-| Primeiro elemento | Escolha inicial ou teste na academia |
-| Segundo elemento | Rank Chunin, treino com mestre e missão elemental |
-| Terceiro elemento | Rank Jonin, pergaminho raro, reputação alta e dungeon elemental |
+| Primeiro elemento | Escolhido livremente pelo jogador durante a criação do personagem |
+| Segundo elemento | Rank Chunin, mestre elemental e missão básica de afinidade |
+| Terceiro elemento em diante | Requisitos complexos de nível do personagem, missões avançadas de vila e níveis mínimos dos elementos anteriores |
 
 ## Limite máximo
 
-- O padrão do servidor deve ser 1 elemento inicial, 2 como evolução normal e 3 como limite máximo raro.
-- O terceiro elemento não deve ser comum.
-- Combinações elementais devem continuar mais raras que o segundo elemento.
+- Não há limite máximo restrito: o jogador pode aprender todos os 5 elementos básicos até o end-game.
+- **Progressão Curva de Dificuldade:** A partir do 3º elemento, a liberação e o treino tornam-se extremamente difíceis, exigindo que o jogador já tenha evoluído bastante seus elementos anteriores e possua nível geral alto de personagem, além de concluir missões de alta periculosidade.
 
 ## Fórmula de evolução
 

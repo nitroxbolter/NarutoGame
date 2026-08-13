@@ -68,7 +68,7 @@ A progressão social e funcional do personagem pode seguir a hierarquia ninja cl
 - Chunin.
 - Jonin.
 - ANBU (ou especialização avançada).
-- Kage ou equivalente endgame narrativo.
+- Kage / Hokage.
 
 Cada rank pode desbloquear:
 
@@ -89,13 +89,17 @@ A promoção de rank não deve depender só de level. O ideal é exigir combina�
 - Bosses específicos derrotados.
 - Reputação com a aldeia.
 
-Isso faz a progressão parecer mais narrativa e menos automática.
+#### Regras Especiais para o Hokage
+O Hokage representa a liderança máxima da aldeia e é um título dinâmico e competitivo:
+- **Critério de Elegibilidade:** O cargo será disputado entre os 3 personagens de maior nível do servidor. O jogador com o maior nível ativo assume o título.
+- **Manutenção do Título:** A cada 5 dias, o Hokage deve derrotar um boss específico para provar que é digno e manter o seu cargo.
+- **Condição de Perda:** Se o Hokage morrer de qualquer forma (para monstros, players ou bosses), ele perde o título automaticamente, permitindo que a liderança alterne entre os 3 personagens mais fortes.
 
 ### 3. Level como Base de Poder
 
-O level representa a evolução geral do ninja e deve ser um dos pilares centrais do crescimento.
+O level representa a evolução geral do ninja e é um dos pilares centrais do crescimento. **Não há limite máximo (cap) de nível, de skills ou de nível dos jutsus.**
 
-O level pode definir principalmente:
+O level define principalmente:
 
 - Vida máxima.
 - Chakra máximo.
@@ -107,10 +111,9 @@ O level pode definir principalmente:
 ### Ideia de função do level dentro do servidor
 
 - Level = maturidade geral do personagem.
-- Não deve decidir tudo sozinho.
-- Deve se combinar com treino, mentalidade, elemento e jutsus aprendidos.
-
-Assim, dois jogadores do mesmo nível ainda podem ser diferentes entre si.
+- Não deve decidir tudo sozinho. Ele atua em conjunto com a maestria dos jutsus e treino físico/mental.
+- Dois jogadores do mesmo nível ainda podem ser diferentes entre si.
+- Como não há cap, a progressão de longo prazo é infinita.
 
 ## Atributos Principais
 
@@ -192,16 +195,13 @@ O elemento base define:
 
 ### Aprendizado de Novos Elementos
 
-Um diferencial importante é que o jogador pode aprender outros elementos no futuro, mas isso deve exigir esforço e progressão real.
+O jogador pode aprender todos os 5 elementos ao longo de sua jornada, mas isso exige um progresso gradual e de alta dificuldade:
 
-Sugestões de regra:
+- **1º Elemento (Inicial):** Escolhido livremente durante a criação do personagem.
+- **2º Elemento:** Exige rank intermediário (Chunin), missão elemental e treino básico com mestre.
+- **A partir do 3º Elemento:** O aprendizado torna-se extremamente difícil. Exigirá requisitos complexos, incluindo níveis mínimos dos elementos anteriores, realização de missões especiais e requisitos de nível do personagem.
 
-- Primeiro elemento é mais fácil de desenvolver.
-- Segundo elemento exige rank mínimo, missão e treinamento especial.
-- Terceiro elemento deve ser conteúdo avançado e raro.
-- Combinações especiais podem ficar para endgame.
-
-Isso cria senso de conquista e evita que todos tenham tudo muito cedo.
+Isso cria senso de conquista e evita que todos tenham todos os elementos muito cedo.
 
 ### Possibilidades Futuras
 
@@ -259,24 +259,21 @@ Exemplo conceitual:
 
 Dessa forma, o anime vira fonte de técnicas, não de classes prontas.
 
-### Progressão de Domínio
+### Progressão de Domínio e Nível do Jutsu
 
-Além de aprender o jutsu, pode existir domínio da técnica:
+Os jutsus possuem seu próprio nível de domínio, sem limite máximo (cap).
+- **Evolução por Uso:** O nível de um jutsu aumenta à medida que o jogador o utiliza em combate. Quanto mais usar, maior será o nível daquele jutsu.
+- **Progressão Lenta:** A progressão de nível do jutsu é extremamente lenta, exigindo dedicação contínua.
+- **Especialização Única:** Um jogador de nível geral mais baixo pode ter um jutsu muito mais forte e evoluído do que um jogador de nível mais alto, se focar e treinar exaustivamente apenas aquela técnica. Os jogadores podem optar por se especializarem em um único jutsu em vez de espalharem seu treino por várias técnicas.
+- **Spellbar Limitada:** Para incentivar decisões estratégicas de build, cada jogador poderá ter no máximo **8 jutsus habilitados** simultaneamente na sua barra de magias (spellbar).
 
-- Aprendido.
-- Treinado.
-- Aperfeiçoado.
-- Mestre.
-
-O domínio pode melhorar:
+O domínio melhorado do jutsu impacta:
 
 - Dano.
 - Custo de chakra.
 - Tempo de recarga.
 - Alcance.
 - Efeitos secundários.
-
-Isso aumenta o valor do uso contínuo da técnica.
 
 ## Estilos de Combate
 
@@ -437,6 +434,11 @@ O ideal é que o dinheiro seja sempre relevante para:
 - Sistema de coleta de recursos.
 - Economia regional por aldeia.
 
+## Clãs no Servidor
+Os clãs no jogo funcionarão como o sistema tradicional de guildas (Guilds), servindo como núcleos sociais e de organização de jogadores.
+- **Eventos de Clã:** O jogo contará com eventos focados em clãs.
+- **Benefícios de Clã:** A participação em eventos de clã garantirá bônus de experiência temporários (XP extra) e double loot para os membros, incentivando a cooperação.
+
 ## Itens e Equipamentos
 
 A identidade dos itens deve seguir a fantasia ninja, sem depender de equipamentos genéricos de MMORPG.
@@ -500,7 +502,7 @@ Os bosses devem ser baseados nas grandes ameaças do universo Naruto, funcionand
 
 - Conteúdo de grupo.
 - Teste de build.
-- Fonte de loot raro.
+- **Loot por Dano:** A distribuição de recompensas e itens raros de bosses será baseada proporcionalmente no dano causado por cada jogador ou grupo ao boss.
 - Fonte de materiais especiais.
 - Requisito de progressão em missões.
 - Eventos globais do servidor.
@@ -577,14 +579,35 @@ Para organizar o projeto e evitar escopo excessivo no começo, uma boa versão i
 ### O que deixar para fases posteriores
 
 - Outras aldeias.
-- Sistema de clãs profundo.
-- Kekkei Genkai.
+- Kekkei Genkai e combinações avançadas.
 - Arena PvP estruturada.
 - Guerra entre vilas.
 - Crafting avançado.
 - Sistema de invocações.
 - Conteúdo Otsutsuki completo.
 - Endgame com bijuus mais complexo.
+
+## Sistema de Mortes, Feridas e Injustiças (PK)
+
+### 1. Punição por Morte Comum
+A morte no jogo carrega consequências significativas para manter a tensão do combate:
+- **Perda de Recursos:** Ao morrer, o jogador perde experiência (EXP), níveis de skill e sua mochila (backpack) cai automaticamente no chão (drop total da mochila).
+- **Acúmulo de Feridas:** Toda morte acumula um status chamado "Feridas". Este status piora cumulativamente a cada morte consecutiva e funciona como um debuff, reduzindo outros atributos como skills e regeneração de vida/chakra.
+- **Recuperação de Feridas:** As feridas podem ser curadas gradualmente com o tempo ou utilizando itens medicinais específicos.
+
+### 2. Sistema de Injustiças e PK (Skulls)
+As mortes injustas acumulam punições específicas para controlar o PK (Player Killing) abusivo:
+- **Acúmulo de Kills:**
+  - Matar um jogador injustamente deixa o assassino com status de PK temporário (White Skull) e adiciona 1 kill injusto à sua ficha.
+  - Ao atingir **10 kills injustos**, o jogador recebe a **Red Skull**.
+  - Ao atingir **50 kills injustos**, o jogador recebe a **Black Skull**.
+- **Regras de Morte no PK:** Ao morrer com White, Red ou Black Skull, as penalidades de morte são as mesmas de um jogador comum (perda da mesma EXP, skills e queda da mochila). O status de PK não aumenta a perda de itens de forma direta além da mochila comum.
+- **Redução de Kills:** Para diminuir a contagem de kills injustos, o jogador pode:
+  - Morrer para outros jogadores ou monstros (cada morte reduz o contador de kills).
+  - Realizar missões de redenção específicas.
+- **Restrições para PKs Altos:** Jogadores com alta contagem de injusts (Red/Black Skull) sofrerão restrições sociais e geográficas na vila:
+  - Bloqueio de entrada em locais protegidos específicos (como templos).
+  - Impossibilidade de aceitar ou completar certas missões (quests) da aldeia.
 
 Essa divisão ajuda a lançar uma base sólida antes de expandir o universo.
 

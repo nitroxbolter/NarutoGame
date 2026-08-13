@@ -36,10 +36,10 @@ Esses cargos não são só level. Eles dependem de missão, mérito e validaçã
 
 ## Regra do Hokage
 
-- Hokage é o título de liderança da vila, não apenas um rank comum.
-- Cada aldeia principal deve ter um Hokage ativo.
-- O candidato ideal é o jogador de maior nível da aldeia, mas a escolha também deve considerar reputação, contribuição e estabilidade.
-- Se o líder ficar inativo ou perder os requisitos, o título pode ser reavaliado.
+- **Elegibilidade Competitiva:** O Hokage será o personagem de maior nível do servidor. A disputa ocorre ativamente entre os 3 personagens mais fortes (de maior nível) do jogo.
+- **Manutenção Periódica:** A cada 5 dias, o Hokage atual deve derrotar um boss específico e desafiador para provar seu poder e manter seu título.
+- **Perda de Cargo:** Se o Hokage atual morrer de qualquer forma (seja para monstros, chefes ou outros players no PvP), ele perde o título instantaneamente, permitindo que o título retorne para a disputa e seja transferido para outro do top 3.
+- **Substituição:** Caso o Hokage perca o título por morte ou falha no boss, o cargo é recalculado entre os jogadores elegíveis mais fortes.
 
 ## Promoções
 

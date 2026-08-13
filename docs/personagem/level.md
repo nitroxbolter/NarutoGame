@@ -14,16 +14,12 @@ O level representa a maturidade geral do personagem. Ele serve como a base da pr
 
 ## Direção de design
 
-- O level não deve ser o único fator de poder.
-- Ele precisa trabalhar junto com treino, mentalidade, elementos e skills.
-- Dois personagens do mesmo level podem ter builds bem diferentes.
+- **Sem limite (no cap):** O nível geral do jogador pode subir indefinidamente.
+- O level não deve ser o único fator de poder. O foco na evolução individual de jutsus e nos atributos é essencial.
+- Dois personagens do mesmo level podem ter builds e forças de jutsus bem diferentes.
 
-## Relação com progressão
+## Relação com progressão e Morte
 
-| Faixa | Papel |
-| --- | --- |
-| Baixo | Tutorial, aldeia e primeiras missões |
-| Médio | Consolidação do estilo de combate |
-| Alto | Acesso a elementos avançados e rank maior |
-| Endgame | Bosses, conteúdos raros e especializações |
+- **Progresso Infinito:** O endgame não possui teto de nível, permitindo progressão constante de longo prazo.
+- **Penalidade de Morte:** Ao morrer, o personagem perde uma porcentagem de experiência (EXP), podendo perder níveis gerais se a experiência acumulada for inferior ao limite do nível atual.
 

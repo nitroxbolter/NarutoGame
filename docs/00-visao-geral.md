@@ -8,20 +8,20 @@ O objetivo da documentação não é ser só explicativa. Ela precisa funcionar 
 
 ## Proposta
 
-O servidor propõe uma jornada ninja autoral dentro do universo de Naruto. O jogador começa como um personagem próprio, sem ser um herói pronto do anime, e constrói sua força por meio de treino, missões, escolhas de elemento, aprendizado de jutsus, equipamentos, profissões e promoções de rank.
+O servidor propõe uma jornada ninja autoral dentro do universo de Naruto, **sem limites de nível para o personagem, skills ou domínio dos jutsus**. O jogador cria sua própria identidade shinobi e evolui gradualmente, focando na maestria individual de suas técnicas prediletas.
 
 ## Diferencial
 
-Em vez de vender a fantasia de “ser Naruto” ou “ser Sasuke”, o projeto vende a fantasia de “ser um ninja original dentro de uma aldeia viva”, com referências diretas a Konoha, ao Exame Chunin, aos Sannin e às grandes ameaças do mundo shinobi.
+Em vez de vender a fantasia de “ser Naruto” ou “ser Sasuke”, o projeto vende a fantasia de “ser um ninja original dentro de uma aldeia viva”.
 
 Isso permite:
 
-- Mais liberdade de build.
-- Progressão mais longa.
-- Técnicas como recompensa, como acontece quando um ninja aprende jutsus de sua vila ou por meio de mestres.
-- Economia mais importante, com recursos usados em pergaminhos, armas, comida, remédios e materiais de treino.
-- Conteúdos de aldeia, profissão e exploração.
-- Expansões futuras sem depender só de personagens famosos, mas ainda usando o peso de vilas, clãs e organizações como Akatsuki, ANBU e ninjas renegados.
+- **Identidade Única de Build:** Os jutsus ganham nível com base no uso repetido (quanto mais usa, mais forte fica), permitindo que um jogador de nível baixo tenha uma técnica muito mais poderosa que um de nível alto por pura dedicação.
+- **Limitação Estratégica:** Spellbar limitada a no máximo **8 jutsus habilitados**, incentivando a especialização em vez de ter um arsenal genérico infinito.
+- **Hokage Competitivo:** O título de Hokage pertence ao jogador com maior nível do servidor, disputado dinamicamente pelos top 3 personagens de maior nível, exigindo derrotar um boss a cada 5 dias e sendo perdido imediatamente na morte.
+- **Risco Real (Morte e Debuffs):** A morte causa perda de EXP/skills e drop automático da mochila, acumulando "Feridas" (debuff progressivo de atributos e regeneração que deve ser tratado).
+- **Sistema de Injusts e PK:** Sistema clássico de Skulls (White, Red a partir de 10 kills, Black a partir de 50) com perda de kills por morte ou quests, sofrendo restrições de tráfego e quests em áreas específicas.
+- **Economia e Clãs ativos:** Distribuição de loot de bosses por dano causado e clãs com benefícios de XP e double loot em eventos.
 
 ## Fantasia principal
 
@@ -64,13 +64,12 @@ O jogador deve sentir que:
 
 ## O que fica fora do MVP
 
-- Kekkei genkai profundo.
+- Kekkei genkai profundo e combinações elementais complexas.
 - Guerra entre vilas.
-- Sistema completo de títulos políticos.
+- Sistema avançado de títulos políticos (além do Hokage dinâmico).
 - Economia avançada entre jogadores.
 - Mais de uma aldeia jogável no lançamento.
-- Bosses lendários de escala final.
-- Sistema completo de clãs jogáveis.
+- Bosses lendários de escala final (Otsutsuki).
 
 ## Estrutura da documentação
 

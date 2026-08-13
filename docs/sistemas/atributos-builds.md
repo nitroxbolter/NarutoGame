@@ -31,21 +31,16 @@
 | Médico | Mentalidade e controle | Cura, suporte e sobrevivência |
 | Sensor | Mentalidade e utilidade | Detecta inimigos e controla área |
 
-## Progressão de Domínio
+## Progressão de Domínio e Feridas
 
-Jutsus, armas e profissões podem ter domínio próprio.
-
-| Grau | Efeito |
-| --- | --- |
-| Aprendido | Técnica disponível |
-| Treinado | Menor custo ou menor cooldown |
-| Aperfeiçoado | Mais dano, alcance ou duração |
-| Mestre | Efeito extra ou bônus especial |
+- **Domínio de Jutsus sem Limites:** Não existe cap de nível para os jutsus ou skills. O crescimento de atributos é infinito.
+- **Feridas (Debuff por Morte):** Cada morte sofrida pelo jogador adiciona um nível de acúmulo ao status "Feridas". Esse status prejudica o desempenho do personagem, agindo como redutor (debuff) de skills (como Ninjutsu e Taijutsu) e taxa de regeneração de vida e chakra.
+- **Remoção de Feridas:** Curada lentamente com o tempo ou acelerada através de itens consumíveis de medicina ninja.
 
 ## Regras de Balanceamento
 
-- Level dá base, mas não deve decidir tudo sozinho.
-- Treino e mentalidade precisam criar diferenças reais.
-- Builds híbridas devem funcionar, mas não superar especialistas em tudo.
+- Level dá base e não possui limite máximo (no level cap), mas a maestria individual de cada jutsu é o que dita a força real de uma técnica.
+- Treino e mentalidade criam especializações físicas ou de chakra distintas.
+- A morte pune com queda de mochila e perda de EXP/skills, desencorajando mortes consecutivas pelo acúmulo de Feridas.
 - Equipamentos complementam a build, não substituem progressão.
 

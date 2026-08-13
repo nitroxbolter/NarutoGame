@@ -20,7 +20,7 @@ A progressão não deve depender apenas de level. O personagem evolui por uma co
 | --- | --- | --- |
 | ANBU | Cargo especial adquirido por missão secreta | Foco em stealth, caça e operações de elite |
 | Sannin | Cargo lendário adquirido por missão e reputação | Título raro com peso social e mecânico |
-| Kage / Hokage | Liderança máxima da aldeia | Um jogador por vila, geralmente o de maior nível, com reputação e aprovação |
+| Kage / Hokage | Liderança máxima da aldeia | Um jogador por vila. Disputado ativamente pelos top 3 personagens de maior nível, mantido por derrotar um boss a cada 5 dias e perdido imediatamente caso morra. |
 
 ## Classes ou Arquétipos
 
@@ -48,7 +48,7 @@ Cada promoção deve exigir uma mistura de requisitos.
 | Tokubetsu Jonin para Jonin | Reputação, liderança, dungeon concluída, domínio de jutsus |
 | Jonin para ANBU | Quest secreta, teste de combate, reputação alta, recomendação de NPC |
 | Jonin para Sannin | Série de missões lendárias, contribuição histórica e validação rara |
-| Jonin / Sannin para Hokage | Liderança da aldeia, maior nível, reputação e eleição ou reconhecimento |
+| Jonin / Sannin para Hokage | Personagem de maior nível (top 3 ativos), derrotar o boss de manutenção a cada 5 dias, sem sofrer mortes. |
 
 ## Exames
 
