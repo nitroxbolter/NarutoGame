@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pendências - NarutoGame Wiki</title>
+<meta name="description" content="Lista de tudo que ainda precisa ser definido no NarutoGame.">
+<link rel="stylesheet" href="layout.css">
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav-logo">NarutoGame</a>
+  <div class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="visao-geral.html">Visão Geral</a>
+    <a href="mundo.html">Mundo</a>
+    <a href="personagem.html">Personagem</a>
+    <a href="equipamentos.html">Equipamentos</a>
+    <a href="economia.html">Economia</a>
+    <a href="missoes.html">Missoes</a>
+    <a href="bosses.html">Bosses</a>
+    <a href="dungeons.html">Dungeons</a>
+    <a href="pvp.html">PvP</a>
+    <a href="arquitetura.html">Arquitetura</a>
+    <a href="pendencias.html" class="active">Pendências</a>
+  </div>
+  <div class="nav-right">
+    <button class="theme-btn" data-theme-toggle aria-label="tema"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="breadcrumb"><a href="index.html">Inicio</a><span>›</span><span>Pendências</span></div>
+  <div class="badge">🔴 Ao Vivo — Atualizado manualmente</div>
+  <h1>O que ainda falta <em>definir</em></h1>
+  <p class="lead">Tudo que ainda não foi decidido, está vago ou precisa de uma resposta antes de avançar no projeto. Responda uma de cada vez.</p>
+</header>
+
+<main class="content">
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- BLOCO 1 — PERSONAGEM -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="section">
+    <div class="section-label"><div class="dot"></div><h2>Personagem &amp; Progressão</h2></div>
+
+    <div class="box" style="margin-bottom:0.75rem">
+      <div class="box-title">🧬 Clãs</div>
+      <ul>
+        <li>Quais clãs vão existir no servidor?</li>
+        <li>O jogador escolhe um clã na criação ou conquista depois?</li>
+        <li>Clã é permanente ou pode mudar?</li>
+        <li>Qual a vantagem concreta de cada clã (passiva, jutsu exclusivo, atributo)?</li>
+        <li>Haverá clãs de NPC além dos de jogadores (ex: Uchiha, Hyuga como lore)?</li>
+      </ul>
+    </div>
+
+    <div class="box" style="margin-bottom:0.75rem">
+      <div class="box-title">⚡ Especialização / Estilo de Combate</div>
+      <ul>
+        <li>Como funciona a especialização (Ninjutsu, Taijutsu, Genjutsu, Kenjutsu, Fuinjutsu, Senjutsu)?</li>
+        <li>O jogador escolhe uma especialização ou evolui naturalmente pelo uso?</li>
+        <li>Uma especialização dá bônus passivos ou destrava jutsus exclusivos?</li>
+        <li>É possível mudar de especialização? Tem custo?</li>
+      </ul>
+    </div>
+
+    <div class="box" style="margin-bottom:0.75rem">
+      <div class="box-title">🎛️ Atributos e Builds</div>
+      <ul>
+        <li>Quais são os atributos exatos (força, velocidade, resistência, chakra, etc.)?</li>
+        <li>O jogador distribui pontos de atributo por level ou eles crescem automaticamente?</li>
+        <li>Como Treino e Mentalidade escalam matematicamente com o tempo?</li>
+        <li>Qual a fórmula de dano e defesa no combate?</li>
+      </ul>
+    </div>
+
+    <div class="box" style="margin-bottom:0.75rem">
+      <div class="box-title">🔑 Kekkei Genkai</div>
+      <ul>
+        <li>Haverá Kekkei Genkai no servidor? (ex: Sharingan, Byakugan, Mokuton)</li>
+        <li>Se sim, como ele é desbloqueado? (quest, linhagem de clã, item raro)</li>
+        <li>Quais combinações elementais existirão? (ex: Fogo + Terra = Youton)</li>
+        <li>Kekkei Genkai é exclusivo de clã ou qualquer um pode ter?</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <div class="box-title">🎓 Tutorial e Academia</div>
+      <ul>
+        <li>Como funciona o tutorial do servidor?</li>
+        <li>A academia terá quests próprias para novos jogadores?</li>
+        <li>Qual o nível mínimo para sair do status de Acadêmico e virar Genin?</li>
+        <li>Haverá NPC professor que ensina os primeiros jutsus?</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- BLOCO 2 — SISTEMAS DE JOGO -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="section">
+    <div class="section-label"><div class="dot"></div><h2>Sistemas de Jogo</h2></div>
+
+    <div class="box" style="margin-bottom:0.75rem">
+      <div class="box-title">🍜 Comidas</div>
+      <ul>
+        <li>Quais buffs as comidas vão dar (hp regen, chakra, velocidade, resistência)?</li>
+        <li>Quanto tempo dura o buff de cada comida?</li>
+        <li>É possível comer mais de uma comida ao mesmo tempo?</li>
+        <li>Haverá limite de comidas por dia?</li>
+        <li>Onde o jogador compra ingredientes? (NPC, coleta, loja do jogador)</li>
+        <li>As receitas são ensinadas por NPC ou descobertas? Tem livro de receitas?</li>
+      </ul>
+    </div>
+
+    <div class="box" style="margin-bottom:0.75rem">
+      <div class="box-title">🐾 Pets e Invocações</div>
+      <ul>
+        <li>Haverá pets de companhia ou apenas invocações de combate?</li>
+        <li>Pets terão IA própria em combate ou são controlados pelo jogador?</li>
+        <li>Como se consegue um pet? (quest, loja, drop, ovo)</li>
+        <li>Pets podem evoluir ou morrer permanentemente?</li>
+        <li>Invocações (contratos) precisam de chakra para ser usadas?</li>
+        <li>Qual o limite de invocações que um jogador pode ter ao mesmo tempo?</li>
+      </ul>
+    </div>
+
+    <div class="box" style="margin-bottom:0.75rem">
+      <div class="box-title">🏠 Casas e Habitação</div>
+      <ul>
+        <li>Onde ficam as casas no mapa? (Konoha, aldeias específicas, mundo aberto?)</li>
+        <li>Como se compra uma casa? (NPC, sistema automático, leilão)</li>
+        <li>O que acontece com a casa se o jogador ficar inativo por muito tempo?</li>
+        <li>A bancada de crafting dentro de casa dá algum bônus?</li>
+        <li>Clãs/guilds terão sede própria no mapa?</li>
+      </ul>
+    </div>
+
+    <div class="box" style="margin-bottom:0.75rem">
+      <div class="box-title">💼 Profissões</div>
+      <ul>
+        <li>Quantas profissões um personagem pode ter ao mesmo tempo?</li>
+        <li>É possível trocar de profissão? Se sim, perde o progresso?</li>
+        <li>As 4 profissões (Ferreiro, Pescador, Cozinheiro, Alquimista) são as únicas?</li>
+        <li>Profissões terão missões próprias de progressão?</li>
+        <li>Existe mercado de itens entre profissões? (Pescador vende peixe pro Cozinheiro)</li>
+      </ul>
+    </div>
+
+    <div class="box" style="margin-bottom:0.75rem">
+      <div class="box-title">📅 Estações e Eventos</div>
+      <ul>
+        <li>Qual a duração real de cada estação? (dias reais ou do servidor?)</li>
+        <li>O clima muda o visual do mapa? (neve no inverno, chuva no outono)</li>
+        <li>Como funciona o Exame Chunin em detalhes? (fases, regras, recompensas)</li>
+        <li>Eventos globais (Bijuu, invasão) vão pausar o jogo ou acontecem em paralelo?</li>
+        <li>Haverá eventos de GM (game master) manuais?</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <div class="box-title">💰 Economia</div>
+      <ul>
+        <li>Qual é a moeda principal? (Ryō, Ouro, Cristal de Chakra?)</li>
+        <li>Haverá loja de jogador (player shop) ou apenas NPC vendor?</li>
+        <li>Como prevenir inflação e acúmulo excessivo de moeda?</li>
+        <li>Itens do shop de doação existirão? Se sim, o que podem vender sem quebrar o jogo?</li>
+        <li>Haverá impostos ou taxas de mercado?</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- BLOCO 3 — PvP E MUNDO -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="section">
+    <div class="section-label"><div class="dot"></div><h2>PvP, Mundo e Política</h2></div>
+
+    <div class="box" style="margin-bottom:0.75rem">
+      <div class="box-title">🏅 Hokage — Vantagens do Cargo</div>
+      <ul>
+        <li>O Hokage terá poderes administrativos no servidor? (banir, punir, dar missões)</li>
+        <li>Quais buffs ou privilégios únicos o Hokage recebe?</li>
+        <li>O Hokage pode fazer alianças com outras vilas?</li>
+        <li>Se o Hokage ficar inativo por X dias sem derrotar o boss, o título passa automaticamente?</li>
+      </ul>
+    </div>
+
+    <div class="box" style="margin-bottom:0.75rem">
+      <div class="box-title">⚔️ PvP — Detalhes Faltando</div>
+      <ul>
+        <li>Quais locais exatos são proibidos para PKs Red e Black Skull?</li>
+        <li>Um Black Skull pode entrar nas aldeias principais? Se sim, com restrições?</li>
+        <li>Haverá sistema de duelo formal (sem skull, acordado entre jogadores)?</li>
+        <li>Qual a mecânica exata de "feridas"? (% de redução de skill por morte)</li>
+        <li>Qual o limite máximo de feridas acumuláveis?</li>
+        <li>Quais itens medicinais curam feridas? Onde se obtêm?</li>
+        <li>Guerra entre clãs/guilds afeta o sistema de skull?</li>
+      </ul>
+    </div>
+
+    <div class="box" style="margin-bottom:0.75rem">
+      <div class="box-title">🗺️ Mapa e Mundo</div>
+      <ul>
+        <li>Quantas aldeias estarão presentes no Ato I? (Konoha + quais?)</li>
+        <li>O jogador pode se registrar em outras aldeias além de Konoha?</li>
+        <li>Haverá viagem rápida entre aldeias? (caravana, barco, portal)</li>
+        <li>Quais regiões do mapa são PvP livre (sem skull)?</li>
+        <li>O mapa cresce com atualizações ou já começa completo?</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <div class="box-title">🏯 Clãs de Jogadores (Guilds)</div>
+      <ul>
+        <li>Como um clã/guild é criado? (NPC, item, nível mínimo)</li>
+        <li>Quantos membros máximos uma guild pode ter?</li>
+        <li>Quais eventos exclusivos de guild existem? (detalhes do double loot)</li>
+        <li>Guilds poderão declarar guerra entre si? O que isso muda no PvP?</li>
+        <li>Existe território de guild no mapa?</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- BLOCO 4 — TÉCNICO E MVP -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="section">
+    <div class="section-label"><div class="dot"></div><h2>Técnico &amp; MVP</h2></div>
+
+    <div class="box" style="margin-bottom:0.75rem">
+      <div class="box-title">🖥️ Servidor e Arquitetura</div>
+      <ul>
+        <li>Qual versão do TFS será usada como base (1.4 ou 1.5)?</li>
+        <li>Qual cliente OT será usado? (OTCv8, RealOTC, Mehah)</li>
+        <li>O servidor vai usar Lua ou C++ para os sistemas principais?</li>
+        <li>Haverá banco de dados MySQL ou SQLite?</li>
+        <li>Como será feito o anti-cheat e proteção contra bots?</li>
+      </ul>
+    </div>
+
+    <div class="box" style="margin-bottom:0.75rem">
+      <div class="box-title">🗂️ Catálogo de Jutsus</div>
+      <ul>
+        <li>Quantos jutsus estarão no servidor no lançamento (MVP)?</li>
+        <li>Haverá jutsus de Taijutsu puro sem elemento?</li>
+        <li>Existirão jutsus de cura para ninja médicos?</li>
+        <li>Genjutsu será implementado? Como funciona mecanicamente?</li>
+        <li>Fuinjutsu (selos) terá mecânica própria de aplicação?</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <div class="box-title">🚀 Lançamento e Conteúdo Inicial</div>
+      <ul>
+        <li>Qual será o conteúdo mínimo do lançamento? (zonas, bosses, jutsus, quests)</li>
+        <li>Haverá beta fechada antes do lançamento público?</li>
+        <li>Qual a capacidade de jogadores simultâneos esperada no início?</li>
+        <li>O servidor será gratuito com shop de doação ou pago?</li>
+        <li>Quem fará o mapa? (mappers, gerado, comprado)?</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>NarutoGame · Wiki do Projeto · <a href="https://github.com/nitroxbolter/NarutoGame" target="_blank" rel="noopener" style="color:var(--primary)">GitHub ↗</a></footer>
+<script>
+(function(){
+  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+  let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+  r.setAttribute('data-theme',d);
+  if(t)t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);});
+})();
+</script>
+</body>
+</html>
