@@ -18,7 +18,7 @@
 
 | Página | Tema |
 | --- | --- |
-| [Visão geral](00-visao-geral.md) | Proposta, pilares, MVP e direção do projeto |
+| [Visão geral](00-visao-geral.md) | Visão-mãe, filosofia, progressão e norte de design |
 | [Estrutura original](../estrutura-ideia-servidor-naruto.md) | Documento base do projeto |
 | [Checklist de desenvolvimento](CHECKLIST_DESENVOLVIMENTO.md) | Ordem prática de execução |
 | [Decisões pendentes](DECISOES_PENDENTES.md) | Perguntas em aberto e opções |

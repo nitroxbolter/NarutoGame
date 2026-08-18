@@ -1,5 +1,7 @@
 # Estrutura da Ideia — Servidor Naruto no TFS 1.4.2 + OTCv8
 
+> Documento original de referência do projeto. A visão-mãe atual e mais completa fica em [docs/00-visao-geral.md](docs/00-visao-geral.md).
+
 ## Visão do Projeto
 
 A proposta do servidor é se diferenciar dos servidores tradicionais de Naruto, nos quais o jogador escolhe ou controla diretamente personagens famosos do anime, como Naruto, Sasuke, Kakashi ou Itachi.

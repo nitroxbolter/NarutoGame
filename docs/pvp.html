@@ -21,15 +21,15 @@
     <a href="dungeons.html">Dungeons</a>
     <a href="pvp.html" class="active">PvP</a>
     <a href="arquitetura.html">Arquitetura</a>
-    <a href="pendencias.html">Pend�ncias</a>
+    <a href="pendencias.html">Pendências</a>
   </div>
   <button class="theme-btn" data-theme-toggle aria-label="tema">Tema</button>
 </nav>
 <div class="page-header">
   <div class="breadcrumb"><a href="index.html">Wiki</a><span>/</span><span>PvP e Mortes</span></div>
-  <div class="badge">⚔️ Combate, Mortes e Injustiças</div>
+  <div class="badge">Combate, mortes e reputação</div>
   <h1>Combate <em>PvP</em></h1>
-  <p class="lead">Especificações sobre as punições de morte, acúmulo de feridas, skulls de PK e restrições no mundo.</p>
+  <p class="lead">Regras de morte, penalidades, reputação, skulls e restrições para jogadores com comportamento agressivo.</p>
 </div>
 <div class="content">
   <div class="section">
@@ -48,8 +48,8 @@
       </div>
       <div class="card">
         <div class="card-icon">🩹</div>
-        <div class="card-title">Status de Feridas</div>
-        <div class="card-body">Toda morte consecutiva acumula o status de "Feridas", que age como um debuff ativo no personagem.</div>
+        <div class="card-title">Consequências extras</div>
+        <div class="card-body">A morte pode também influenciar reputação, acesso a áreas e outras restrições de progressão, conforme o balanceamento final.</div>
       </div>
     </div>
   </div>
@@ -57,15 +57,15 @@
   <div class="divider"></div>
 
   <div class="section">
-    <div class="section-label"><div class="dot"></div><h2>Sistema de Feridas (Wounds)</h2></div>
-    <p>O acúmulo de feridas representa o desgaste físico e mental das mortes consecutivas.</p>
+    <div class="section-label"><div class="dot"></div><h2>Reputação e Consequências</h2></div>
+    <p>O sistema de PvP deve permitir liberdade, mas também consequências sociais e logísticas para jogadores que acumulam mortes injustas.</p>
     <div class="box">
-      <div class="box-title">🩹 Impacto do status de Feridas</div>
+      <div class="box-title">Impacto da morte repetida</div>
       <ul>
-        <li>Reduz temporariamente os valores ativos de todas as suas **skills** (Ninjutsu, Taijutsu, etc.).</li>
-        <li>Diminui a **regeneração de vida e chakra**.</li>
-        <li>O debuff piora cumulativamente a cada nova morte.</li>
-        <li>**Como curar:** O status reduz gradualmente com o tempo online ou de forma instantânea usando consumíveis medicinais especiais (ervas e remédios ninja).</li>
+        <li>Pode reduzir acesso a áreas protegidas e certos serviços.</li>
+        <li>Pode bloquear missões ou benefícios específicos para criminosos.</li>
+        <li>Pode afetar a reputação geral do personagem no mundo.</li>
+        <li>Penalidades e reduções devem ser tratadas por balanceamento e sistemas específicos.</li>
       </ul>
     </div>
   </div>
@@ -81,24 +81,24 @@
           <tr>
             <th>Skull</th>
             <th>Requisito (Kills Injustos)</th>
-            <th>Efeito e Punição</th>
+            <th>Efeito e punição</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><strong>White Skull (PK)</strong></td>
             <td>A partir de 1 kill injusto</td>
-            <td>Fica marcado para PvP livre. Mantém a perda normal de EXP/skills e mochila ao morrer.</td>
+            <td>Fica marcado como agressor e pode sofrer restrições sociais, sem alterar a lógica normal de morte.</td>
           </tr>
           <tr>
             <td><strong>Red Skull</strong></td>
             <td>10 kills injustos</td>
-            <td>Sinalização de alta periculosidade. Sofre restrições de tráfego e missões. Perdas na morte iguais às normais.</td>
+            <td>Sinalização de alta periculosidade. Sofre restrições de tráfego e missões.</td>
           </tr>
           <tr>
             <td><strong>Black Skull</strong></td>
             <td>50 kills injustos</td>
-            <td>Nível máximo de ameaça. Impedido de entrar em locais protegidos e quests. Perdas na morte iguais às normais.</td>
+            <td>Nível máximo de ameaça. Impedido de entrar em locais protegidos e de acessar certos benefícios.</td>
           </tr>
         </tbody>
       </table>
@@ -110,17 +110,17 @@
   <div class="section">
     <div class="section-label"><div class="dot"></div><h2>Remoção de Kills e Restrições</h2></div>
     <div class="box">
-      <div class="box-title">🛑 Restrições para PKs (Red/Black Skull)</div>
+      <div class="box-title">Restrições para PKs (Red/Black Skull)</div>
       <ul>
-        <li><strong>Zonas Protegidas:</strong> Proibição de entrar em locais específicos da aldeia, como templos e bibliotecas.</li>
-        <li><strong>Missões Bloqueadas:</strong> Impossibilidade de aceitar ou completar certas missões (quests) da vila enquanto estiver sob punição.</li>
+        <li><strong>Zonas protegidas:</strong> Proibição de entrar em locais específicos da aldeia, como templos e outras áreas protegidas.</li>
+        <li><strong>Missões bloqueadas:</strong> Impossibilidade de aceitar ou completar certas missões enquanto estiver sob punição.</li>
       </ul>
     </div>
     <div class="box">
-      <div class="box-title">🔄 Métodos para Reduzir Kills Injustos</div>
+      <div class="box-title">Métodos para reduzir kills injustos</div>
       <ul>
-        <li><strong>Mortes Purgadoras:</strong> Cada morte sofrida para monstros ou outros jogadores reduz ativamente o contador de kills injustos.</li>
-        <li><strong>Missões de Redenção:</strong> Concluir tarefas específicas oferecidas por NPCs neutros ou templos para limpar o carma ninja.</li>
+        <li><strong>Redução gradual:</strong> O sistema pode permitir redução do estado criminoso com o tempo ou por ações específicas.</li>
+        <li><strong>Missões de redenção:</strong> Concluir tarefas especiais pode limpar parte da reputação negativa.</li>
       </ul>
     </div>
   </div>

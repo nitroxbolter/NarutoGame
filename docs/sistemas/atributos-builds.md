@@ -4,9 +4,11 @@
 
 | Atributo | Papel |
 | --- | --- |
-| Level | Base geral de poder, vida, chakra e acesso a conteúdo |
-| Treino | Corpo, taijutsu, armas, resistência física |
-| Mentalidade | Chakra, ninjutsu, controle, eficiência técnica |
+| Força | Dano físico, desempenho corporal e combate com armas |
+| Vitalidade | Vida máxima, regeneração e resistência geral |
+| Controle de Chakra | Chakra máximo, regeneração e eficiência técnica |
+| Inteligência | Domínio de Ninjutsu e leitura técnica do personagem |
+| Agilidade | Mobilidade, velocidade física e posicionamento |
 
 ## Atributos Secundários
 
@@ -14,33 +16,31 @@
 | --- | --- |
 | Vida | Sobrevivência |
 | Chakra | Recurso para jutsus |
-| Stamina | Recurso para ações físicas e profissões |
-| Defesa | Redução de dano físico |
-| Resistência elemental | Redução contra elementos específicos |
-| Velocidade | Movimento, esquiva e mobilidade |
-| Controle de chakra | Redução de custo e melhoria de jutsus |
+| Resistência | Redução de dano e sustentação |
+| Mobilidade | Reposicionamento e esquiva |
+| Precisão técnica | Apoio a rotas de jutsu e controle |
 
 ## Exemplos de Build
 
 | Build | Prioridade | Resultado |
 | --- | --- | --- |
-| Lutador físico | Treino alto | Forte em taijutsu e armas |
-| Ninja elemental | Mentalidade alta | Dano alto com jutsus |
-| Híbrido | Treino e mentalidade equilibrados | Flexível em PvE e PvP |
-| Tanque shinobi | Vida, defesa e treino | Aguenta bosses e protege grupo |
-| Médico | Mentalidade e controle | Cura, suporte e sobrevivência |
-| Sensor | Mentalidade e utilidade | Detecta inimigos e controla área |
+| Lutador físico | Força e Vitalidade | Forte em Taijutsu e armas |
+| Ninja elemental | Inteligência e Controle de Chakra | Dano alto com jutsus |
+| Híbrido | Atributos equilibrados | Flexível em PvE e PvP |
+| Tanque shinobi | Vitalidade e Força | Aguenta bosses e protege grupo |
+| Técnico | Controle de Chakra e Inteligência | Eficiência e domínio de técnicas |
+| Mobilidade | Agilidade alta | Reposicionamento e controle de ritmo |
 
-## Progressão de Domínio e Feridas
+## Progressão de domínio
 
-- **Domínio de Jutsus sem Limites:** Não existe cap de nível para os jutsus ou skills. O crescimento de atributos é infinito.
-- **Feridas (Debuff por Morte):** Cada morte sofrida pelo jogador adiciona um nível de acúmulo ao status "Feridas". Esse status prejudica o desempenho do personagem, agindo como redutor (debuff) de skills (como Ninjutsu e Taijutsu) e taxa de regeneração de vida e chakra.
-- **Remoção de Feridas:** Curada lentamente com o tempo ou acelerada através de itens consumíveis de medicina ninja.
+- **Skills por uso:** A prática continua sendo o eixo do avanço das habilidades.
+- **Atributos por construção:** Os atributos representam a base de potencial do personagem e devem ser distribuídos com cuidado.
+- **Sem atalho universal:** equipamento, atributo e skill se complementam, mas não substituem progressão.
 
 ## Regras de Balanceamento
 
-- Level dá base e não possui limite máximo (no level cap), mas a maestria individual de cada jutsu é o que dita a força real de uma técnica.
-- Treino e mentalidade criam especializações físicas ou de chakra distintas.
-- A morte pune com queda de mochila e perda de EXP/skills, desencorajando mortes consecutivas pelo acúmulo de Feridas.
+- A distribuição de atributos deve gerar identidade sem criar combinações obrigatórias.
+- O personagem continua crescendo por treino, escolha de build e uso de jutsus.
+- A morte pune com perda de EXP, skills e mochila, além de possíveis consequências de reputação.
 - Equipamentos complementam a build, não substituem progressão.
 

@@ -2,31 +2,29 @@
 
 ## Função
 
-Skills são as habilidades e técnicas que o personagem domina ao longo da jornada. Elas organizam o que o ninja consegue fazer em combate, suporte e utilidade.
+Skills representam prática e treinamento. Elas dizem o que o personagem sabe fazer por uso repetido, não por potencial bruto.
 
 ## Estrutura sugerida
 
-- Ninjutsu.
-- Taijutsu.
-- Genjutsu.
-- Mobilidade.
-- Defesa.
-- Utilidade.
-- Técnicas de elemento.
+- Taijutsu / Fist Fighting.
+- Ninjutsu / Magic Level.
+- Sword Fighting.
+- Club Fighting.
+- Axe Fighting.
+- Bukijutsu / Distance Fighting.
 
-## Domínio de skill e Evolução
+## Domínio de skill e evolução
 
-- **Sem limite (no cap):** As skills físicas e de chakra do personagem não possuem teto máximo de nível.
-- **Evolução por prática:** O desenvolvimento das skills é contínuo e ocorre de forma orgânica.
+- **Evolução por prática:** As skills crescem pelo uso.
+- **Especialização natural:** Classes e escolhas iniciais mudam a velocidade de progresso de cada caminho.
+- **Nenhum caminho deve virar atalho universal:** dominar uma skill não deve eliminar a necessidade de investir em outras áreas.
 
-## Penalidades por Morte e Feridas
+## Penalidades por morte
 
-- **Perda por Morte:** Ao morrer, o personagem perde pontos/percentuais de progresso nas suas skills.
-- **Feridas (Status Debuff):** Toda morte consecutiva acumula o status de "Feridas" (Wounds). Este status atua como um redutor de atributos, diminuindo temporariamente os valores ativos de suas skills e as taxas de regeneração.
-- **Tratamento:** As feridas reduzem conforme o tempo passa ou por meio do uso de consumíveis medicinais (remédios/ervas).
+- **Perda por morte:** Ao morrer, o personagem perde uma quantidade de progresso de skill.
+- **Balanço com reputação:** Sistemas de PvP e reputação podem afetar acesso e risco, sem apagar a identidade de build do jogador.
 
 ## Direção de design
 
-- O uso repetido e dedicação definem o avanço das skills.
-- O sistema deve permitir que o jogador construa builds especializadas devido ao progresso sem limites das skills.
-
+- O uso repetido e a dedicação definem o avanço das skills.
+- O sistema deve permitir builds especializadas e também caminhos híbridos, com custo maior para versatilidade.
