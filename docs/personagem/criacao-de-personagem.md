@@ -10,9 +10,22 @@ A criação de personagem define a entrada do jogador no mundo e precisa reforç
 - Vila inicial, sempre começando em Konoha no MVP.
 - Histórico curto.
 - Primeiras escolhas de identidade.
-- Elemento inicial ou afinidade inicial, se houver.
+- Classe ou afinidade inicial.
 - Clã ou origem social, se o sistema existir no MVP.
-- Preferência de estilo: ninjutsu, taijutsu, genjutsu ou híbrido.
+- Preferência de estilo: ninjutsu, taijutsu, bukijutsu ou híbrido.
+
+## Classes iniciais
+
+As classes previstas para a criação são:
+
+- Fogo.
+- Água.
+- Vento.
+- Terra.
+- Raio.
+- Taijutsu.
+
+Essas escolhas definem a aptidão natural do personagem e o seu caminho inicial de evolução.
 
 ## Estrutura inspirada no anime
 
@@ -58,6 +71,12 @@ Cada promocao mostra um simbolo ao lado do nome do personagem no cliente. Isso a
 - Jounin: manter consistencia, dominar jutsus e ter reputacao solida.
 - Ninja Elite: alcançar nivel muito alto, concluir conteudo perigoso e manter reputacao acima da media.
 - ANBU: entrar por missao secreta, recomendacao ou prova especial.
+
+## Direção de design da criação
+
+- O jogador deve criar um shinobi, nao um protagonista pronto.
+- A escolha inicial deve criar identidade sem bloquear o resto da progressão.
+- A criação precisa deixar claro que o personagem cresce por treino, missões, jutsus e rank.
 
 ## Direção de design
 

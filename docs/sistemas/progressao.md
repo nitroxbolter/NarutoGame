@@ -17,6 +17,13 @@ A progressão organiza a evolução do jogador ao longo do tempo, desde o iníci
 - Reputação com a vila.
 - Experiência com missões.
 
+## Filosofia central
+
+- Progressão deve ser conquistada.
+- Especialização deve valer mais do que dominar tudo rápido.
+- O jogador deve enxergar o próximo objetivo o tempo todo.
+- A jornada precisa misturar combate, treino, missões, equipamentos e cooperação.
+
 ## Estrutura da progressão
 
 O jogador deve sentir evolução em quatro camadas:

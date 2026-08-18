@@ -10,6 +10,12 @@
 | Doton | Terra | Defesa, controle, resistência |
 | Fuuton | Vento | Alcance, corte, mobilidade |
 
+## Regra geral
+
+- O jogador escolhe o primeiro elemento na criação.
+- O segundo elemento exige rank e missão.
+- Os demais elementos devem ser difíceis, mas possíveis no longo prazo.
+
 ## Aprendizado de Elementos
 
 | Elemento | Requisito sugerido |
@@ -33,6 +39,12 @@ Categorias:
 - Técnicas supremas.
 - Invocações.
 
+## Jutsus equipados
+
+- O jogador não leva toda a coleção de técnicas para a barra ativa.
+- A quantidade de jutsus equipados deve ser limitada para forçar escolhas.
+- A quantidade sugerida pela visão-mãe é de aproximadamente 8 jutsus.
+
 ## Requisitos de Aprendizado
 
 Um jutsu pode exigir:
@@ -40,7 +52,7 @@ Um jutsu pode exigir:
 - Level mínimo.
 - Rank ninja.
 - Elemento.
-- Treino ou mentalidade.
+- Controle de chakra ou preparo técnico.
 - Mestre NPC.
 - Pergaminho.
 - Dinheiro.
@@ -71,6 +83,12 @@ Ideia de fluxo:
 5. Treinar a invocação.
 6. Evoluir vínculo para liberar versões mais fortes.
 
+## Direção de design
+
+- Jutsus, invocações e elementos precisam formar uma árvore legível.
+- O sistema deve explicar requisitos, custos e caminhos de evolução.
+- Quanto mais poderosa a técnica, maior deve ser o investimento.
+
 ## Checklist
 
 - [ ] Definir árvore inicial de cada elemento.
@@ -78,4 +96,3 @@ Ideia de fluxo:
 - [ ] Criar requisitos de aprendizado.
 - [ ] Definir primeira invocação disponível.
 - [ ] Separar jutsus comuns de jutsus lendários.
-

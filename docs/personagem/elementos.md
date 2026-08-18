@@ -12,6 +12,12 @@ Os elementos definem a afinidade principal do personagem e orientam quais árvor
 - Doton.
 - Fuuton.
 
+## Progressão elemental
+
+- O primeiro elemento é escolhido na criação do personagem.
+- O segundo elemento é liberado no rank Chunin, com treino e requisito de missão.
+- O terceiro ao quinto elemento exigem progressão alta, requisitos de level e domínio dos elementos anteriores.
+
 ## O que o elemento afeta
 
 - Primeira árvore de jutsus.
@@ -31,3 +37,8 @@ Os elementos definem a afinidade principal do personagem e orientam quais árvor
 - Técnicas exclusivas por linhagem.
 - Pergaminhos raros e especializações secretas.
 
+## Direção de design
+
+- A escolha inicial precisa ser acessível.
+- O avanço para novos elementos precisa ser difícil o bastante para premiar especialização.
+- Elementos não devem invalidar builds físicas ou híbridas.

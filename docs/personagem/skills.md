@@ -18,6 +18,7 @@ Skills representam prática e treinamento. Elas dizem o que o personagem sabe fa
 - **Evolução por prática:** As skills crescem pelo uso.
 - **Especialização natural:** Classes e escolhas iniciais mudam a velocidade de progresso de cada caminho.
 - **Nenhum caminho deve virar atalho universal:** dominar uma skill não deve eliminar a necessidade de investir em outras áreas.
+- **Taijutsu como caminho próprio:** o especialista em Taijutsu deve evoluir essa skill mais rápido do que qualquer outra classe.
 
 ## Penalidades por morte
 

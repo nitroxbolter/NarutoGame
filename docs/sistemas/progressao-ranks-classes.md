@@ -1,14 +1,16 @@
 # Progressão, Ranks, Classes e Promoções
 
+> As classes iniciais do personagem ficam detalhadas em [docs/personagem/criacao-de-personagem.md](../personagem/criacao-de-personagem.md). Aqui a ênfase está nos ranks, cargos e especializações de progressão.
+
 ## Filosofia
 
-A progressão não deve depender apenas de level. O personagem evolui por uma combinação de força, treino, mentalidade, reputação, missões, exames e conquistas.
+A progressão não deve depender apenas de level. O personagem evolui por uma combinação de força, treino, reputação, missões, exames e conquistas.
 
 ## Ranks Ninja
 
 | Rank | Função | Conteúdo liberado |
 | --- | --- | --- |
-| Academia | Tutorial e introdução | Treino básico, missões simples, primeiros NPCs |
+| Academia | Tutorial e introdução | Base shinobi, missões simples, primeiros NPCs |
 | Genin | Início real da carreira | Missões D e C, jutsus básicos, profissões |
 | Chunin | Ninja intermediário | Missões B, dungeons iniciais, segundo elemento |
 | Tokubetsu Jonin | Especialista | Funções de elite em área específica |
@@ -22,15 +24,15 @@ A progressão não deve depender apenas de level. O personagem evolui por uma co
 | Sannin | Cargo lendário adquirido por missão e reputação | Título raro com peso social e mecânico |
 | Kage / Hokage | Liderança máxima da aldeia | Um jogador por vila. Disputado ativamente pelos top 3 personagens de maior nível, mantido por derrotar um boss a cada 5 dias e perdido imediatamente caso morra. |
 
-## Classes ou Arquétipos
+## Especializações ou Arquétipos
 
-As classes podem funcionar como caminhos de especialização, não como prisões rígidas.
+As especializações funcionam como caminhos de construção, não como prisões rígidas.
 
 | Arquétipo | Foco | Exemplo de estilo |
 | --- | --- | --- |
-| Taijutsu | Treino, corpo a corpo, velocidade | Lutador agressivo |
-| Ninjutsu | Mentalidade, chakra, elementos | Mago elemental |
-| Bukijutsu | Armas ninja, precisão, críticos | Usuário de armas |
+| Taijutsu | Combate corporal, velocidade e resistência | Lutador agressivo |
+| Ninjutsu | Chakra, elementos e jutsus | Mago elemental |
+| Bukijutsu | Armas ninja, precisão e críticos | Usuário de armas |
 | Suporte Médico | Cura, purificação, proteção | Médico de grupo |
 | Sensor | Detecção, controle, informação | Utilidade e estratégia |
 | Assassino ANBU | Mobilidade, burst, furtividade | Caçador de alvos |
@@ -61,10 +63,11 @@ Tipos de prova possíveis:
 - Prova de coleta ou escolta.
 - Prova contra boss de instância.
 
-## Checklist
+## Direção de design
 
-- [ ] Definir level mínimo por rank.
-- [ ] Definir número de missões por promoção.
-- [ ] Criar roteiro do exame Genin.
-- [ ] Criar roteiro do exame Chunin.
-- [ ] Definir se ANBU será rank, classe ou facção.
+- O jogo precisa recompensar tempo e dedicação.
+- Cada fase deve abrir novas opções, não apenas números maiores.
+- A progressão deve combinar treino, missão, exploração e combate.
+- A progressão deve sempre parecer a formação de um shinobi, não só uma barra de level.
+- Cada promocao precisa ter um simbolo visual no cliente para leitura rapida.
+- As classes iniciais definem aptidão; as especializações definem aprofundamento.

@@ -36,7 +36,14 @@ A economia deve fazer o dinheiro ter valor durante toda a jornada, sem travar a 
 - Taxas de promoção.
 - Entrar em eventos especiais.
 
-## Controle de Inflação
+## Papel na progressão
+
+- A economia precisa alimentar crafting e upgrades.
+- O dinheiro deve continuar relevante no late game.
+- Bosses, dungeons e profissões precisam gerar circulação de recursos.
+- Itens raros e pergaminhos precisam funcionar como decisões de uso, não só como prêmio estático.
+
+## Controle de inflação
 
 Possíveis saídas de dinheiro:
 
@@ -60,6 +67,12 @@ Futuro sistema:
 - Histórico de preço.
 - Restrições para itens lendários.
 
+## Direção de design
+
+- O jogador deve ganhar dinheiro jogando, não só por grind vazio.
+- O jogo deve ter saídas claras para o dinheiro sair da economia.
+- A economia precisa conversar com missões, loot, bosses, profissões e casas.
+
 ## Checklist
 
 - [ ] Definir moeda principal.
@@ -67,4 +80,3 @@ Futuro sistema:
 - [ ] Definir tabelas de recompensa por rank de missão.
 - [ ] Definir itens vendidos por NPC.
 - [ ] Definir quais materiais entram no mercado.
-

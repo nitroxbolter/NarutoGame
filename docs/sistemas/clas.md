@@ -15,3 +15,4 @@ Clãs ajudam a dar identidade, variação de build e vínculos de mundo.
 
 - Clãs devem ser relevantes, mas não obrigatórios.
 - O sistema precisa evitar que a escolha de clã anule outras builds.
+- Clãs sociais não devem virar fonte de poder obrigatório no MVP.

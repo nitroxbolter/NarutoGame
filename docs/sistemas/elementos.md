@@ -51,7 +51,7 @@ Cada elemento possui um nível próprio de 1 a 10.
 ## Limite máximo
 
 - Não há limite máximo restrito: o jogador pode aprender todos os 5 elementos básicos até o end-game.
-- **Progressão Curva de Dificuldade:** A partir do 3º elemento, a liberação e o treino tornam-se extremamente difíceis, exigindo que o jogador já tenha evoluído bastante seus elementos anteriores e possua nível geral alto de personagem, além de concluir missões de alta periculosidade.
+- A partir do 3º elemento, a liberação e o treino tornam-se extremamente difíceis, exigindo que o jogador já tenha evoluído bastante seus elementos anteriores e possua nível geral alto de personagem, além de concluir missões de alta periculosidade.
 
 ## Fórmula de evolução
 
@@ -73,16 +73,14 @@ XP ganho = base do jutsu x multiplicador de rank x bônus de dificuldade
 - Nível 8 -> 9: 2500 XP
 - Nível 9 -> 10: 3200 XP
 
-## Interação com jutsus
-
-- Jutsus elementais exigem nível mínimo do elemento correspondente.
-- Jutsus do mesmo elemento escalam com o nível elementar do personagem.
-- Jutsus combinados usam o menor nível entre os elementos exigidos como limite de desempenho.
-- Se o elemento estiver em desvantagem, o dano final sofre redução.
-- Se o elemento estiver em vantagem, o efeito final recebe bônus de eficiência.
-
 ## Direção de progressão
 
 - O primeiro elemento deve ser acessível.
 - Expansões e combinações devem surgir com treino e rank.
 - Cada elemento precisa ter função clara em combate e em progressão.
+
+## Direção de design
+
+- O primeiro elemento precisa ser acessível e relevante desde o início.
+- O avanço para novos elementos deve premiar dedicação.
+- O sistema deve favorecer especialização sem proibir versatilidade.
