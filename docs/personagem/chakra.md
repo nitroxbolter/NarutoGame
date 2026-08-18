@@ -11,12 +11,14 @@ O chakra é o recurso central do combate e do aprendizado. Ele conecta atributos
 - Regeneração.
 - Custo por técnica.
 - Controle de uso.
+- Defesa elemental.
 
 ## Relação com classes
 
 - Classes elementais tendem a ter maior progressão e reserva de chakra.
 - Taijutsu tende a ter menos chakra, mas compensa com vida, resistência e combate físico.
-- O atributo Controle de Chakra deve influenciar eficiência, custo e regeneração.
+- O atributo Defesa deve ajudar na defesa física e na defesa elemental.
+- A Inteligência deve influenciar o dano e a eficiência de Ninjutsu.
 
 ## Regeneração
 

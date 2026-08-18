@@ -13,6 +13,15 @@ Skills representam prática e treinamento. Elas dizem o que o personagem sabe fa
 - Axe Fighting.
 - Bukijutsu / Distance Fighting.
 
+## Descrições
+
+- **Taijutsu:** aumenta o dano dos ataques físicos e dos ataques básicos.
+- **Ninjutsu:** aumenta o dano dos jutsus e das técnicas elementais.
+- **Sword Fighting:** aumenta a eficiência de espadas e katanas.
+- **Club Fighting:** aumenta a eficiência de clavas, bastões e armas contundentes.
+- **Axe Fighting:** aumenta a eficiência de machados e armas do tipo axe.
+- **Bukijutsu:** aumenta a eficiência de armas de ataque à distância, como arcos, kunais e shurikens.
+
 ## Domínio de skill e evolução
 
 - **Evolução por prática:** As skills crescem pelo uso.

@@ -27,6 +27,12 @@ As classes previstas para a criação são:
 
 Essas escolhas definem a aptidão natural do personagem e o seu caminho inicial de evolução.
 
+## Direção de classes
+
+- **Taijutsu:** guerreiro de grande poder físico, vida alta e resistência física elevada, mas com defesa elemental mais baixa e sem uso de elementos.
+- **Ninjutsu elemental:** foco em poder elemental e jutsus, com grande potencial ofensivo e defesa mediana.
+- **Versatilidade:** outras armas e estilos continuam possíveis, mas seguem caminhos de progressão diferentes.
+
 ## Estrutura inspirada no anime
 
 A criação pode seguir a lógica clássica do mundo ninja:

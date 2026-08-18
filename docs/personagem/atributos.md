@@ -8,9 +8,19 @@ Os atributos representam o crescimento do personagem e ajudam a diferenciar esti
 
 - Força.
 - Vitalidade.
-- Controle de Chakra.
+- Defesa.
+- Defesa Elemental.
 - Inteligência.
 - Agilidade.
+
+## Descrições
+
+- **Força:** aumenta o dano físico e o impacto dos ataques básicos.
+- **Vitalidade:** aumenta vida máxima, resistência física e capacidade de aguentar dano.
+- **Defesa:** reduz o dano recebido e ajuda na sobrevivência geral.
+- **Defesa Elemental:** reduz o dano recebido de elementos e técnicas elementais.
+- **Inteligência:** aumenta o dano de Ninjutsu e melhora o desempenho técnico das técnicas.
+- **Agilidade:** aumenta velocidade física, deslocamento e capacidade de reagir em combate.
 
 ## Direção de design
 

@@ -43,13 +43,20 @@ Categorias:
 
 - O jogador não leva toda a coleção de técnicas para a barra ativa.
 - A quantidade de jutsus equipados deve ser limitada para forçar escolhas.
-- A quantidade sugerida pela visão-mãe é de aproximadamente 8 jutsus.
+- A quantidade fixa sugerida pela visão-mãe é de 8 jutsus na spell bar.
+
+## Arvore de habilidades
+
+- Cada elemento deve ter sua própria árvore de habilidades.
+- Jutsus avançados dependem do elemento desbloqueado e do domínio do jutsu anterior.
+- A árvore deve mostrar claramente o próximo jutsu, os requisitos e o caminho de progressão.
 
 ## Requisitos de Aprendizado
 
 Um jutsu pode exigir:
 
 - Level mínimo.
+- Quantidade mínima de chakra.
 - Rank ninja.
 - Elemento.
 - Controle de chakra ou preparo técnico.
@@ -58,6 +65,7 @@ Um jutsu pode exigir:
 - Dinheiro.
 - Missão específica.
 - Domínio de técnica anterior.
+- Nível x de um jutsu específico já aprendido.
 
 ## Invocações
 
